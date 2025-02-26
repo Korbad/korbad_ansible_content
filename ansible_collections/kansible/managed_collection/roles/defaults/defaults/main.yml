@@ -1,0 +1,1 @@
+managed_external_ansible_collections_path: "{{ xdg_data_home_path }}/managed_external_ansible_collections"

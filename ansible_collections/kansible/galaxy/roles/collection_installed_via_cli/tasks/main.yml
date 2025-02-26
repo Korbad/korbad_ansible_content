@@ -1,0 +1,4 @@
+- name: Perform collection installation via ansible-galaxy cli (NOT IDEMPOTENT unless 'creates' arg is utilized)
+  command:
+    cmd: ansible-galaxy collection install {{ collection_namespace_dot_collection_name }} -p {{ collections_path }}
+    creates: "{{ __ansible_galaxy_collection_install_cli_command_module_creates_argument | default(omit,true) }}"

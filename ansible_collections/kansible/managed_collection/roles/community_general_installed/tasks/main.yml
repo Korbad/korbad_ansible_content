@@ -1,0 +1,6 @@
+- import_role:
+    name: kansible.galaxy.collection_installed_via_cli
+  vars:
+    collection_namespace_dot_collection_name: community.general
+    collections_path: "{{ managed_external_ansible_collections_path }}"
+    __ansible_galaxy_collection_install_cli_command_module_creates_argument: "{{ collections_path }}/ansible_collections/community/general"

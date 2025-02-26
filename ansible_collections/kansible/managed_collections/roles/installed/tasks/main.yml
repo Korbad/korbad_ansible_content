@@ -1,0 +1,5 @@
+- include_role:
+    name: kansible.managed_collection.installed
+  loop: "{{ managed_external_ansible_collections }}"
+  loop_control:
+    loop_var: collection_namespace_dot_collection_name
