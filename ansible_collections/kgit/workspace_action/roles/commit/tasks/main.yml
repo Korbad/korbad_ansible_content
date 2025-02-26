@@ -1,0 +1,5 @@
+- name: Commit staged changes (git commit) {{ git_workspace_path }}
+  command:
+    cmd: git commit -m '{{ git_workspace_commit_message }}'
+    chdir: "{{ git_workspace_path }}"
+  register: git_commit_result

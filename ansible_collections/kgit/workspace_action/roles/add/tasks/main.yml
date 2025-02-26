@@ -1,0 +1,6 @@
+
+- name: Stage changes (git add .) {{ git_workspace_path }}
+  command:
+    cmd: git add .
+    chdir: "{{ git_workspace_path }}"
+  register: git_add_result

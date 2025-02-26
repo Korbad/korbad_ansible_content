@@ -1,0 +1,6 @@
+- import_role:
+    name: kgit.workspace_info.status
+
+- include_role:
+    name: kgit.workspace_action.add
+  when: _git_status_unstaged_changes_detected

@@ -1,0 +1,6 @@
+- name: Get git status {{ git_workspace_path }}
+  command:
+    cmd: git status
+    chdir: "{{ git_workspace_path }}"
+  register: git_status_result
+  changed_when: false
