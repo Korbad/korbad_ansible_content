@@ -2,4 +2,4 @@
   vars:
     managed_git_workspace_name: korbad_ansible_content
   roles:
-    - name: kgit.workspace.
+    - name: kgit.managed_workspace.added_committed_pushed
