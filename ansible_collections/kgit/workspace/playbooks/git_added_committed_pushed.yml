@@ -1,6 +1,0 @@
-- hosts: "{{ target_hosts }}"
-  roles:
-    - name: kgit.workspace.added_unstaged_changes
-    - name: kgit.workspace.added_untracked_files
-    - name: kgit.workspace.committed
-    - name: kgit.workspace.pushed
