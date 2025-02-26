@@ -1,0 +1,5 @@
+- import_role:
+    name: kgit.workspace.added_unstaged_changes
+
+- import_role:
+    name: kgit.workspace.added_untracked_files

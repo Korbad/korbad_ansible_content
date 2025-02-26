@@ -1,0 +1,8 @@
+- import_role:
+    name: added
+
+- import_role:
+    name: kgit.workspace.committed
+
+- import_role:
+    name: kgit.workspace.pushed
