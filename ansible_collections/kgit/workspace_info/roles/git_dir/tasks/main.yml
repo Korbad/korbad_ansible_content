@@ -1,0 +1,3 @@
+- stat:
+    path: "{{ git_workspace_path }}/.git"
+  register: _git_workspace_git_dir_result

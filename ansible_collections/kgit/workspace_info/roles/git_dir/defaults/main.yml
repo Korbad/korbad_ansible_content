@@ -1,0 +1,1 @@
+_git_workspace_git_dir_exists: "{{ _git_workspace_git_dir_result.stat.exists }}"

@@ -1,0 +1,2 @@
+- command:
+    cmd: git clone {{ git_repo_remote_full_url }} {{ git_workspace_path }}

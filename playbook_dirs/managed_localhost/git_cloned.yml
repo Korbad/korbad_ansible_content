@@ -1,0 +1,5 @@
+- hosts: localhost
+  roles:
+    - name: kgit.managed_workspace.defaults
+    - name: kgit.managed_workspace.cloned
+      git_repo_remote_full_url: git@github.com:Korbad/korbad_ansible_content.git
