@@ -1,4 +1,4 @@
 - import_role:
-    name: kgit.managed_workspaces.added_committed_pushed
+    name: kgit.workspaces.added_committed_pushed
   vars:
     git_workspace_paths: "{{ managed_git_workspace_path_list }}"
