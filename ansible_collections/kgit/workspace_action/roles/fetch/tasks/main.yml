@@ -1,0 +1,5 @@
+- name: Perform git fetch in workspace {{ git_workspace_path }}
+  command:
+    cmd: git fetch
+    chdir: "{{ git_workspace_path }}"
+  register: git_fetch_result

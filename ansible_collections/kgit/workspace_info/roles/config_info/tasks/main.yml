@@ -1,0 +1,7 @@
+- community.general.git_config_info:
+    path: "{{ git_workspace_path }}"
+    scope: local
+  register: _git_workspace_config_info_result
+
+- debug:
+    var: _git_workspace_config_info_result

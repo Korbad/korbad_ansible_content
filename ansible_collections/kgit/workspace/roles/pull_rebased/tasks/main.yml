@@ -1,0 +1,6 @@
+- name: Perform git pull --rebase in workspace {{ git_workspace_path }}
+  command:
+    cmd: git pull --rebase
+    chdir: "{{ git_workspace_path }}"
+  register: git_pull_rebase_result
+  changed_when: not 'Already up to date' in git_pull_rebase_result.stdout

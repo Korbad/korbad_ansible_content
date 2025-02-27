@@ -1,0 +1,6 @@
+- name: Ensure clone of remote repo exists locally
+  ansible.builtin.git:
+    dest: "{{ git_workspace_path }}"
+    repo: "{{ git_repo_remote_full_url }}"
+    key_file: "{{ git_ssh_key_file_path | default(omit) }}"
+    update: false

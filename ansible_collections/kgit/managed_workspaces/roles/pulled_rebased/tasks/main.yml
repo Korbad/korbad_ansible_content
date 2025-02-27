@@ -1,0 +1,4 @@
+- import_role:
+    name: kgit.workspaces.pull_rebased
+  vars:
+    git_workspace_paths: "{{ managed_git_workspace_path_list }}"

@@ -1,0 +1,4 @@
+- import_role:
+    name: kgit.bare_repo.cloned
+  vars:
+    bare_git_repo_path: "{{ managed_bare_git_repo_path }}"
