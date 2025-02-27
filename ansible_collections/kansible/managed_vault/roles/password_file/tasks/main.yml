@@ -1,0 +1,4 @@
+- import_role:
+    name: kansible.vault_config.password_file_exists
+  vars:
+    vault_password_file_path: "{{ managed_ansible_vault_password_file_path }}"
