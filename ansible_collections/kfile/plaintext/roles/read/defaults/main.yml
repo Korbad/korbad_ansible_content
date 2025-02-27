@@ -1,0 +1,1 @@
+_detected_filesystem_file_content: "{{ _filesystem_file_slurp_result['content'] | b64decode }}"

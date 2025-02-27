@@ -4,5 +4,5 @@ managed_ansible_vault_password_file_path: "{{ managed_ansible_vault_path }}/ansi
 managed_ansible_vault_user_secrets_path: "{{ (managed_ansible_vault_path, 'user_secrets') | path_join }}"
 managed_ansible_vault_user_secret_path: "{{ (managed_ansible_vault_user_secrets_path, managed_ansible_vault_user_secret_name) | path_join }}"
 
-_user_secret_var_name: "{{ managed_ansible_vault_user_secret_name }}"
-_user_secret_var_value: "{{ vars[_user_secret_var_name] }}"
+managed_ansible_vault_user_secret_name: "{{ managed_ansible_vault_user_secret_name }}"
+_user_secret_var_value: "{{ vars[managed_ansible_vault_user_secret_name] }}"

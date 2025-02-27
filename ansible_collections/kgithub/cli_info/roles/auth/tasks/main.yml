@@ -1,0 +1,6 @@
+- name: Check GitHub authentication status
+  command:
+    cmd: gh auth status
+  register: _gh_auth_status_result
+  failed_when: false
+  changed_when: false

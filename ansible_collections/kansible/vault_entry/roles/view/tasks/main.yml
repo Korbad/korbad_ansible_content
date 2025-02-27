@@ -1,0 +1,5 @@
+- command:
+    cmd: ansible-vault view {{ vault_file_to_view_path }}
+  changed_when: false
+  register: _vault_entry_view_result
+  no_log: true

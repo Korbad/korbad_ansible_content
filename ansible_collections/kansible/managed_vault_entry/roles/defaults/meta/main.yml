@@ -1,0 +1,2 @@
+dependencies:
+  - name: kansible.managed_vault.defaults

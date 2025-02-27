@@ -1,0 +1,10 @@
+- import_role:
+    name: kansible.vault_entry.view
+  vars:
+    vault_file_to_view_path: "{{ managed_ansible_vault_user_secret_path }}"
+  environment:
+    ANSIBLE_VAULT_PASSWORD_FILE: "{{ managed_ansible_vault_password_file_path }}"
+
+- set_fact:
+    "{{ managed_ansible_vault_user_secret_name }}": "{{ _vault_content_viewed }}"
+  no_log: true
