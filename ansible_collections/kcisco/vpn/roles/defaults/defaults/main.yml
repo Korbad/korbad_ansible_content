@@ -1,0 +1,4 @@
+opt_cisco_secureclient_dir_path: /opt/cisco/secureclient
+opt_cisco_secureclient_bin_dir_path: "{{ opt_cisco_secureclient_dir_path }}/bin"
+cisco_secureclient_cli_bin_path: "{{ opt_cisco_secureclient_bin_dir_path }}/vpn"
+cisco_secureclient_gui_bin_path: "{{ opt_cisco_secureclient_bin_dir_path }}/vpnui"

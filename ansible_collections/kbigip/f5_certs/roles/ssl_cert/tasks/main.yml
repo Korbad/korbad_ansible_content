@@ -1,0 +1,4 @@
+- f5networks.f5_modules.bigip_ssl_certificate:
+    name: "{{ certificate_name }}"
+    content: "{{ cert_file_content }}"
+    provider: "{{ bigip_connection_provider_dict }}"

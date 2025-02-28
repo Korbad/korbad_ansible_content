@@ -1,0 +1,11 @@
+{% set environ_list = environ_string.split('\0') -%}
+{% set environ_dict = {} -%}
+{% for item in environ_list -%}
+  {%- if item -%}
+    {%- set key_val = item.split('=', 1) -%}
+    {%- set key = key_val[0] -%}
+    {%- set value = key_val[1] if key_val[1] is defined else '' -%}
+    {%- set _ = environ_dict.update({key: value}) -%}
+  {%- endif -%}
+{% endfor -%}
+{{ environ_dict | to_json }}

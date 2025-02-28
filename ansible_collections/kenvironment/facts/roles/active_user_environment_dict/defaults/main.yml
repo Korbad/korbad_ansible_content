@@ -1,0 +1,1 @@
+active_user_display_env_var_value: "{{ active_user_environment_dict.DISPLAY }}"

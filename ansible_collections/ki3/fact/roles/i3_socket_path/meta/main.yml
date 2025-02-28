@@ -1,0 +1,5 @@
+---
+allow_duplicates: true
+dependencies:
+  - name: kenvironment.facts.active_user_environment_dict
+  - name: ki3.runtime_environment.defaults

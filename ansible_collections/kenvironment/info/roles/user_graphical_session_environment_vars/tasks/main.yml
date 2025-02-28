@@ -1,0 +1,8 @@
+- import_role:
+    name: graphical_session_pid
+
+- name: Get environment variables for the user_graphical_process_name process
+  command:
+    cmd: cat /proc/{{ user_graphical_process_name_pid }}/environ
+  register: user_graphical_process_name_environ_result
+  changed_when: false

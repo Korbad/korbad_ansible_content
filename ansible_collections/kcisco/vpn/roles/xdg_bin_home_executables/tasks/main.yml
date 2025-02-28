@@ -1,0 +1,11 @@
+- import_role:
+    name: kfreedesktop.xdg_bin_home.symlink
+  vars:
+    symlink_src_path: "{{ cisco_secureclient_cli_bin_path }}"
+    xdg_bin_home_filename: vpn
+
+- import_role:
+    name: kfreedesktop.xdg_bin_home.symlink
+  vars:
+    symlink_src_path: "{{ cisco_secureclient_gui_bin_path }}"
+    xdg_bin_home_filename: vpnui

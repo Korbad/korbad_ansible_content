@@ -1,0 +1,4 @@
+- f5networks.f5_modules.bigip_config:
+    save: false
+    verify: true
+    provider: "{{ bigip_connection_provider_dict }}"

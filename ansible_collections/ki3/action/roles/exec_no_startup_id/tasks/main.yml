@@ -1,0 +1,5 @@
+---
+- import_role:
+    name: msg
+  vars:
+    i3_msg: exec --no-startup-id {{ i3_exec_command }}

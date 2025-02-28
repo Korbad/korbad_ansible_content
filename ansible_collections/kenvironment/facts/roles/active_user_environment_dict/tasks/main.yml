@@ -1,0 +1,13 @@
+---
+- import_role:
+    name: kenvironment.info.user_uid
+
+- import_role:
+    name: kenvironment.info.user_graphical_session_environment_vars
+
+- name: Convert environ string to a dictionary using Jinja2 template
+  set_fact:
+    active_user_environment_dict: "{{ lookup('template', 'parse_environ.j2') | from_json }}"
+    cacheable: true
+  vars:
+    environ_string: "{{ user_graphical_process_name_environ_result.stdout }}"

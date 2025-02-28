@@ -1,0 +1,4 @@
+bigip_connection_provider_dict:
+  server: "{{ bigip_server }}"
+  user: "{{ bigip_username }}"
+  password: "{{ bigip_password }}"

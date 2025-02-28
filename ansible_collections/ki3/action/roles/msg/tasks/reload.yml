@@ -1,0 +1,4 @@
+---
+- import_tasks: main.yml
+  vars:
+    i3_msg: reload
