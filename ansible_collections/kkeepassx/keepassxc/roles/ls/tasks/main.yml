@@ -1,0 +1,4 @@
+- shell: keepassxc-cli ls {{ keepass_database_file_path }}
+  args:
+    stdin: "{{ keepass_database_file_password }}"
+  no_log: true

@@ -1,0 +1,5 @@
+- shell: keepassxc-cli show --show-protected --quiet --attributes {{ keepass_database_entry_attribute_name }} {{ keepass_database_file_path }} '{{ keepass_database_entry_name }}'
+  args:
+    stdin: "{{ keepass_database_file_password }}"
+  register: _keepass_show_result
+  no_log: true
