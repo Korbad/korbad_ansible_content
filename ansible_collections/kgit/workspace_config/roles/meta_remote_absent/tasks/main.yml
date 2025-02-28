@@ -1,0 +1,9 @@
+- import_role:
+    name: kgit.workspace_config.config_key_absent
+  vars:
+    git_workspace_config_key_name: remote.{{ git_remote_name }}.url
+
+- import_role:
+    name: kgit.workspace_config.config_key_absent
+  vars:
+    git_workspace_config_key_name: remote.{{ git_remote_name }}.pushurl

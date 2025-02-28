@@ -1,0 +1,10 @@
+- file:
+    path: "{{ git_workspace_path }}"
+    state: directory
+
+- import_role:
+    name: kgit.workspace_info.git_dir
+
+- include_role:
+    name: kgit.workspace_action.clone_remote
+  when: not _git_workspace_git_dir_exists

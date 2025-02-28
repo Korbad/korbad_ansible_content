@@ -1,0 +1,2 @@
+- import_role:
+    name: kgit.workspace_config.meta_remote_absent
