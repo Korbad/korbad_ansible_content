@@ -1,0 +1,6 @@
+- import_role:
+    name: kgithub.cli_info.repo_list
+
+- include_role:
+    name: kgithub.cli_action.unsafe_delete_repo
+  when: github_repo_name in _detected_github_repo_name_list

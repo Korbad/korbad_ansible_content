@@ -1,0 +1,8 @@
+- name: Prompt for user input
+  ansible.builtin.pause:
+    prompt: "{{ terminal_prompt }}:"
+  register: terminal_prompt_for_user_input_result
+
+- assert:
+    that:
+    - _prompt_response_value | length | int > 0

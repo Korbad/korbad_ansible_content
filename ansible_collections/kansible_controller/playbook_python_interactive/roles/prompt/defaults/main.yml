@@ -1,0 +1,1 @@
+_prompt_response_value: "{{ terminal_prompt_for_user_input_result.user_input }}"

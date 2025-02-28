@@ -1,0 +1,3 @@
+- file:
+    path: "{{ managed_ansible_vault_user_secret_path }}"
+    state: absent

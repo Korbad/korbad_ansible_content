@@ -1,0 +1,4 @@
+- copy:
+    dest: "{{ managed_ansible_vault_user_secret_path }}"
+    content: "{{ managed_ansible_vault_user_secret_encrypted_content }}"
+    decrypt: false

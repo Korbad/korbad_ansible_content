@@ -1,0 +1,4 @@
+- name: Create GitHub remote repository from the current directory
+  command:
+    cmd: gh repo create {{ github_repo_name }} --private --source=. --remote={{ git_remote_name }}
+    chdir: "{{ git_workspace_path }}"

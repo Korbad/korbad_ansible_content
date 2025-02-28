@@ -1,0 +1,2 @@
+- command:
+    cmd: gh auth logout

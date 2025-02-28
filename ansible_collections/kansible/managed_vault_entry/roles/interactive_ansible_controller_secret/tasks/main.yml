@@ -1,0 +1,9 @@
+- import_role:
+    name: kansible_controller.playbook_python_interactive.secret_prompt
+  vars:
+    terminal_prompt: "{{ managed_ansible_vault_user_secret_name }}"
+
+- import_role:
+    name: kansible.managed_vault_entry.ensure_encrypted_content
+  vars:
+    managed_ansible_vault_user_secret_value: "{{ _secret_prompt_response_value }}"

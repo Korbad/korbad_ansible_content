@@ -1,0 +1,9 @@
+- name: Prompt for user secret input
+  ansible.builtin.pause:
+    prompt: "{{ terminal_prompt }}:"
+    echo: false
+  register: terminal_prompt_for_user_secret_result
+
+- assert:
+    that:
+    - _secret_prompt_response_value | length | int > 0
