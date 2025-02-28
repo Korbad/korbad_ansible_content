@@ -1,0 +1,4 @@
+- import_role:
+    name: kssh.agent.add_key
+  environment:
+    SSH_AUTH_SOCK: "{{ active_user_environment_dict.SSH_AUTH_SOCK }}"

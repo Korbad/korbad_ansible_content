@@ -1,0 +1,2 @@
+- import_role:
+    name: kenvironment.facts.active_user_environment_dict

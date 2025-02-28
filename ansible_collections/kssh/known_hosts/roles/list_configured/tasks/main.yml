@@ -1,0 +1,8 @@
+- name: Ensure known_hosts entries are present
+  known_hosts:
+    name: "{{ entry.0 }}"
+    key: "{{ entry.0 }} {{ entry.1 }} {{ entry.2 }}"
+  loop: "{{ _xdg_user_home_ssh_known_hosts }}"
+  loop_control:
+    loop_var: entry
+  when: entry | length >= 3

@@ -1,0 +1,1 @@
+xdg_user_home_ssh_known_hosts_file_path: "{{ xdg_user_home_ssh_directory_path }}/known_hosts"

@@ -1,0 +1,3 @@
+_ssh_keyscan_result_list: "{{ _ssh_keyscan_results.stdout_lines }}"
+_ssh_keyscan_filtered_list: "{{ _ssh_keyscan_result_list | reject('match', '^#') | list }}"
+_ssh_keyscan_filtered_parts: "{{ _ssh_keyscan_filtered_list | map('split') | list }}"

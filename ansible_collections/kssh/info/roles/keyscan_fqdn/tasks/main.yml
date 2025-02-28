@@ -1,0 +1,5 @@
+- name: Scan for existing ssh host keys for {{ ssh_keyscan_fqdn }}
+  command:
+    cmd: ssh-keyscan {{ ssh_keyscan_fqdn }}
+  changed_when: false
+  register: _ssh_keyscan_results
