@@ -1,5 +1,5 @@
 - community.general.git_config:
     repo: "{{ git_workspace_path }}"
     scope: local
-    name: remote.{{ git_workspace_remote_name }}.pushurl
+    name: remote.{{ git_remote_name }}.pushurl
     value: "{{ git_repo_remote_full_url }}"
