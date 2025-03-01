@@ -1,0 +1,10 @@
+dependencies:
+  - name: kansible.managed_collections.installed
+    managed_external_ansible_collections:
+      - community.general
+      - containers.podman
+      - ansible.posix
+      - community.network
+      - community.crypto
+      - ansible.utils
+      - ansible.netcommon
