@@ -1,0 +1,4 @@
+- import_role:
+    name: kgit.workspace_meta.added_committed_pushed_to_remote
+  vars:
+    git_workspace_path: "{{ managed_git_workspace_path }}"

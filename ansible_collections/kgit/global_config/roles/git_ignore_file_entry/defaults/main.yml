@@ -1,0 +1,3 @@
+global_config_git_dir_path: "{{ xdg_config_home_path }}/git"
+global_config_git_ignore_file_path: "{{ global_config_git_dir_path }}/ignore"
+global_config_git_ignore_file_entry: .idea/

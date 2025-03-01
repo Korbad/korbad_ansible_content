@@ -1,0 +1,4 @@
+- import_role:
+    name: kgit.global_config.git_ignore_file_entry
+  vars:
+    global_config_git_ignore_file_entry: target/

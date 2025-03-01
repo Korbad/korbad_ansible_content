@@ -1,0 +1,5 @@
+- name: Ensure automatic push.autoSetupRemote
+  community.general.git_config:
+    scope: global
+    name: push.autoSetupRemote
+    value: true

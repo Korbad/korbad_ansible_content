@@ -1,0 +1,5 @@
+- name: Set default branch reconciliation policy
+  community.general.git_config:
+    scope: global
+    name: pull.rebase
+    value: true
