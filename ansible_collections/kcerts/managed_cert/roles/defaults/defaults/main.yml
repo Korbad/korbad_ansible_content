@@ -1,0 +1,13 @@
+managed_cert_directories_parent_directory_path: "{{ xdg_user_home_path }}"
+managed_cert_directories_directory_name: managed_cert_directories
+managed_cert_directories_path: "{{ managed_cert_directories_parent_directory_path }}/{{ managed_cert_directories_directory_name }}"
+managed_cert_directory_path: "{{ managed_cert_directories_path }}/{{ managed_cert_directory_name }}"
+managed_cert_crt_file_shortname: "{{ managed_cert_directory_name }}"
+managed_cert_san_file_shortname: "{{ managed_cert_directory_name }}"
+managed_cert_dns_file_shortname: "{{ managed_cert_directory_name }}"
+managed_cert_crt_file_name: "{{ managed_cert_crt_file_shortname }}.crt"
+managed_cert_crt_file_path: "{{ managed_cert_directory_path }}/{{ managed_cert_crt_file_name }}"
+managed_cert_san_file_name: "{{ managed_cert_san_file_shortname }}.san"
+managed_cert_san_file_path: "{{ managed_cert_directory_path }}/{{ managed_cert_san_file_name }}"
+managed_cert_dns_file_name: "{{ managed_cert_dns_file_shortname }}.DNS"
+managed_cert_dns_file_path: "{{ managed_cert_directory_path }}/{{ managed_cert_dns_file_name }}"
