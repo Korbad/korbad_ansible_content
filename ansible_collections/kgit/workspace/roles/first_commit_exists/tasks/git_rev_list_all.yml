@@ -1,0 +1,6 @@
+- name: Check if git workspace has any commits
+  command:
+    cmd: git rev-list -n 1 --all
+    chdir: "{{ git_workspace_path }}"
+  register: rev_list_commit_check_result
+  changed_when: false

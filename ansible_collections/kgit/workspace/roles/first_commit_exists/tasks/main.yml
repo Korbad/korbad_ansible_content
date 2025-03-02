@@ -1,0 +1,4 @@
+- import_tasks: git_rev_list_all.yml
+
+- include_tasks: git_empty_commit.yml
+  when: not _git_workspace_commits_exist

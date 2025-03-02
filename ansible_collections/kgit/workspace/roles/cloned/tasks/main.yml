@@ -8,6 +8,3 @@
 - include_role:
     name: kgit.workspace_action.clone
   when: not _git_workspace_git_dir_exists
-
-- import_role:
-    name: kgit.workspace.remote_configured
