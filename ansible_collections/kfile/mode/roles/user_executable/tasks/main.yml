@@ -1,0 +1,3 @@
+- file:
+    path: "{{ filesystem_file_path }}"
+    mode: 'u+x'
