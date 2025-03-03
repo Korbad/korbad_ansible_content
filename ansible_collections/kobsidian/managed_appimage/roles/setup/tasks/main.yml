@@ -1,3 +1,0 @@
-- import_role:
-    name: kappimage.managed_appimage.setup
-  vars:
