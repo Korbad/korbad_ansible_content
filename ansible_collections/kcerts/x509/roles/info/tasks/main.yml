@@ -1,5 +1,5 @@
 - community.crypto.x509_certificate_info:
-    path: "{{ x509_cert_crt_file_path }}"
+    content: "{{ x509_cert_crt_content }}"
     valid_at:
-      point_1: "{{ x509_cert_file_valid_at_point_1_string }}"
-  register: _x509_cert_file_info_result
+      point_1: "{{ x509_cert_content_valid_at_point_1_string }}"
+  register: _x509_cert_content_info_result

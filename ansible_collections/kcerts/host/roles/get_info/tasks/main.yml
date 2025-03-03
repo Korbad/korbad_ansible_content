@@ -1,0 +1,11 @@
+- community.crypto.get_certificate:
+    host: "{{ get_cert_remote_host_fqdn }}"
+    port: "{{ get_cert_remote_host_port }}"
+  register: _get_cert_from_remote_host_result
+
+- set_fact:
+    detected_presented_cert_value: "{{ _get_cert_from_remote_host_result.cert }}"
+    detected_presented_cert_not_after: "{{ _get_cert_from_remote_host_result.not_after }}"
+    detected_presented_cert_subject: "{{ _get_cert_from_remote_host_result.subject }}"
+    detected_presented_cert_not_after_datetime: "{{ _get_cert_from_remote_host_result.not_after | to_datetime('%Y%m%d%H%M%SZ') }}"
+    cacheable: true
