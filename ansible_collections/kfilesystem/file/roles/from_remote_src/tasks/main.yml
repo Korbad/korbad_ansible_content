@@ -1,0 +1,9 @@
+- file:
+    state: directory
+    path: "{{ filesystem_file_path | dirname }}"
+
+- name: Self-copy managed artifact from {{ remote_src_filesystem_file_path }} to {{ filesystem_file_path }}
+  copy:
+    src: "{{ remote_src_filesystem_file_path }}"
+    dest: "{{ filesystem_file_path }}"
+    remote_src: true

@@ -1,0 +1,9 @@
+- file:
+    state: directory
+    path: "{{ filesystem_file_path | dirname }}"
+
+- name: Ensure file {{ filesystem_file_path }} exists from url
+  ansible.builtin.get_url:
+    url: "{{ filesystem_file_src_url }}"
+    dest: "{{ filesystem_file_path }}"
+    checksum: "{{ filesystem_file_checksum | default(omit) }}"
