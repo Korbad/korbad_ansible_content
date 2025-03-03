@@ -1,0 +1,2 @@
+- command:
+    cmd: git clone --branch {{ git_branch_name }} {{ git_repo_remote_full_url }} {{ git_workspace_path }}
