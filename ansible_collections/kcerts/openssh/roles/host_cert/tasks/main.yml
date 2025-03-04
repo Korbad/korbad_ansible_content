@@ -1,0 +1,5 @@
+- community.crypto.openssh_cert:
+    path: "{{ openssh_cert_path }}"
+    type: host
+    signing_key: "{{ openssh_private_signing_key_path }}"
+    public_key: "{{ openssh_public_key_path }}"

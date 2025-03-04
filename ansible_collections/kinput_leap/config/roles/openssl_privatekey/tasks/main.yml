@@ -1,0 +1,4 @@
+- community.crypto.openssl_privatekey:
+    path: "{{ input_leap_config_ssl_key_file_path }}"
+    size: 4096
+    type: RSA

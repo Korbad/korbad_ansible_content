@@ -1,0 +1,9 @@
+- name: Gather information about the certificate
+  community.crypto.x509_certificate_info:
+    path: "{{ input_leap_config_ssl_pem_file_path }}"
+  register: cert_info
+
+- name: Write the fingerprint to Local.txt
+  copy:
+    content: "v2:sha256:{{ cert_info.fingerprints.sha256 }}"
+    dest: "{{ input_leap_config_ssl_fingerprint_file_path }}"

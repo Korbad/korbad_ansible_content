@@ -1,6 +1,0 @@
-- community.crypto.get_certificate:
-    host: "{{ get_cert_remote_host_fqdn }}"
-    port: "{{ get_cert_remote_host_port }}"
-    get_certificate_chain: true
-    ca_cert: "{{ ca_root_certs_pem_file_path }}"
-  register: _get_signed_chain_cert_info_from_remote_host_result

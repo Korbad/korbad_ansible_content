@@ -1,0 +1,1 @@
+input_leap_config_ssl_fingerprints_trustedservers_file_path: "{{ input_leap_config_ssl_fingerprints_dir_path }}/TrustedServers.txt"

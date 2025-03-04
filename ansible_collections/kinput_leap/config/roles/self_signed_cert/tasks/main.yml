@@ -1,0 +1,8 @@
+- name: Generate self-signed certificate for Input Leap valid for 365 days
+  community.crypto.x509_certificate:
+      provider: selfsigned
+      csr_path: "{{ input_leap_config_ssl_csr_file_path }}"
+      selfsigned_not_after: "+365d"
+      privatekey_path: "{{ input_leap_config_ssl_key_file_path }}"
+      path: "{{ input_leap_config_ssl_pem_file_path }}"
+
