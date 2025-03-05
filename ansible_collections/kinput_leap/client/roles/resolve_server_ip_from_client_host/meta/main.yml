@@ -1,0 +1,4 @@
+dependencies:
+  - name: defaults
+  - name: kavahi.resolve.installed
+  - name: kenvironment.facts.active_user_environment_dict

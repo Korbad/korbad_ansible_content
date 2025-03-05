@@ -1,0 +1,4 @@
+- name: Resolve IP address from mDNS hostname
+  command: avahi-resolve -4 -n {{ avahi_resolve_target_hostname }}
+  register: _avahi_resolve_ipv4_result
+  changed_when: false

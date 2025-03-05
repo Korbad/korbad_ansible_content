@@ -1,0 +1,13 @@
+[Unit]
+Description=Input Leap Server
+After=network.target
+
+[Service]
+ExecStart=input-leaps -f
+Restart=always
+{% for key, value in environment_variables.items() %}
+Environment="{{ key }}={{ value }}"
+{% endfor %}
+
+[Install]
+WantedBy=default.target

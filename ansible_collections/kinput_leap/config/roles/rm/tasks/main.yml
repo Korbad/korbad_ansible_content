@@ -1,0 +1,3 @@
+- file:
+    path: "{{ input_leap_config_dir_path }}"
+    state: absent

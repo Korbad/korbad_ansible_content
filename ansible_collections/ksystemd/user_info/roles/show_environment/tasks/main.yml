@@ -1,0 +1,6 @@
+- command:
+    cmd: systemctl --user show-environment
+  register: systemctl_user_show_environment_result
+
+- debug:
+    var: systemctl_user_show_environment_result

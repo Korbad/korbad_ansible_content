@@ -1,0 +1,1 @@
+_avahi_resolve_ipv4_value: "{{ _avahi_resolve_ipv4_result.stdout.split('\t')[1] }}"

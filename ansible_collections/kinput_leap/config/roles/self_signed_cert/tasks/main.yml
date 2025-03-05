@@ -4,5 +4,9 @@
       csr_path: "{{ input_leap_config_ssl_csr_file_path }}"
       selfsigned_not_after: "+365d"
       privatekey_path: "{{ input_leap_config_ssl_key_file_path }}"
-      path: "{{ input_leap_config_ssl_pem_file_path }}"
+      path: "{{ input_leap_config_ssl_crt_file_path }}"
+      mode: '0600'
+      return_content: true
+  register: input_leap_config_ssl_crt_file_result
+  no_log: true
 

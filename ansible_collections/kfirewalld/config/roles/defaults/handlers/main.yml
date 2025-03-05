@@ -1,0 +1,7 @@
+- name: reload firewalld
+  ansible.builtin.systemd:
+    name: firewalld
+    state: reloaded
+  become: yes
+  listen:
+    - reload firewalld

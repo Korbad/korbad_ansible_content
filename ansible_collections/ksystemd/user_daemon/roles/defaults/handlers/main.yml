@@ -1,0 +1,4 @@
+- name: reload systemd user daemon
+  include_tasks: daemon_reload.yml
+  listen:
+  - reload systemd user daemon

@@ -1,0 +1,12 @@
+[Unit]
+Description=Set display layout with xrandr for user {{ ansible_env.USER }}
+After=graphical.target
+ConditionPathExists={{ layout_file_path }}
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh {{ layout_file_path }}
+User={{ ansible_env.USER }}
+
+[Install]
+WantedBy=default.target

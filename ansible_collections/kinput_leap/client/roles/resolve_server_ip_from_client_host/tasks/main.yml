@@ -1,0 +1,7 @@
+- import_role:
+    name: kavahi.resolve.ipv4
+  vars:
+    avahi_resolve_target_hostname: "{{ input_leap_server_hostname }}"
+
+- set_fact:
+    input_leap_target_server_ip: "{{ _avahi_resolve_ipv4_value }}"

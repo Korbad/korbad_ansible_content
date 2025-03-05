@@ -1,0 +1,18 @@
+- import_role:
+    name: resolve_server_ip_from_client_host
+
+- import_role:
+    name: ksystemd.user_unit.configured
+  vars:
+    systemd_user_unit_file_content: "{{ lookup('template','input_leap_client.j2') }}"
+    systemd_user_unit_filename: input-leap-client.service
+    input_leap_server_ip: "{{ input_leap_target_server_ip }}"
+    environment_variables:
+      PATH: "/usr/local/bin:/usr/bin:/bin"
+      DISPLAY: "{{ active_user_display_env_var_value }}"
+      XAUTHORITY: "{{ ansible_env.HOME }}/.Xauthority"
+
+- import_role:
+    name: ksystemd.user_unit.running_enabled
+  vars:
+    systemd_user_unit_filename: input-leap-client.service

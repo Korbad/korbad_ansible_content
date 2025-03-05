@@ -1,0 +1,10 @@
+- name: Allow TCP port {{ port_number }} in the firewall permanently
+  ansible.builtin.firewalld:
+    port: "{{ port_number }}/tcp"
+    permanent: true
+    state: enabled
+    immediate: true
+    zone: public
+  become: true
+  notify:
+    - name: reload firewalld
