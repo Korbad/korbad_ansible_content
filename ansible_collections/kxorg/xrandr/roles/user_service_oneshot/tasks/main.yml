@@ -1,3 +1,0 @@
-- template:
-    src: xrandr_user.service.j2
-    dest: "{{  }}"
