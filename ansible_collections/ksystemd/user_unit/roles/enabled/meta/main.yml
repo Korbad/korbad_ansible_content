@@ -1,0 +1,5 @@
+dependencies:
+- name: defaults
+- name: ksystemd.user_daemon.defaults
+- name: kfilesystem.directory.exists
+  filesystem_directory_path: "{{ systemd_user_config_directory_path }}"

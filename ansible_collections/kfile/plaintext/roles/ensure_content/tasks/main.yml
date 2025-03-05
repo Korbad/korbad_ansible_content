@@ -6,3 +6,4 @@
     src: file_content.j2
     dest: "{{ filesystem_file_path }}"
     force: true
+  register: _template_file_result

@@ -1,0 +1,4 @@
+---
+- name: Perform reboot
+  ansible.builtin.reboot:
+  become: true

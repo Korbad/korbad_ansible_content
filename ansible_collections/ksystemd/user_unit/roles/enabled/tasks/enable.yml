@@ -1,0 +1,3 @@
+- command:
+    cmd: systemctl --user enable {{ systemd_user_unit_file_path }}
+  register: systemctl_user_enable_unit_file_result

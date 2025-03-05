@@ -3,6 +3,8 @@
   vars:
     filesystem_file_content: "{{ systemd_user_unit_file_content }}"
     filesystem_file_path: "{{ systemd_user_unit_file_path }}"
-  register: _systemd_user_unit_result
   notify:
     - reload systemd user daemon
+
+- debug:
+    var: _template_file_result
