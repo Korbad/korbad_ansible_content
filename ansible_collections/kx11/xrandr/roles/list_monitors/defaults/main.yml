@@ -1,0 +1,1 @@
+_parsed_xrandr_listmonitors_result: "{{ lookup('template','parse_list_monitors.j2') | from_yaml }}"

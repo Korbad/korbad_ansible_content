@@ -1,0 +1,9 @@
+- command:
+    cmd: xrandr --listmonitors
+  register: xrandr_listmonitors_result
+  changed_when: false
+  environment:
+    DISPLAY: "{{ active_user_display_env_var_value }}"
+
+- debug:
+    var: _parsed_xrandr_listmonitors_result

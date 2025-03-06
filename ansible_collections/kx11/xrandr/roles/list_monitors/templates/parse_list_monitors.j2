@@ -1,0 +1,15 @@
+{% set monitor_list = [] %}
+{% for line in xrandr_listmonitors_result.stdout_lines %}
+    {% if not line.startswith('Monitors:') and line.strip() %}
+        {% set parts = line.strip().split() %}
+        {% if parts | length >= 4 %}
+          {% set _ = monitor_list.append({
+            'number': parts[0] | replace(':', ''),
+            'name': parts[1],
+            'geometry': parts[2],
+            'output': parts[3]
+          }) %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+{{ monitor_list }}

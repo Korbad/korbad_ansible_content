@@ -1,4 +1,4 @@
-- name: Generate Certificate Signing Request (CSR) for Input Leap
+- name: Generate Certificate Signing Request (CSR)
   community.crypto.openssl_csr:
     path: "{{ ssl_csr_file_path }}"
     privatekey_path: "{{ ssl_privatekey_file_path }}"
