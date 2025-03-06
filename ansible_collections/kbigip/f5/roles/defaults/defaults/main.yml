@@ -1,4 +1,6 @@
+bigip_connection_validate_certs: true
 bigip_connection_provider_dict:
   server: "{{ bigip_server }}"
   user: "{{ bigip_username }}"
   password: "{{ bigip_password }}"
+  validate_certs: "{{ bigip_connection_validate_certs }}"

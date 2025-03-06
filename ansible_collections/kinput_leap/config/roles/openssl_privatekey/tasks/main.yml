@@ -1,7 +1,4 @@
-- community.crypto.openssl_privatekey:
-    path: "{{ input_leap_config_ssl_key_file_path }}"
-    size: 4096
-    type: RSA
-    return_content: true
-  register: input_leap_config_ssl_key_file_result
-  no_log: true
+- import_role:
+    name: kcerts.openssl.privatekey
+  vars:
+    ssl_privatekey_file_path: "{{ input_leap_config_ssl_key_file_path }}"

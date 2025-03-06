@@ -1,2 +1,10 @@
 - community.crypto.x509_certificate:
     provider: selfsigned
+    csr_path: "{{ ssl_csr_file_path }}"
+    selfsigned_not_after: "+365d"
+    privatekey_path: "{{ ssl_privatekey_file_path }}"
+    path: "{{ ssl_crt_file_path }}"
+    mode: '0600'
+    return_content: true
+  register: ssl_crt_file_result
+  no_log: true

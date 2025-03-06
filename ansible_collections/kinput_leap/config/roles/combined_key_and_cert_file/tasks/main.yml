@@ -3,5 +3,5 @@
     dest: "{{ input_leap_config_ssl_pem_file_path }}"
     mode: '0600'
   vars:
-    privatekey_content: "{{ input_leap_config_ssl_key_file_result.privatekey }}"
-    certificate_content: "{{ input_leap_config_ssl_crt_file_result.certificate }}"
+    privatekey_content: "{{ _ssl_privatekey_file_result.privatekey }}"
+    certificate_content: "{{ ssl_crt_file_result.certificate }}"

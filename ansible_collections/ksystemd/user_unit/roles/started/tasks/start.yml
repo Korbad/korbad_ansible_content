@@ -1,0 +1,3 @@
+- command:
+    cmd: systemctl --user start {{ systemd_user_unit_file_path }}
+  register: systemctl_user_start_unit_file_result

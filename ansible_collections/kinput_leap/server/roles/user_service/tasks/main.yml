@@ -9,6 +9,11 @@
       XAUTHORITY: "{{ ansible_env.HOME }}/.Xauthority"
 
 - import_role:
-    name: ksystemd.user_unit.running_enabled
+    name: ksystemd.user_unit.enabled
+  vars:
+    systemd_user_unit_filename: input-leap-server.service
+
+- import_role:
+    name: ksystemd.user_unit.started
   vars:
     systemd_user_unit_filename: input-leap-server.service

@@ -1,0 +1,2 @@
+ssl_privatekey_filename: "{{ ssl_privatekey_file_shortname }}.key"
+ssl_privatekey_file_path: "{{ ssl_privatekey_file_parent_directory_path }}/{{ ssl_privatekey_filename }}"
