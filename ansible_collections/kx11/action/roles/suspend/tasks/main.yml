@@ -1,0 +1,5 @@
+- ansible.builtin.command:
+    cmd: systemctl suspend
+  become: true
+  environment:
+    DISPLAY: "{{ active_user_display_env_var_value }}"
