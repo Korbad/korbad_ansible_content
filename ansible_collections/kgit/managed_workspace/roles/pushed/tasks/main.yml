@@ -1,0 +1,4 @@
+- import_role:
+    name: kgit.workspace.pushed
+  vars:
+    git_workspace_path: "{{ managed_git_workspace_path }}"
