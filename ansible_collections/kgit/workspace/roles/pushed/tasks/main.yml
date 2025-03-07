@@ -1,4 +1,4 @@
-- name: git push
+- name: git push {{ git_workspace_path }}
   command:
     cmd: git push
     chdir: "{{ git_workspace_path }}"
