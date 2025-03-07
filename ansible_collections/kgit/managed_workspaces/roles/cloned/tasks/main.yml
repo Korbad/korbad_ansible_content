@@ -1,0 +1,8 @@
+- include_role:
+    name: kgit.managed_workspace.cloned
+  loop: "{{ managed_git_workspaces }}"
+  loop_control:
+    loop_var: managed_git_workspace
+  vars:
+    managed_git_workspace_name: "{{ managed_git_workspace.managed_git_workspace_name }}"
+    git_repo_remote_full_url: "{{ managed_git_workspace.git_repo_remote_full_url }}"
