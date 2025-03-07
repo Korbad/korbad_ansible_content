@@ -1,0 +1,8 @@
+dependencies:
+- name: kdnf.package.installed
+  dnf_package_name:
+  - gcc-c++
+  - libX11-devel
+  - alsa-lib-devel
+  - systemd-devel
+  when: ansible_distribution == 'Fedora'
