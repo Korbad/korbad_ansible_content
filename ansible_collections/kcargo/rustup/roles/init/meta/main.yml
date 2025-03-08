@@ -1,0 +1,3 @@
+dependencies:
+- name: installed
+- name: kcargo.local.defaults

@@ -1,0 +1,7 @@
+dependencies:
+- name: kdnf.package.installed
+  dnf_package_name: rustup
+  when: ansible_distribution == 'Fedora'
+- name: kdnf.package.installed
+  dnf_package_name: '@development-tools'
+  when: ansible_distribution == 'Fedora'

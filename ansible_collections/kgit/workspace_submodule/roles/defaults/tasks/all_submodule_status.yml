@@ -1,0 +1,5 @@
+- command:
+    cmd: git submodule status
+    chdir: "{{ git_workspace_path }}"
+  register: _git_submodules_status_result
+  changed_when: false

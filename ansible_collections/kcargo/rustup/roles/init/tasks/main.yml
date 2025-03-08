@@ -1,0 +1,3 @@
+- command:
+    cmd: rustup-init -y
+    creates: "{{ user_cargo_bin_directory_path }}/rustup"

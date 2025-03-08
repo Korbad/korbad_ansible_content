@@ -1,0 +1,3 @@
+- import_role:
+      name: defaults
+      tasks_from: update_all.yml

@@ -1,0 +1,9 @@
+{%- set submodules_dict = {} -%}
+{%- for line in _git_submodules_status_result.stdout_lines -%}
+    {%- set parts = line.split() -%}
+    {%- set commit = parts[0] -%}
+    {%- set path = parts[1] -%}
+    {%- set branchcrud = parts[2] -%}
+    {% set _ = submodules_dict.update({path: {'commit': commit, 'branchcrud': branchcrud } }) %}
+{%- endfor -%}
+{{ submodules_dict }}

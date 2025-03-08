@@ -1,0 +1,6 @@
+
+
+- name: git workspace {{ git_workspace_path }} submodule {{ git_workspace_submodule_relative_path }} set-url {{ git_repo_remote_full_url }}
+  command:
+    cmd: git submodule set-url {{ git_workspace_submodule_relative_path }} {{ git_repo_remote_full_url }}
+    chdir: "{{ git_workspace_path }}"

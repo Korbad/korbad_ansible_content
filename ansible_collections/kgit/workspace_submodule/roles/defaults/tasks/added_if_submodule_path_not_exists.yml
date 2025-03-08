@@ -1,0 +1,3 @@
+- import_tasks: all_submodule_status.yml
+- include_tasks: add_submodule.yml
+  when: not _git_submodule_exists_by_relpath

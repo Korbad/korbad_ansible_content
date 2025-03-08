@@ -1,0 +1,5 @@
+- name: NOT IDEMPOTENT, NOT GREAT - Cargo install binaries from manifest {{ cargo_manifest_dir_path }} to {{ cargo_install_destination_bin_path }}
+  command:
+    cmd: cargo install --path {{ cargo_manifest_dir_path }} --root {{ cargo_install_destination_bin_path | dirname }} --force
+  environment:
+    PATH: "{{ user_cargo_bin_directory_path }}:{{ ansible_env.PATH }}"
