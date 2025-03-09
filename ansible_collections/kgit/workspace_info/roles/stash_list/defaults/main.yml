@@ -1,0 +1,1 @@
+_git_stash_detected_bool: "{{ _git_workspace_stash_result.stdout | length > 0 }}"

@@ -1,0 +1,5 @@
+- import_role:
+    name: kfilesystem.file.from_url_without_filename
+  vars:
+    filesystem_file_src_url: "{{ managed_archive_file_url }}"
+    filesystem_file_parent_directory_path: "{{ managed_archive_file_parent_directory_path }}"

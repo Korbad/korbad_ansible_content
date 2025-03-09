@@ -1,0 +1,17 @@
+- name: Ensure that userspace managed unarchive directory exists
+  ansible.builtin.file:
+    state: directory
+    path: "{{ managed_unarchive_path }}"
+
+- name: Unarchive {{ managed_archive_file_path }} installation directory
+  ansible.builtin.unarchive:
+    src: "{{ managed_archive_file_path }}"
+    dest: "{{ managed_unarchive_path }}"
+    extra_opts: "{{ unarchive_extra_opts | default(omit) }}"
+    remote_src: true
+
+- name: Store new archive hash
+  ansible.builtin.copy:
+    content: "{{ _managed_archive_checksum }}"
+    dest: "{{ managed_unarchive_path }}/.archive_hash"
+    mode: '0600'

@@ -1,0 +1,10 @@
+- name: Get checksum of the archive file
+  ansible.builtin.stat:
+    path: "{{ managed_archive_file_path }}"
+    checksum_algorithm: sha256
+  register: _archive_stat_result
+
+- name: Check if .archive_hash file exists
+  ansible.builtin.stat:
+    path: "{{ managed_unarchive_path }}/.archive_hash"
+  register: _hash_file_stat_result

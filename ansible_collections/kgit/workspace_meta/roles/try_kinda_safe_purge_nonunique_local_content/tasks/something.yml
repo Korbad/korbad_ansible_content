@@ -1,0 +1,2 @@
+- debug:
+    msg: "unsafe purging {{ git_workspace_path }}"

@@ -1,0 +1,8 @@
+- name: git diff between local branch {{ local_git_branch_name }} and remote ({{ git_remote_name }}) branch {{ remote_git_branch_name }} versions
+  command:
+    cmd: git diff {{ local_git_branch_name }} {{ git_remote_name }}/{{ remote_git_branch_name }} --numstat
+    chdir: "{{ git_workspace_path }}"
+  register: _git_diff_local_to_remote_result
+  failed_when: false
+  changed_when: false
+

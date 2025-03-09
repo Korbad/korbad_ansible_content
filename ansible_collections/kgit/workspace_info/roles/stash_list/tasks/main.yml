@@ -1,0 +1,6 @@
+- name: Check for git stash in {{ git_workspace_path }}
+  command:
+    cmd: git stash list
+    chdir: "{{ git_workspace_path }}"
+  register: _git_workspace_stash_result
+  changed_when: false

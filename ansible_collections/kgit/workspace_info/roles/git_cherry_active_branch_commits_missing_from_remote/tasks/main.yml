@@ -1,0 +1,8 @@
+- command:
+    cmd: git cherry -v
+    chdir: "{{ git_workspace_path }}"
+  register: _git_cherry_info_local_commits_missing_from_remote_remote
+  changed_when: false
+
+- debug:
+    var: _git_cherry_info_local_commits_missing_from_remote_remote

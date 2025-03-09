@@ -1,0 +1,7 @@
+managed_unarchive_directory_parent_directory_path: "{{ xdg_data_home_path }}/managed_unarchive_directories"
+managed_unarchive_name: "{{ managed_archive_filename }}"
+managed_unarchive_path: "{{ managed_unarchive_directory_parent_directory_path }}/{{ managed_unarchive_name }}"
+managed_unarchive_target_file_path: "{{ managed_archive_file_path }}"
+_managed_unarchive_stored_hash_checksum: "{{ _stored_hash_result.content | b64decode }}"
+_managed_archive_checksum: "{{ _archive_stat_result.stat.checksum }}"
+_managed_unarchive_hash_file_exists: "{{ _hash_file_stat_result.stat.exists }}"

@@ -1,0 +1,9 @@
+- name: Get Git remotes using command
+  ansible.builtin.command:
+    cmd: git remote -v
+    chdir: "{{ git_workspace_path }}"
+  register: _git_workspace_remotes_result
+  changed_when: false
+
+- debug:
+    var: _git_workspace_remotes_list
