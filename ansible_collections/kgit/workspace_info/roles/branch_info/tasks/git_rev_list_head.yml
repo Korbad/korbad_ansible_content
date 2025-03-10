@@ -1,0 +1,6 @@
+- name: List commits reachable from current branch (HEAD)
+  command:
+    cmd: git rev-list HEAD
+    chdir: "{{ git_workspace_path }}"
+  register: _git_rev_list_head_result
+  changed_when: false

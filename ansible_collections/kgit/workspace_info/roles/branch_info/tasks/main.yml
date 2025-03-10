@@ -1,0 +1,4 @@
+- import_tasks: git_rev_list_head.yml
+- import_tasks: git_rev_list_branch.yml
+- import_tasks: git_rev_list_upstream_to_head.yml
+- import_tasks: git_rev_list_upstream_to_branch.yml

@@ -1,0 +1,6 @@
+- name: List commits reachable from branch {{ git_branch_name }}
+  command:
+    cmd: git rev-list {{ git_branch_name }}
+    chdir: "{{ git_workspace_path }}"
+  register: _git_rev_list_branch_result
+  changed_when: false
