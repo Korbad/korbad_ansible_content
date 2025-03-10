@@ -4,7 +4,7 @@
 - import_role:
     name: kgit.workspace_info.stash_list
 
-- include_tasks: something.yml
+- include_tasks: check_branches.yml
   when:
   - not _git_stash_detected_bool
   - not _git_status_untracked_files_detected

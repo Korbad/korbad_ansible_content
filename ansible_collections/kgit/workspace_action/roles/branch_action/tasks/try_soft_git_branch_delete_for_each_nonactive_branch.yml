@@ -1,0 +1,12 @@
+- import_role:
+    name: kgit.workspace_info.git_rev_ref_head
+
+- import_role:
+    name: kgit.workspace_info.branch_info
+    tasks_from: list_fully_merged_branches_for_each_ref.yml
+
+- include_tasks: try_soft_git_branch_delete.yml
+  loop: "{{ _git_workspace_fully_merged_branches_by_ref_except_active_branch_list }}"
+  loop_control:
+    loop_var: git_branch_name
+

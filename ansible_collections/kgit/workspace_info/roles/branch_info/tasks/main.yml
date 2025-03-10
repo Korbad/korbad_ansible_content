@@ -2,3 +2,5 @@
 - import_tasks: git_rev_list_branch.yml
 - import_tasks: git_rev_list_upstream_to_head.yml
 - import_tasks: git_rev_list_upstream_to_branch.yml
+- import_tasks: list_local_branches.yml
+- import_tasks: list_fully_merged_branches_for_each_ref.yml
