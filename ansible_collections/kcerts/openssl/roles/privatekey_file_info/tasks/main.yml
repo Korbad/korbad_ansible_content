@@ -1,0 +1,4 @@
+- community.crypto.openssl_privatekey_info:
+    path: "{{ ssl_privatekey_file_path }}"
+  register: _ssl_privatekey_file_info_result
+  no_log: true

@@ -1,0 +1,5 @@
+managed_ca_cert_provider_directories_parent_directory_path: "{{ xdg_data_home_path }}"
+managed_ca_cert_provider_directories_directory_name: managed_ca_cert_provider_directories
+managed_ca_cert_provider_directories_path: "{{ managed_ca_cert_provider_directories_parent_directory_path }}/{{ managed_ca_cert_provider_directories_directory_name }}"
+managed_ca_cert_provider_directory_path: "{{ managed_ca_cert_provider_directories_path }}/{{ managed_ca_cert_provider_directory_name }}"
+managed_ca_cert_provider_crt_file_path: "{{ managed_ca_cert_provider_directory_path }}/{{ managed_ca_cert_provider_crt_file_name }}"

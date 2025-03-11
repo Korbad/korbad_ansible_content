@@ -1,0 +1,31 @@
+managed_cert_directories_parent_directory_path: "{{ xdg_data_home_path }}"
+managed_cert_directories_directory_name: managed_cert_host_directories
+managed_cert_directories_path: "{{ managed_cert_directories_parent_directory_path }}/{{ managed_cert_directories_directory_name }}"
+managed_cert_directory_path: "{{ managed_cert_directories_path }}/{{ managed_cert_directory_name }}"
+managed_cert_directory_name: "{{ managed_cert_target_hostname }}"
+
+managed_cert_crt_file_parent_directory_path: "{{ managed_cert_directory_path }}"
+managed_cert_crt_file_shortname: "{{ managed_cert_directory_name }}"
+managed_cert_crt_file_name: "{{ managed_cert_crt_file_shortname }}.crt"
+managed_cert_crt_file_path: "{{ managed_cert_crt_file_parent_directory_path }}/{{ managed_cert_crt_file_name }}"
+
+managed_cert_csr_file_parent_directory_path: "{{ managed_cert_directory_path }}"
+managed_cert_csr_file_shortname: "{{ managed_cert_directory_name }}"
+managed_cert_csr_file_name: "{{ managed_cert_csr_file_shortname }}.csr"
+managed_cert_csr_file_path: "{{ managed_cert_csr_file_parent_directory_path }}/{{ managed_cert_csr_file_name }}"
+
+
+managed_cert_key_file_parent_directory_path: "{{ managed_cert_directory_path }}"
+managed_cert_key_file_shortname: "{{ managed_cert_directory_name }}"
+managed_cert_key_file_name: "{{ managed_cert_key_file_shortname }}.key"
+managed_cert_key_file_path: "{{ managed_cert_key_file_parent_directory_path }}/{{ managed_cert_key_file_name }}"
+
+managed_cert_pem_file_parent_directory_path: "{{ managed_cert_directory_path }}"
+managed_cert_pem_file_shortname: "{{ managed_cert_directory_name }}"
+managed_cert_pem_file_name: "{{ managed_cert_pem_file_shortname }}.pem"
+managed_cert_pem_file_path: "{{ managed_cert_pem_file_parent_directory_path }}/{{ managed_cert_pem_file_name }}"
+
+
+
+
+

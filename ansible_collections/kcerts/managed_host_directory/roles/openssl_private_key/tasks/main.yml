@@ -1,0 +1,4 @@
+- import_role:
+    name: kcerts.openssl.privatekey
+  vars:
+    ssl_privatekey_file_path: "{{ managed_cert_key_file_path }}"

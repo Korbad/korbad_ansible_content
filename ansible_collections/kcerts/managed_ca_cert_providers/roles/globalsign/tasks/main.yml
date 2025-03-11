@@ -1,0 +1,7 @@
+- import_role:
+    name: kfilesystem.file.from_url
+  vars:
+    managed_ca_cert_provider_directory_name: globalsign
+    managed_ca_cert_provider_crt_file_name: gsrsaovsslca2018.crt
+    filesystem_file_path: "{{ managed_ca_cert_provider_crt_file_path }}"
+    filesystem_file_src_url: http://secure.globalsign.com/cacert/gsrsaovsslca2018.crt

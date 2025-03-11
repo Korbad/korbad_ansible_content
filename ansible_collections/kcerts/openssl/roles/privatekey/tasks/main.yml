@@ -3,5 +3,6 @@
     size: 4096
     type: RSA
     return_content: true
+    regenerate: never
   register: _ssl_privatekey_file_result
   no_log: true

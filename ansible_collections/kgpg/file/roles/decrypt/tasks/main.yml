@@ -1,0 +1,9 @@
+- command:
+    cmd: gpg --batch --ignore-mdc-error --yes --passphrase={{ gpg_key_passphrase }} -o {{ gpg_decryption_output_file_path }} -d {{ gpg_decryption_input_file_path }}
+  no_log: true
+
+#  gpg --batch --passphrase="${GPG}" \
+#  -o ./certs/"${certCN}"/"${certCN}".key \
+#  -d ./certs/"${certCN}"/"${certCN}".key.gpg
+#  echo "gpg decryption of key.gpg"
+#  echo
