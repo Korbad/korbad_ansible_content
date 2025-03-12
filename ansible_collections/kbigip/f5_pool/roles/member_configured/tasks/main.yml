@@ -1,0 +1,3 @@
+- f5networks.f5_modules.bigip_pool_member:
+    fqdn: "{{ f5_pool_member_fqdn }}"
+    pool: "{{ f5_pool_name }}"

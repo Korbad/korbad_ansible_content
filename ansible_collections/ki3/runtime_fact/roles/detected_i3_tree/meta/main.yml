@@ -1,0 +1,4 @@
+---
+dependencies:
+- name: ki3.runtime_environment.defaults
+- name: ki3.fact.i3_socket_path
