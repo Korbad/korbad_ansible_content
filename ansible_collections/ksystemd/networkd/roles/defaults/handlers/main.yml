@@ -1,0 +1,9 @@
+- name: restart systemd-networkd and reload daemon
+  include_tasks: daemon_reloaded_service_restarted.yml
+  listen:
+  - restart systemd-networkd and reload daemon
+
+- name: networkctl reload
+  include_tasks: networkctl_reload.yml
+  listen:
+  - networkctl reload

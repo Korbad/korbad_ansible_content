@@ -1,0 +1,6 @@
+- name: Enable systemd-networkd
+  systemd:
+    name: systemd-networkd
+    enabled: yes
+    state: started
+  become: true

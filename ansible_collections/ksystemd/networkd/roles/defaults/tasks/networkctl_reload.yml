@@ -1,0 +1,4 @@
+- name: networkctl reload
+  command:
+    cmd: networkctl reload
+  become: true

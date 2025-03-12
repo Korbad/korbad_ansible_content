@@ -1,0 +1,4 @@
+- name: Gather info about systemd-networkd
+  community.general.systemd_info:
+    unitname: systemd-networkd.service
+  register: systemd_networkd_info_result

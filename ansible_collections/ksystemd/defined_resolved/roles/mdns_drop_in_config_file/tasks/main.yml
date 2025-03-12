@@ -1,0 +1,12 @@
+- name: Set mDNS in systemd-resolved drop-in configuration
+  community.general.ini_file:
+    path: "{{ etc_systemd_resolved_conf_drop_in_file_path }}"
+    section: Resolve
+    option: MulticaseDNS
+    value: yes
+    mode: '0644'
+  become: true
+  vars:
+    systemd_resolved_conf_d_file_shortname: mdns
+  notify:
+    - restart systemd-resolved and reload daemon
