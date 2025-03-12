@@ -1,0 +1,5 @@
+- import_role:
+    name: get_tree
+
+- ansible.builtin.set_fact:
+    i3_{{ i3_node_shortname }}_nodes: "{{ _i3_tree_nodes_with_window_properties_class }}"

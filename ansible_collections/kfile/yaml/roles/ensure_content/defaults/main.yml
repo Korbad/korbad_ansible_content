@@ -1,0 +1,3 @@
+_yaml_file_nice_content: "{{ lookup('template', 'yaml_file.yml.j2') }}"
+yaml_file_filename: "{{ yaml_file_shortname }}.yml"
+yaml_file_path: "{{ yaml_file_parent_directory_path }}/{{ yaml_file_filename }}"

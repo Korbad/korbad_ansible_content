@@ -1,0 +1,6 @@
+- import_role:
+    name: ki3.runtime_info.get_tree
+
+- include_role:
+    name: ki3.runtime_action.exec
+  when: not _i3_tree_nodes_with_window_properties_class_found

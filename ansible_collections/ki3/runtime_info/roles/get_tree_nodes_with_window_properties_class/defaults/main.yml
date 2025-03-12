@@ -1,0 +1,2 @@
+_i3_tree_nodes_with_window_properties_class: "{{ lookup('template', 'extract_nodes_by_window_properties_class.j2') | from_yaml }}"
+_i3_tree_nodes_with_window_properties_class_found: "{{ _i3_tree_nodes_with_window_properties_class | count | int > 0 }}"

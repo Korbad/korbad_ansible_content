@@ -1,0 +1,3 @@
+- command:
+    cmd: git add .gitmodules
+    chdir: "{{ git_workspace_path }}"

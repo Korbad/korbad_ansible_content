@@ -1,3 +1,6 @@
 _detected_git_submodule_status: "{{ lookup('template','parse_submodules_status.j2') }}"
 _detected_git_submodules: "{{ lookup('template','parse_submodules_status_to_dict.j2') }}"
 _git_submodule_exists_by_relpath: "{{ git_workspace_submodule_relative_path in _detected_git_submodules.keys() }}"
+git_workspace_git_submodules_config_file_path: "{{ git_workspace_path }}/.gitmodules"
+git_workspace_submodule_path: "{{ git_workspace_path }}/{{ git_workspace_submodule_relative_path }}"
+git_workspace_submodule_relative_path: "{{ git_workspace_submodule_name }}"

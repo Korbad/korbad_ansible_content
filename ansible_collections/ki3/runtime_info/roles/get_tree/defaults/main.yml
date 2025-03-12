@@ -1,0 +1,1 @@
+_i3_tree: "{{ i3_tree_result.stdout | from_json }}"
