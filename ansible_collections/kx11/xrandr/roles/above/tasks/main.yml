@@ -1,0 +1,4 @@
+- command:
+    cmd: xrandr --output {{ above_output }} --auto --above {{ below_output }}
+  environment:
+    DISPLAY: "{{ active_user_display_env_var_value }}"

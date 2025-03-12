@@ -1,0 +1,17 @@
+- include_role:
+    name: left_of
+  when:
+    - xrandr_entry.left_output is defined
+    - xrandr_entry.right_output is defined
+  vars:
+    left_output: "{{ xrandr_entry.left_output }}"
+    right_output: "{{ xrandr_entry.right_output }}"
+
+- include_role:
+    name: below
+  when:
+    - xrandr_entry.below_output is defined
+    - xrandr_entry.above_output is defined
+  vars:
+    below_output: "{{ xrandr_entry.below_output }}"
+    above_output: "{{ xrandr_entry.above_output }}"
