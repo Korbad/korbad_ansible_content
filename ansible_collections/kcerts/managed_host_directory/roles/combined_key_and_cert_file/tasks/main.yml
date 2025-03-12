@@ -1,0 +1,11 @@
+- import_role:
+    name: openssl_private_key
+- import_role:
+    name: openssl_csr_file
+- template:
+    src: combined_privatekey_and_cert_pem_file.j2
+    dest: "{{ managed_cert_privatekey_and_cert_ssl_pem_file_path }}"
+    mode: '0600'
+  vars:
+    privatekey_content: "{{ _ssl_privatekey_file_result.privatekey }}"
+    certificate_content: "{{ ssl_crt_file_result.certificate }}"

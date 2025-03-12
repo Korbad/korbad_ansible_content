@@ -20,12 +20,7 @@ managed_cert_key_file_shortname: "{{ managed_cert_directory_name }}"
 managed_cert_key_file_name: "{{ managed_cert_key_file_shortname }}.key"
 managed_cert_key_file_path: "{{ managed_cert_key_file_parent_directory_path }}/{{ managed_cert_key_file_name }}"
 
-managed_cert_pem_file_parent_directory_path: "{{ managed_cert_directory_path }}"
-managed_cert_pem_file_shortname: "{{ managed_cert_directory_name }}"
-managed_cert_pem_file_name: "{{ managed_cert_pem_file_shortname }}.pem"
-managed_cert_pem_file_path: "{{ managed_cert_pem_file_parent_directory_path }}/{{ managed_cert_pem_file_name }}"
-
-
-
-
-
+managed_cert_privatekey_and_cert_ssl_pem_file_parent_directory_path: "{{ managed_cert_directory_path }}"
+managed_cert_privatekey_and_cert_ssl_pem_file_shortname: "{{ managed_cert_directory_name }}"
+managed_cert_privatekey_and_cert_ssl_pem_file_name: "{{ managed_cert_privatekey_and_cert_ssl_pem_file_shortname }}.pem"
+managed_cert_privatekey_and_cert_ssl_pem_file_path: "{{ managed_cert_privatekey_and_cert_ssl_pem_file_parent_directory_path }}/{{ managed_cert_privatekey_and_cert_ssl_pem_file_name }}"

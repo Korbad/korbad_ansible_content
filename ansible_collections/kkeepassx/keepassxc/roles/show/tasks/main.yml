@@ -1,3 +1,10 @@
+- assert:
+    that:
+    - keepass_database_entry_attribute_name is defined
+    - keepass_database_file_path is defined
+    - keepass_database_entry_name is defined
+    - keepass_database_file_password is defined
+
 - shell: keepassxc-cli show --show-protected --quiet --attributes {{ keepass_database_entry_attribute_name }} {{ keepass_database_file_path }} '{{ keepass_database_entry_name }}'
   args:
     stdin: "{{ keepass_database_file_password }}"
