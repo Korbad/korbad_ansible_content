@@ -1,2 +1,3 @@
 - f5networks.f5_modules.bigip_pool:
     name: "{{ f5_pool_name }}"
+    provider: "{{ bigip_connection_provider_dict }}"
