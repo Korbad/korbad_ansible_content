@@ -1,8 +1,8 @@
 - slurp:
     path: "{{ managed_ansible_vault_password_file_path }}"
   register: managed_ansible_vault_password_file_slurp_result
-#  no_log: true
+  no_log: true
 
 - set_fact:
     managed_ansible_vault_password: "{{ managed_ansible_vault_password_file_slurp_result['content'] | b64decode }}"
-#  no_log: true
+  no_log: true
