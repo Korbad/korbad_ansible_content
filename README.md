@@ -8,10 +8,12 @@ Much of the documentation in this set of composite ansible content (collections,
 
 ### unspecified nomenclature
 actions/action - not idempotent
+
 past-tense - idempotent (e.g. 'configured', 'cloned')
 
 ### managed_*
 utilizes coherent specification for locations on filesystem (e.g., managed ansible collections via ansible-galaxy, managed ansible-vault)
+
 utilizes XDG Spec
 
 ### runtime_*
