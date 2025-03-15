@@ -1,0 +1,3 @@
+- command:
+    cmd: git branch {{ git_workspace_desired_branch_name }} {{ git_workspace_source_branch_name }}
+    chdir: "{{ git_workspace_path }}"

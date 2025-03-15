@@ -1,0 +1,6 @@
+managed_inventory_hostname_directory_grandparent_directory_path: "{{ xdg_user_home_path }}"
+managed_inventory_hostname_directory_parent_directory_name: managed_ansible_inventory_hostnames
+managed_inventory_hostname_directory_parent_directory_path: "{{ managed_inventory_hostname_directory_grandparent_directory_path }}/{{ managed_inventory_hostname_directory_parent_directory_name }}"
+managed_inventory_hostname_directory_name: "{{ inventory_hostname }}"
+managed_inventory_hostname_directory_path: "{{ managed_inventory_hostname_directory_parent_directory_path }}/{{ managed_inventory_hostname_directory_name }}"
+managed_inventory_hostname_directory_file_path: "{{ managed_inventory_hostname_directory_path }}/{{ managed_inventory_hostname_directory_file_name }}"

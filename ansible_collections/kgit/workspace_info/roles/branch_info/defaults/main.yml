@@ -1,4 +1,3 @@
-_git_workspace_all_branches_list: "{{ _git_workspace_all_branches_result.stdout_lines }}"
-_git_workspace_all_branches_except_active_branch_list: "{{ _git_workspace_all_branches_list | difference([_git_worktree_active_branch_name]) }}"
+_git_workspace_all_branches_except_active_branch_list: "{{ _git_workspace_all_branches_list | difference([_detected_git_worktree_active_branch_name]) }}"
 _git_workspace_fully_merged_branches_by_ref_list: "{{ _git_for_each_ref_merged_branches_result.stdout_lines }}"
-_git_workspace_fully_merged_branches_by_ref_except_active_branch_list: "{{ _git_workspace_fully_merged_branches_by_ref_list | difference([_git_worktree_active_branch_name]) }}"
+_git_workspace_fully_merged_branches_by_ref_except_active_branch_list: "{{ _git_workspace_fully_merged_branches_by_ref_list | difference([_detected_git_worktree_active_branch_name]) }}"

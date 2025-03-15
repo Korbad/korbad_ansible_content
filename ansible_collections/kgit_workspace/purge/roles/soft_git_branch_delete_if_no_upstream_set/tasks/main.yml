@@ -1,0 +1,6 @@
+- import_role:
+    name: kgit_workspace.config_info.workspace_config_info
+
+- include_role:
+    name: kgit_workspace.purge.soft_git_branch_delete
+  when: not _detected_git_workspace_config_git_branch_remote_key_exists_bool

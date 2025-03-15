@@ -8,5 +8,5 @@
 - include_tasks: try_soft_git_branch_delete.yml
   loop: "{{ _git_workspace_fully_merged_branches_by_ref_except_active_branch_list }}"
   loop_control:
-    loop_var: git_branch_name
+    loop_var: git_workspace_branch_name
 

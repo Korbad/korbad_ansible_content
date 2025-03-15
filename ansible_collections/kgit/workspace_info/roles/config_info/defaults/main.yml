@@ -1,1 +1,0 @@
-_git_workspace_config_info_maybe: "{{ _git_workspace_config_info_result.config_values }}"

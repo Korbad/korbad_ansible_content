@@ -1,4 +1,0 @@
-managed_project_directory_grandparent_directory_path: "{{ xdg_user_home_path }}"
-managed_project_directory_parent_directory_name: managed_project_directories
-managed_project_directory_parent_directory_path: "{{ managed_project_directory_grandparent_directory_path }}/{{ managed_project_directory_parent_directory_name }}"
-managed_project_directory_path: "{{ managed_project_directory_parent_directory_path }}/{{ managed_project_directory_name }}"

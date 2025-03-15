@@ -1,0 +1,5 @@
+- file:
+    state: directory
+    path: "{{ managed_directory_path }}"
+
+# add content to project based on complex data-structure?

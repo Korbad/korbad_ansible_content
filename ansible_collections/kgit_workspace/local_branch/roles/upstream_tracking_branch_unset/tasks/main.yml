@@ -1,0 +1,5 @@
+- import_role:
+    name: kgit_workspace.active_worktree_info.upstream
+
+- include_tasks: unset_upstream.yml
+#  when: ...

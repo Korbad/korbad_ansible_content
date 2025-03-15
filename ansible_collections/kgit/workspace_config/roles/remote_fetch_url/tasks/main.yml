@@ -1,5 +1,5 @@
-- community.general.git_config:
-    repo: "{{ git_workspace_path }}"
-    scope: local
-    name: remote.{{ git_remote_name }}.url
-    value: "{{ git_repo_remote_full_url }}"
+- import_role:
+    name: config_key_set
+  vars:
+    git_workspace_config_key_name: "{{ git_workspace_config_remote_fetch_url_key_name }}"
+    git_workspace_config_key_value: "{{ git_repo_remote_full_url }}"

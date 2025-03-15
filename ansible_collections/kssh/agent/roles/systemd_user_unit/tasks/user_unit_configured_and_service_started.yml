@@ -1,0 +1,15 @@
+- name: Deploy ssh-agent service unit
+  template:
+    src: ssh-agent.service.j2
+    dest: "{{ systemd_user_unit_file_path }}"
+    mode: '0644'
+  notify:
+    - reload systemd user daemon
+
+- meta: flush_handlers
+
+- import_role:
+    name: ksystemd.user_unit.enabled
+
+- import_role:
+    name: ksystemd.user_unit.started

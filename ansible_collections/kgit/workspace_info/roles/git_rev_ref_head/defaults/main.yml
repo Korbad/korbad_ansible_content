@@ -1,1 +1,0 @@
-_git_worktree_active_branch_name: "{{ _git_checked_out_branch_result.stdout }}"

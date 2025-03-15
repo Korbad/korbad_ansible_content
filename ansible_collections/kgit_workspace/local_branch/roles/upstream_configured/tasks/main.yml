@@ -1,0 +1,9 @@
+- import_role:
+    name: kgit_workspace.config_info.workspace_config_info
+
+- include_role:
+    name: defaults
+    tasks_from: set_upstream_to.yml
+  when: not _detected_git_remote_branch_ref_equalto_git_remote_branch_ref
+
+

@@ -1,0 +1,4 @@
+- name: git fetch prune (which removes local branches with nonexistant remote tracking branch)
+  command:
+    cmd: git fetch --prune {{ git_remote_name }}
+    chdir: "{{ git_workspace_path }}"

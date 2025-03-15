@@ -1,0 +1,1 @@
+git_remote_branch_ref: "{{ git_remote_name }}/{{ git_remote_branch_name }}"

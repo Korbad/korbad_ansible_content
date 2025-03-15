@@ -1,0 +1,2 @@
+_detected_git_worktree_active_branch_name: "{{ _git_checked_out_branch_result.stdout }}"
+_git_workspace_branch_name_equalto_worktree_active_branch_name: "{{ _detected_git_worktree_active_branch_name == git_workspace_branch_name }}"
