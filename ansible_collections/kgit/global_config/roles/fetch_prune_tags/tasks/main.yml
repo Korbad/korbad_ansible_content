@@ -1,0 +1,4 @@
+- community.general.git_config:
+    scope: global
+    name: fetch.pruneTags
+    value: true

@@ -1,3 +1,0 @@
-- command:
-    cmd: git fetch {{ git_remote_name }}
-    chdir: "{{ git_workspace_path }}"

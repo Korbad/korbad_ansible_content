@@ -1,1 +1,0 @@
-_detected_git_remote_branch_ref: "{{ _detected_git_workspace_branch_remote_tracking_branch_result.stdout }}"

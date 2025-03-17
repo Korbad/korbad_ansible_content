@@ -1,0 +1,16 @@
+- command:
+    cmd: git for-each-ref --format '%(refname:short) %(upstream:track)' refs/heads/
+    chdir: "{{ git_workspace_path }}"
+  register: _git_workspace_branch_upstream_tracking_branch_results
+  changed_when: false
+#
+#- debug:
+#    var: _git_workspace_branches_upstream_data_mapsplit
+#- debug:
+#    var: _git_workspace_branches_upstream_data_mapsplit_mapzip_mapmapreverse_mapdict
+- debug:
+    var: _git_workspace_branches_upstream_data_mapsplit_mapzip_mapmapreverse_mapdict_with_upstream_defined
+- debug:
+    var: _git_workspace_branches_upstream_data_mapsplit_mapzip_mapmapreverse_mapdict_with_upstream_defined_and_gone
+- debug:
+    var: _git_workspace_branches_upstream_data_mapsplit_mapzip_mapmapreverse_mapdict_with_upstream_defined_and_gone_just_branches

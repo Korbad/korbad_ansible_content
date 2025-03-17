@@ -1,0 +1,5 @@
+dependencies:
+  - name: kgit.global_config.fetch_prune
+  - name: kgit.global_config.fetch_prune_tags
+  - name: kgit.global_config.pull_rebase
+  - name: kgit.global_config.git_ignore_file_entry

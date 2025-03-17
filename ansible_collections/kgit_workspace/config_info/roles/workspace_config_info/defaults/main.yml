@@ -5,9 +5,6 @@ _detected_git_workspace_config_git_remote_fetch_url_value: "{{ _detected_git_wor
 
 _detected_git_workspace_config_git_branch_remote_key_exists_bool: "{{ git_workspace_config_branch_remote_key_name in _detected_git_workspace_config_info.keys() }}"
 _detected_git_workspace_config_git_branch_remote_value: "{{ _detected_git_workspace_config_info[git_workspace_config_branch_remote_key_name]  }}"
-#_detected_git_remote_branch_name: "{{ _detected_git_workspace_config_git_branch_remote_value }}"
 
-_detected_git_workspace_config_git_branch_upstream_tracking_remote_branch_key_exists_bool: "{{ git_workspace_config_branch_upstream_tracking_remote_branch_key_name in _detected_git_workspace_config_info.keys() }}"
-_detected_git_workspace_config_git_branch_upstream_tracking_remote_branch_value: "{{ _detected_git_workspace_config_info[git_workspace_config_branch_upstream_tracking_remote_branch_key_name]  }}"
-_detected_git_remote_branch_ref_equalto_git_remote_branch_ref: "{{ _detected_git_remote_branch_ref == git_remote_branch_ref }}"
-
+_detected_git_workspace_config_branch_upstream_tracking_branch_key_exists: "{{ git_workspace_config_branch_upstream_tracking_remote_branch_key_name in _detected_git_workspace_config_info.keys() }}"
+_detected_git_workspace_config_branch_upstream_merge_refsheads_branch_not_very_useful: "{{ _detected_git_workspace_config_info[git_workspace_config_branch_upstream_tracking_remote_branch_key_name]  }}"

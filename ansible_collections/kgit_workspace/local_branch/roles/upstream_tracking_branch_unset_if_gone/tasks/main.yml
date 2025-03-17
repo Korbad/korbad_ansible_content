@@ -1,0 +1,11 @@
+- import_role:
+    name: kgit_workspace.info.upstream_tracking_branches
+- debug:
+    var: git_workspace_branch_name
+- debug:
+    var: _git_workspace_branch_name_equalto_branch_name_with_upstream_gone
+- debug:
+    var: _git_workspace_branches_upstream_data_mapsplit_mapzip_mapmapreverse_mapdict_with_upstream_defined_and_gone_just_branches
+- include_role:
+    name: upstream_tracking_branch_unset
+  when: _git_workspace_branch_name_equalto_branch_name_with_upstream_gone

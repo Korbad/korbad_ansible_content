@@ -1,0 +1,5 @@
+- command:
+    cmd: git fetch --atomic --porcelain --verbose {{ git_remote_name }}
+    chdir: "{{ git_workspace_path }}"
+  register: _git_fetch_remote_result
+  changed_when: _git_fetched_remote_refs_data_change_detected_bool

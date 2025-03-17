@@ -1,0 +1,2 @@
+_detected_git_remote_branch_ref_fromrevparse: "{{ _detected_git_workspace_branch_remote_tracking_branch_result.stdout }}"
+_detected_git_remote_branch_ref_fromrevparse_equalto_git_remote_branch_ref: "{{ _detected_git_remote_branch_ref_fromrevparse == git_remote_branch_ref }}"

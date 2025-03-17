@@ -1,0 +1,13 @@
+__git_fetched_remote_refs_split_keys:
+  - changed_state
+  - local_commit_hash
+  - remote_commit_hash
+  - remote_branch_refs
+_git_fetched_remote_refs_data: "{{ _git_fetch_remote_result.stdout_lines }}"
+_git_fetched_remote_refs_data_mapsplit: "{{ _git_fetched_remote_refs_data | map('split') }}"
+_git_fetched_remote_refs_data_mapsplit_mapzip: "{{ _git_fetched_remote_refs_data_mapsplit | map('zip', __git_fetched_remote_refs_split_keys) }}"
+_git_fetched_remote_refs_data_mapsplit_mapzip_mapmapreverse: "{{ _git_fetched_remote_refs_data_mapsplit_mapzip | map('map', 'reverse') }}"
+_git_fetched_remote_refs_data_mapsplit_mapzip_mapmapreverse_mapdict: "{{ _git_fetched_remote_refs_data_mapsplit_mapzip_mapmapreverse | map('community.general.dict') }}"
+_git_fetched_remote_refs_data_changed_states: "{{ _git_fetched_remote_refs_data_mapsplit_mapzip_mapmapreverse_mapdict | map(attribute='changed_state') }}"
+_git_fetched_remote_refs_data_changed_states_without_equal: "{{ _git_fetched_remote_refs_data_changed_states | reject('equalto','=') }}"
+_git_fetched_remote_refs_data_change_detected_bool: "{{ _git_fetched_remote_refs_data_changed_states_without_equal | list | count > 0 }}"

@@ -1,0 +1,5 @@
+- import_role:
+    name: kgit_workspace.local_branch_info.upstream_tracking_branch
+
+- include_tasks: set_upstream.yml
+  when: not _detected_git_remote_branch_ref_fromrevparse_equalto_git_remote_branch_ref

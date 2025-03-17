@@ -3,6 +3,3 @@
     chdir: "{{ git_workspace_path }}"
   register: _detected_git_workspace_branch_remote_tracking_branch_result
   changed_when: false
-
-- debug:
-    var: _detected_git_remote_branch_ref
