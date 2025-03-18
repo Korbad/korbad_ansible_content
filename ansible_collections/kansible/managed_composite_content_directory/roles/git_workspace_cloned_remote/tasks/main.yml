@@ -1,0 +1,4 @@
+- import_role:
+    name: kgit.managed_workspace.cloned_remote
+  vars:
+    managed_git_workspace_path: "{{ managed_composite_ansible_content_path }}"

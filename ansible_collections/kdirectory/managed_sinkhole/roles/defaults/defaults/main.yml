@@ -1,0 +1,4 @@
+managed_sinkhole_parent_directory_path: "{{ xdg_user_home_path }}"
+managed_sinkhole_directory_name: managed_sinkhole
+managed_sinkhole_directory_path: "{{ managed_sinkhole_parent_directory_path }}/{{ managed_sinkhole_directory_name }}"
+managed_sinkhole_subdir_path: "{{ managed_sinkhole_directory_path }}/{{ managed_sinkhole_subdir_name }}"
