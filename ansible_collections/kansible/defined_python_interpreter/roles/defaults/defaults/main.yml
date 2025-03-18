@@ -1,0 +1,5 @@
+ansible_python_interpreter: "{{ detected_managed_ansible_interpreter_virtual_environment_python_interpreter_path | default('auto',true) }}"
+managed_ansible_interpreter_virtual_environment_name: default
+managed_ansible_interpreter_virtual_environment_path: "{{ managed_virtual_environments_path }}/{{ managed_ansible_interpreter_virtual_environment_name }}"
+managed_ansible_interpreter_virtual_environment_bin_path: "{{ managed_ansible_interpreter_virtual_environment_path }}/bin"
+managed_ansible_interpreter_virtual_environment_python_interpreter_path: "{{ managed_ansible_interpreter_virtual_environment_bin_path }}/python"
