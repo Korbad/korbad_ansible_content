@@ -2,4 +2,4 @@
     name: added_committed
 
 - import_role:
-    name: kgit.workspace.pulled_rebased
+    name: pulled_rebased_if_remote_branches_exist

@@ -1,0 +1,2 @@
+_git_workspace_git_ls_remote_branches: "{{ _git_workspace_git_ls_remote_branches_result.stdout_lines }}"
+_git_workspace_git_ls_remote_branches_exist: "{{ _git_workspace_git_ls_remote_branches | count | int > 0 }}"
