@@ -3,6 +3,3 @@
     chdir: "{{ git_workspace_path }}"
   changed_when: false
   register: _git_workspace_git_ls_remote_branches_result
-
-- debug:
-    var: _git_workspace_git_ls_remote_branches
