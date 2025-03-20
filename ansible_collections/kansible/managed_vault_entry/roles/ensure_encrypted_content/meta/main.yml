@@ -1,2 +1,3 @@
 dependencies:
 - name: defaults
+- name: kansible.managed_vault.vault_password_as_fact
