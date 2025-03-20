@@ -1,0 +1,4 @@
+- import_role:
+    name: kgit_workspace.config.remote_fetch_refs
+  vars:
+    git_remote_name: github

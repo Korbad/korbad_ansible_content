@@ -1,0 +1,5 @@
+- import_role:
+    name: remote_fetch_url
+
+- import_role:
+    name: remote_push_url

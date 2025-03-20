@@ -1,4 +1,6 @@
 xdg_user_home_ssh_directory_path: "{{ xdg_user_home_path }}/.ssh"
+xdg_user_home_ssh_directory_config_file_path: "{{ xdg_user_home_ssh_directory_path }}/config"
 xdg_user_home_ssh_priv_key_file_path: "{{ xdg_user_home_ssh_directory_path }}/{{ ssh_priv_key_filename }}"
 ssh_pub_key_filename: "{{ ssh_priv_key_filename }}.pub"
 xdg_user_home_ssh_pub_key_file_path: "{{ xdg_user_home_ssh_directory_path }}/{{ ssh_pub_key_filename }}"
+xdg_user_home_ssh_priv_key_file_path_relative_to_xdg_user_home: "{{ xdg_user_home_ssh_priv_key_file_path | ansible.builtin.relpath(xdg_user_home_path) }}"

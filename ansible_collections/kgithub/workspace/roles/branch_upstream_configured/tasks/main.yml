@@ -1,0 +1,4 @@
+- import_role:
+    name: kgit_workspace.local_branch.upstream_tracking_branch_configured
+  vars:
+    git_remote_name: github

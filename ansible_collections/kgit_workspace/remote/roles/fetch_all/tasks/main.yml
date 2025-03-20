@@ -1,0 +1,6 @@
+- name: git fetch workspace {{ git_workspace_path }} all remotes
+  command:
+    cmd: git fetch --porcelain --verbose --all
+    chdir: "{{ git_workspace_path }}"
+  register: _git_fetch_all_remotes_result
+  changed_when: _git_fetched_all_remotes_refs_data_change_detected_bool

@@ -1,7 +1,6 @@
 - import_role:
     name: kgit_workspace.config_info.workspace_config_info
-- debug:
-    var: _detected_git_workspace_config_branch_upstream_tracking_branch_key_exists
+
 - include_tasks: set_upstream.yml
   when: not _detected_git_workspace_config_branch_upstream_tracking_branch_key_exists
 

@@ -1,5 +1,0 @@
-- command:
-    cmd: git ls-remote --quiet --branches
-    chdir: "{{ git_workspace_path }}"
-  changed_when: false
-  register: _git_workspace_git_ls_remote_branches_result

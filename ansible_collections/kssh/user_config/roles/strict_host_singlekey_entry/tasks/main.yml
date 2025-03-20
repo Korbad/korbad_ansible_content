@@ -1,0 +1,9 @@
+- blockinfile:
+    path: "{{ xdg_user_home_ssh_directory_config_file_path }}"
+    marker: "# {mark} Host {{ ssh_config_host_fqdn }} entry - Ansible managed"
+    insertbefore: "^# BEGIN Host catch-all always last - Ansible managed"
+    append_newline: true
+    block: |
+      Host {{ ssh_config_host_fqdn }}
+        IdentitiesOnly yes
+        IdentityFile ~/{{ xdg_user_home_ssh_priv_key_file_path_relative_to_xdg_user_home }}

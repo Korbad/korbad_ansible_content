@@ -1,0 +1,5 @@
+- import_role:
+    name: kgit_workspace.remote.configured
+  vars:
+    git_remote_name: github
+    git_repo_remote_full_url: "{{ github_git_repo_remote_full_url }}"

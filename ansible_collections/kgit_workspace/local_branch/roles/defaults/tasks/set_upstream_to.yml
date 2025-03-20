@@ -1,3 +1,4 @@
-- command:
+- name: set upstream for git workspace {{ git_workspace_path }} local branch {{ git_workspace_branch_name }} to remote ref {{ git_remote_branch_ref }}
+  command:
     cmd: git branch --set-upstream-to={{ git_remote_branch_ref }} {{ git_workspace_branch_name }}
     chdir: "{{ git_workspace_path }}"

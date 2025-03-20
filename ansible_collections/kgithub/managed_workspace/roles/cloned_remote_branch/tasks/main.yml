@@ -1,0 +1,4 @@
+- import_role:
+    name: kgithub.workspace.cloned_remote_branch
+  vars:
+    git_workspace_path: "{{ managed_github_workspace_path }}"

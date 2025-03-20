@@ -1,5 +1,0 @@
-- import_role:
-    name: kgit.workspace_config.remote_fetch_url
-
-- import_role:
-    name: kgit.workspace_config.remote_push_url

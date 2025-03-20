@@ -1,0 +1,1 @@
+git_workspace_config_remote_fetch_value: +refs/heads/*:refs/remotes/{{ git_remote_name }}/*

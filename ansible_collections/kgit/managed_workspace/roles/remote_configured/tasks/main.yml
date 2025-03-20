@@ -1,4 +1,4 @@
 - import_role:
-    name: kgit.workspace.remote_configured
+    name: kgit_workspace.remote.configured
   vars:
     git_workspace_path: "{{ managed_git_workspace_path }}"
