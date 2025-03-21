@@ -1,3 +1,0 @@
-#git_repo_remote_https_full_url:
-#git_repo_remote_ssh_full_url:
-#git_remote_fqdn: "{{ }}"
