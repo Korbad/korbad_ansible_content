@@ -1,3 +1,12 @@
+- assert:
+    that:
+    - gpg_key_passphrase is defined
+    - gpg_decryption_output_file_path is defined
+    - gpg_decryption_input_file_path is defined
+
+- file:
+    path: "{{ gpg_decryption_input_file_path }}"
+
 - command:
     cmd: gpg --batch --ignore-mdc-error --yes --passphrase={{ gpg_key_passphrase }} -o {{ gpg_decryption_output_file_path }} -d {{ gpg_decryption_input_file_path }}
   no_log: true
