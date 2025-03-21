@@ -1,0 +1,5 @@
+git_remote_fqdn: "{{ hostvars[git_repo_host_inventory_hostname].ansible_host }}"
+git_repo_remote_ssh_full_url: ssh://{{ git_remote_fqdn }}:{{ git_remote_repo_path }}
+git_remote_repo_path: "{{ git_remote_repo_parent_path }}/{{ git_remote_repo_directory_name }}"
+git_remote_repo_workspace_path: "{{ git_remote_repo_parent_path }}/{{ git_remote_repo_name }}"
+git_remote_repo_directory_name: "{{ git_remote_repo_name }}.git"
