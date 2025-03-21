@@ -1,4 +1,0 @@
-- import_role:
-    name: kcerts.x509.info
-  vars:
-    x509_cert_crt_file_path: "{{ managed_cert_crt_file_path }}"

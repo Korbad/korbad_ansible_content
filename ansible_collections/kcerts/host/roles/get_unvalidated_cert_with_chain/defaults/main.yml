@@ -1,0 +1,1 @@
+_detected_unvalidated_presented_cert_value: "{{_get_unvalidated_certificate_with_chain_from_remote_host_result.cert}}"

@@ -3,3 +3,4 @@
     port: "{{ get_cert_remote_host_port }}"
     get_certificate_chain: true
     ca_cert: "{{ root_certs_pem_file_path }}"
+  register: _get_validated_certificate_with_chain_from_remote_host_result
