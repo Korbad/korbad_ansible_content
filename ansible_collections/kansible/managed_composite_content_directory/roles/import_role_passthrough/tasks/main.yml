@@ -1,4 +1,0 @@
-- import_role:
-    name: "{{ import_role_fqcn_with_composite_ansible_content_path_overwrite }}"
-  vars:
-    managed_git_workspace_path: "{{ managed_composite_ansible_content_path }}"
