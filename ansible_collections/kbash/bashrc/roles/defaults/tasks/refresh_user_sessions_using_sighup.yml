@@ -1,0 +1,6 @@
+---
+- name: NOT IDEMPOTENT, NOT STABLE - refresh user bash sessions using SIGHUP
+  ansible.builtin.command:
+    cmd: "pkill -HUP -u {{ ansible_env.USER }} bash"
+  register: pkill_result
+  failed_when: pkill_result.rc != 0 and pkill_result.rc != 1

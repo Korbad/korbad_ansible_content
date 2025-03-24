@@ -1,0 +1,5 @@
+dependencies:
+- name: kpacman.package.installed
+  pacman_package_name: base-devel
+- name: kpacman.package.installed
+  pacman_package_name: yay

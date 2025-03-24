@@ -1,0 +1,7 @@
+- name: Add SSH key to GitHub account using gh CLI
+  ansible.builtin.command:
+    cmd: gh ssh-key add {{ xdg_user_home_ssh_pub_key_file_path }} --title 'automation-added key'
+  register: ssh_key_add_result
+  environment:
+    GH_TOKEN: "{{ github_personal_access_token }}"
+  changed_when: not "'Public key already exists on your account' in ssh_key_add_result.stdout"

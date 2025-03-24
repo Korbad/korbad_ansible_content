@@ -1,0 +1,7 @@
+- name: Get current GSettings value
+  ansible.builtin.command: gsettings get {{ gsettings_schema }} {{ gsettings_key }}
+  register: current_gsettings_value
+  changed_when: false
+
+- include_tasks: set.yml
+  when: current_gsettings_value.stdout != gsettings_value

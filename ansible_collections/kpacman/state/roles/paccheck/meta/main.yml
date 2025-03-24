@@ -1,0 +1,3 @@
+dependencies:
+- name: kpacman.package.installed
+  pacman_package_name: pacutils

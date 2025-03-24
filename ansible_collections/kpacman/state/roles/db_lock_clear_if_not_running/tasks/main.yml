@@ -1,0 +1,17 @@
+- name: Check if pacman lock file exists
+  stat:
+    path: /var/lib/pacman/db.lck
+  register: pacman_lock
+
+- name: Check if pacman process is running
+  shell: pgrep -x pacman
+  register: pacman_process
+  failed_when: false
+  changed_when: false
+
+- name: Remove pacman lock file if no pacman process is running
+  file:
+    path: /var/lib/pacman/db.lck
+    state: absent
+  become: true
+  when: pacman_lock.stat.exists and pacman_process.rc != 0

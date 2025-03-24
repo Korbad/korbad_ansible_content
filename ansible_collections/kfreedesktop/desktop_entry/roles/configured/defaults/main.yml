@@ -1,0 +1,3 @@
+desktop_entry_filename: "{{ desktop_entry_file_shortname }}.desktop"
+# https://specifications.freedesktop.org/desktop-entry-spec/latest/file-naming.html
+desktop_entry_file_path: "{{ xdg_data_home_applications_path }}/{{ desktop_entry_filename }}"

@@ -1,0 +1,1 @@
+terminator_user_config_path: "{{ xdg_config_home_path }}/terminator/config"

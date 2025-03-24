@@ -1,0 +1,4 @@
+- name: Ensure that {{ pacman_package_name }} is installed
+  pacman:
+    name: "{{ pacman_package_name }}"
+  become: true

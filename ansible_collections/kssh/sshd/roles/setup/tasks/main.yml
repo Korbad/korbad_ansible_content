@@ -1,0 +1,6 @@
+- name: sshd started and enabled
+  systemd:
+    name: sshd
+    state: started
+    enabled: true
+  become: true

@@ -1,0 +1,2 @@
+existing_gsettings_keys: "{{ existing_gsettings_keys_result.stdout_lines | list }}"
+existing_gsettings_schemas: "{{ existing_gsettings_schemas_result.stdout_lines | list }}"

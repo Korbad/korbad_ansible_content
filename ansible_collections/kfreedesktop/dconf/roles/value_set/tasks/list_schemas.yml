@@ -1,0 +1,4 @@
+- ansible.builtin.command:
+    cmd: gsettings list-schemas
+  register: existing_gsettings_schemas_result
+  changed_when: false

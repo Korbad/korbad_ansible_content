@@ -1,3 +1,4 @@
 - community.crypto.openssh_keypair:
     path: "{{ xdg_user_home_ssh_priv_key_file_path }}"
     regenerate: never
+  register: _xdg_user_home_ssh_priv_key_result

@@ -1,0 +1,9 @@
+- name: Add public key to authorized_keys
+  ansible.posix.authorized_key:
+    key: "{{ ssh_authorized_keys_source_url }}"
+    manage_dir: false
+    path: "{{ user_ssh_authorized_keys_file_path }}"
+    user: "{{ ssh_authorized_keys_username }}"
+  become: true
+  vars:
+    ansible_ssh_pipelining: yes

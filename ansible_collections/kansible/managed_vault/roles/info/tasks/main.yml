@@ -1,0 +1,7 @@
+- find:
+    paths: "{{ managed_ansible_vault_user_secrets_path }}"
+  register: _managed_ansible_vault_user_secrets_path_result
+
+- set_fact:
+    detected_managed_ansible_vault_user_secret_filenames: "{{ _detected_managed_ansible_vault_user_secret_file_paths }}"
+    cacheable: true

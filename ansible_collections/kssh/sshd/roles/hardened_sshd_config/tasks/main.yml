@@ -1,0 +1,11 @@
+---
+- name: Ensure static hardened SSH config {{ etc_ssh_sshd_config_file_path }}
+  template:
+    dest: "{{ etc_ssh_sshd_config_file_path }}"
+    src: sshd_config.j2
+    owner: root
+    group: root
+    mode: 0600
+  become: true
+  notify:
+    - sshd restarted

@@ -1,0 +1,9 @@
+- import_role:
+    name: kdnf.package.installed
+  vars:
+    dnf_package_name: 1password
+
+- import_role:
+    name: kdnf.package.installed
+  vars:
+    dnf_package_name: 1password-cli

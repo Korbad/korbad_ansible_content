@@ -1,0 +1,8 @@
+- name: Ensure remote_tmp directory exists with correct permissions
+  file:
+    path: /root/.ansible/tmp
+    state: directory
+    mode: '0700'
+    owner: root
+    group: root
+  become: true

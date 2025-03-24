@@ -1,0 +1,4 @@
+- name: List available keys for the schema
+  ansible.builtin.command: gsettings list-keys {{ gsettings_schema }}
+  register: existing_gsettings_keys_result
+  changed_when: false

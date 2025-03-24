@@ -1,0 +1,12 @@
+- import_role:
+    name: kssh.user.key_configured_never_regenerated
+
+- import_role:
+    name: kgithub.cli_info.ssh_key_list
+  environment:
+    GH_TOKEN: "{{ github_personal_access_token }}"
+
+- include_role:
+    name: kgithub.cli_action.ssh_key_added
+  when: not _detected_xdg_user_home_ssh_public_key_value in _github_user_ssh_public_keys_blob_dirty
+

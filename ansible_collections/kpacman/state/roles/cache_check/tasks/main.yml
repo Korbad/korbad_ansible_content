@@ -1,0 +1,19 @@
+- name: Check pacman cache directory permissions
+  ansible.builtin.stat:
+    path: /var/cache/pacman
+  register: pacman_cache_info
+
+- name: Fix pacman cache directory permissions
+  ansible.builtin.file:
+    path: /var/cache/pacman
+    state: directory
+    mode: '0755'
+    owner: root
+    group: root
+    recurse: true
+  become: true
+
+- name: NOT IDEMPOTENT Run pacman-db-upgrade to fix permissions
+  ansible.builtin.command: pacman-db-upgrade
+  become: true
+  register: db_upgrade_result

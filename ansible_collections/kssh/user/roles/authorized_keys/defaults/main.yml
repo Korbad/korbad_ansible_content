@@ -1,0 +1,2 @@
+user_ssh_authorized_keys_file_path: "{{ xdg_user_home_ssh_directory_path }}/authorized_keys"
+ssh_authorized_keys_username: "{{ ansible_env.USER }}"
