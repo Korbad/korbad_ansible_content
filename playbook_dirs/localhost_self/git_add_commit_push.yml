@@ -2,4 +2,5 @@
   vars:
     git_workspace_path: "{{ playbook_dir | dirname | dirname }}"
   roles:
+    - name: kgit.workspace_meta.added_committed_pulled_rebased
     - name: kgit.workspace_meta.added_committed_pushed

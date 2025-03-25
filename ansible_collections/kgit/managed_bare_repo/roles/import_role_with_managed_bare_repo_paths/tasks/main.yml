@@ -1,0 +1,4 @@
+- import_role:
+    name: "{{ git_bare_repo_managed_path_vars_import_role_fqcn }}"
+  vars:
+    bare_git_repo_path: "{{ managed_bare_git_repo_path }}"
