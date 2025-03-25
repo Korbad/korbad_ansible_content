@@ -1,0 +1,7 @@
+---
+- name: Ensure that dnf package {{ dnf_package_name }} latest installed
+  dnf:
+    name: "{{ dnf_package_name }}"
+    use_backend: dnf
+    state: latest
+  become: true
