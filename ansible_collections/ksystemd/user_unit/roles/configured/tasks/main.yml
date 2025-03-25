@@ -5,6 +5,4 @@
     filesystem_file_path: "{{ systemd_user_unit_file_path }}"
   notify:
     - reload systemd user daemon
-
-- debug:
-    var: _template_file_result
+    - systemd user unit restarted

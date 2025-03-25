@@ -1,0 +1,4 @@
+- name: Ensure {{ known_host_entry_hostname }} ed25519 key is NOT in known hosts
+  known_hosts:
+    name: "{{ known_host_entry_hostname }}"
+    state: absent
