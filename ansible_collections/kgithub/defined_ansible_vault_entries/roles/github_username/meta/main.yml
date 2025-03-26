@@ -1,0 +1,3 @@
+dependencies:
+  - name: kansible.managed_vault_entry.read_and_decrypt_to_fact
+    managed_ansible_vault_user_secret_name: github_username
