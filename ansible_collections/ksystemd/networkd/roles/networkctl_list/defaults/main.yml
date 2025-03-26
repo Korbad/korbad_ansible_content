@@ -1,0 +1,1 @@
+_networkctl_list: "{{ _networkctl_list_result.stdout | from_json }}"

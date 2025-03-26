@@ -1,0 +1,7 @@
+- name: DOESN'T OUTPUT JSON CORRECTLY
+  command:
+    cmd: resolvectl status --json=pretty
+  register: _resolvectl_status_result
+
+- debug:
+    var: _resolvectl_status

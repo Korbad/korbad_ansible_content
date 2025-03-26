@@ -1,5 +1,5 @@
 - import_role:
-    name: "{{ github_git_remote_name_overwrite_import_role_fqdn }}"
+    name: "{{ github_vars_import_role_fqcn }}"
   vars:
     git_remote_name: github
     git_repo_remote_full_url: "{{ github_git_repo_remote_full_url }}"

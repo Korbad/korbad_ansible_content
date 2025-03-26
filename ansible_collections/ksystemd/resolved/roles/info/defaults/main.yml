@@ -1,0 +1,1 @@
+_resolvectl_status: "{{ _resolvectl_status_result.stdout | from_json }}"

@@ -2,3 +2,6 @@
     cmd: ip -j link show
   register: _ip_link_show_result
   changed_when: false
+
+- debug:
+    var: _ip_link_show
