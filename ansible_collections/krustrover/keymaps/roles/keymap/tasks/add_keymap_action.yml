@@ -1,0 +1,13 @@
+- name: Check if action exists
+  community.general.xml:
+    path: "{{ jetbrains_product_config_dir_keymap_file_path }}"
+    xpath: "/keymap/action[@id='{{ action_id }}']"
+    state: "present"
+    pretty_print: true
+
+- name: Check if keyboard shortcut exists for action
+  community.general.xml:
+    path: "{{ jetbrains_product_config_dir_keymap_file_path }}"
+    xpath: "/keymap/action[@id='{{ action_id }}']/keyboard-shortcut[@first-keystroke='{{ keystroke }}']"
+    state: "present"
+    pretty_print: true

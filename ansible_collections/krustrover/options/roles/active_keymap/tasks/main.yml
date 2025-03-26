@@ -1,0 +1,18 @@
+- name: Ensure jetbrains product settings directory exists
+  file:
+    path: "{{ jetbrains_product_config_dir_options_path }}"
+    state: directory
+
+- name: Create keymap.xml if it doesn't exist
+  copy:
+    content: <application></application>
+    dest: "{{ jetbrains_product_config_dir_options_keymap_path }}"
+    force: false
+
+- name: Set default keymap to {{ _jetbrains_keymap_name }}
+  community.general.xml:
+    path: "{{ jetbrains_product_config_dir_options_keymap_path }}"
+    xpath: "/application/component[@name='KeymapManager']/active_keymap"
+    attribute: "name"
+    value: "{{ _jetbrains_keymap_name }}"
+    pretty_print: yes

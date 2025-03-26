@@ -1,0 +1,18 @@
+- name: Ensure action exists without keystrokes
+  community.general.xml:
+    path: "{{ jetbrains_product_config_dir_keymap_file_path }}"
+    xpath: "/keymap"
+    state: present
+    add_children:
+    - action:
+        id: "{{ action_id }}"
+    pretty_print: yes
+  register: action_added
+
+- name: Remove existing keyboard-shortcut elements if any
+  community.general.xml:
+    path: "{{ jetbrains_product_config_dir_keymap_file_path }}"
+    xpath: "/keymap/action[@id='{{ action_id }}']/keyboard-shortcut"
+    state: absent
+    pretty_print: yes
+  when: not action_added.changed

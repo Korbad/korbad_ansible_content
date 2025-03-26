@@ -1,0 +1,18 @@
+- name: Ensure jetbrains product settings directory exists
+  file:
+    path: "{{ jetbrains_product_config_dir_options_path }}"
+    state: directory
+
+- name: Ensure options/options.xml exists
+  copy:
+    content: "<application></application>"
+    dest: "{{ jetbrains_product_config_dir_options_options_path }}"
+    force: no
+
+- name: Disable automatic build on change
+  community.general.xml:
+    path: "{{ jetbrains_product_config_dir_options_options_path }}"
+    xpath: "/application/component[@name='CompilerWorkspaceConfiguration']/option[@name='MAKE_PROJECT_ON_SAVE']"
+    attribute: "value"
+    value: "false"
+    pretty_print: yes

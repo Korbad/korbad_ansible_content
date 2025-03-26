@@ -1,0 +1,15 @@
+---
+- name: Add multiple keymap actions
+  include_tasks: add_keymap_action.yml
+  loop: "{{ keymaps_to_add }}"
+  vars:
+    action_id: "{{ item.action_id }}"
+    keystroke: "{{ item.keystroke }}"
+  when: keymaps_to_add is defined and keymaps_to_add is iterable
+
+- name: unset keymap
+  include_tasks: unset_keymap.yml
+  loop_control:
+    loop_var: action_id
+  loop: "{{ keymap_actions_to_remove }}"
+  when: keymap_actions_to_remove is defined and keymap_actions_to_remove is iterable
