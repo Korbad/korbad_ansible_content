@@ -1,8 +1,6 @@
-- community.crypto.get_certificate:
+- name: Getting presented cert from {{ get_cert_remote_host_fqdn }} port {{ get_cert_remote_host_port }}
+  community.crypto.get_certificate:
     host: "{{ get_cert_remote_host_fqdn }}"
     port: "{{ get_cert_remote_host_port }}"
     get_certificate_chain: true
   register: _get_unvalidated_certificate_with_chain_from_remote_host_result
-
-- debug:
-    var: _detected_unvalidated_presented_cert_value
