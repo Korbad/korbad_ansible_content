@@ -1,5 +1,0 @@
-managed_bare_git_repo_parent_directory_name: managed_bare_git_repos
-managed_bare_git_repo_parent_directory_path: "{{ xdg_data_home_path }}/{{ managed_bare_git_repo_parent_directory_name }}"
-managed_bare_git_repo_path: "{{ managed_bare_git_repo_parent_directory_path }}/{{ managed_bare_git_repo_directory_name }}"
-managed_bare_git_repo_directory_name: "{{ managed_bare_git_repo_name }}.git"
-

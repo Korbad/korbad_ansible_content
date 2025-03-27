@@ -1,7 +1,0 @@
----
-- name: Ensure bare git repo clone exists
-  git:
-    repo: "{{ git_repo_remote_full_url }}"
-    dest: "{{ bare_git_repo_path }}"
-    bare: true
-    update: false
