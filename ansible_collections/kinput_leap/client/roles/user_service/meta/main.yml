@@ -1,3 +1,4 @@
 dependencies:
   - name: ksystemd.user_daemon.defaults
   - name: kenvironment.facts.active_user_environment_dict
+  - name: ksystemd.user_unit.defaults

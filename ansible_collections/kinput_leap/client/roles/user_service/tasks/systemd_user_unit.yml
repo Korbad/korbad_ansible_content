@@ -1,0 +1,21 @@
+
+- template:
+    src: input_leap_client.j2
+    dest: "{{ systemd_user_unit_file_path }}"
+    force: true
+  register: input_leap_client_user_unit_file_template_result
+  vars:
+    input_leap_server_ip: "{{ input_leap_target_server_ip }}"
+    environment_variables:
+      PATH: "/usr/local/bin:/usr/bin:/bin"
+      DISPLAY: "{{ active_user_display_env_var_value }}"
+      XAUTHORITY: "{{ ansible_env.HOME }}/.Xauthority"
+  notify:
+    - reload systemd user daemon
+    - systemd user unit restarted
+
+- import_role:
+    name: ksystemd.user_unit.enabled
+
+- import_role:
+    name: ksystemd.user_unit.started

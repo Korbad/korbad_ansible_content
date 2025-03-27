@@ -1,2 +1,3 @@
 - name: rexec user systemd units
-  command: systemctl --user daemon-reexec
+  command:
+    cmd: systemctl --user daemon-reexec
