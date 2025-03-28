@@ -1,0 +1,6 @@
+- import_role:
+    name: attachment_read
+
+- set_fact:
+    "{{ keepassx_fact_var_name }}": "{{ _keepass_attachment_read_result.stdout }}"
+  no_log: true

@@ -1,0 +1,6 @@
+- shell: keepassxc-cli attachment-export --quiet {{ keepass_database_file_path }} '{{ keepass_database_entry_name }}' '{{ keepass_database_entry_attachment_name }}' {{ keepass_database_entry_attachment_export_path }}
+  args:
+    stdin: "{{ keepass_database_file_password }}"
+  register: _keepass_attachment_export_file_result
+  changed_when: false
+  no_log: true
