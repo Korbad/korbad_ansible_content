@@ -11,3 +11,4 @@ dependencies:
       - pexpect
       - psutil
       - PyGithub
+      - xmltodict

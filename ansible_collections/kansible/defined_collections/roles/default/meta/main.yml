@@ -8,3 +8,4 @@ dependencies:
       - community.crypto
       - ansible.utils
       - ansible.netcommon
+      - community.dns

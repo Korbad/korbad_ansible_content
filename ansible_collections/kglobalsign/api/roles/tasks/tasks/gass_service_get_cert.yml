@@ -1,6 +1,6 @@
 - name: Query GlobalSign for GASService for order_id {{ globalsign_order_id }}
   uri:
-    url: "{{ globalsign_api_gasservice_url }}/get_cert"
+    url: "{{ globalsign_api_gas_service_url }}/get_cert"
     method: POST
     headers:
       Content-Type: "application/json"

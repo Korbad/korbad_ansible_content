@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:xsd="{{ globalsign_api_soap_namespaces.xmlns_xsd }}"
+                  xmlns:xsi="{{ globalsign_api_soap_namespaces.xmlns_xsi }}"
+                  xmlns:v1="{{ globalsign_api_soap_namespaces.xmlns_v1 }}"
+                  xmlns:soapenv="{{ globalsign_api_soap_namespaces.xmlns_soap }}"
+                  xmlns:ins0="{{ globalsign_api_soap_namespaces.xmlns_ins0 }}">
+  <soapenv:Body>
+    <ins0:GetOBOIDR>
+      <GetResponse>
+        <UserName>{{ globalsign_api_username }}</UserName>
+        <Password>{{ globalsign_api_password }}</Password>
+        <OrderID>{{ globalsign_order_id }}</OrderID>
+        <ReturnCertificateInfo>true</ReturnCertificateInfo>
+        <ReturnFulfillment>true</ReturnFulfillment>
+        <ReturnPKCS12>true</ReturnPKCS12>
+        <ReturnSANEntries>true</ReturnSANEntries>
+      </GetResponse>
+    </ins0:GetOBOIDR>
+  </soapenv:Body>
+</soapenv:Envelope>

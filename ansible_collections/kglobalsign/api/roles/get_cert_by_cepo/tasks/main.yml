@@ -1,0 +1,10 @@
+- name: Send SOAP request to get certificate by CEPO for OrderID
+  ansible.builtin.uri:
+    url: "{{ globalsign_api_gas_service_url }}"
+    method: POST
+    headers:
+      Content-Type: "text/xml; charset=utf-8"
+    body: "{{ lookup('template', 'get_cert_by_cepo.xml.j2') }}"
+    return_content: true
+    status_code: 200
+  register: _globalsign_cert_response

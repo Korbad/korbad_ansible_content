@@ -1,0 +1,18 @@
+<soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:v1="https://system.globalsign.com/kb/ws/v1/"
+                  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ins0="https://system.globalsign.com/kb/ws/">
+  <soapenv:Body>
+    <ins0:RevokeOrderByCEPO>
+      <ins0:SubmitRevokeReq>
+        <ins0:ModifyMSSLOrder>
+          <ins0:UserName>{{ globalsign_api_username }}</ins0:UserName>
+          <ins0:Password>{{ globalsign_api_password }}</ins0:Password>
+          <ins0:OrderID>{{ globalsign_order_id }}</ins0:OrderID>
+          <ins0:ModifyOrderOperation>revoke</ins0:ModifyOrderOperation>
+        </ins0:ModifyMSSLOrder>
+      </ins0:SubmitRevokeReq>
+    </ins0:RevokeOrderByCEPO>
+  </soapenv:Body>
+</soapenv:Envelope>

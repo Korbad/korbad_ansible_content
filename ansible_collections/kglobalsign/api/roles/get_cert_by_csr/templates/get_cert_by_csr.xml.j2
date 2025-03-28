@@ -1,0 +1,24 @@
+<soapenv:Envelope xmlns:xsd="{{ globalsign_api_soap_namespaces.xmlns_xsd }}"
+                  xmlns:xsi="{{ globalsign_api_soap_namespaces.xmlns_xsi }}"
+                  xmlns:v1="{{ globalsign_api_soap_namespaces.xmlns_v1 }}"
+                  xmlns:soapenv="{{ globalsign_api_soap_namespaces.xmlns_soap }}"
+                  xmlns:ins0="{{ globalsign_api_soap_namespaces.xmlns_ins0 }}">
+  <soapenv:Body>
+    <v1:SubmitCSR>
+      <Request>
+        <CSR>{{ globalsign_csr_string }}</CSR>
+        <DomainID>{{ globalsign_domain_id }}</DomainID>
+        <OrganizationName>{{ globalsign_org_name }}</OrganizationName>
+        <City>{{ globalsign_city }}</City>
+        <Region>{{ globalsign_region }}</Region>
+        <PostalCode>{{ globalsign_postal_code }}</PostalCode>
+        <Country>{{ globalsign_country }}</Country>
+        <OrgPhone>{{ globalsign_org_phone }}</OrgPhone>
+        <Contact1FirstName>{{ globalsign_contact1_first_name }}</Contact1FirstName>
+        <Contact1LastName>{{ globalsign_contact1_last_name }}</Contact1LastName>
+        <Contact1Phone>{{ globalsign_contact1_phone }}</Contact1Phone>
+        <Contact1Email>{{ globalsign_contact1_email }}</Contact1Email>
+      </Request>
+    </v1:SubmitCSR>
+  </soapenv:Body>
+</soapenv:Envelope>
