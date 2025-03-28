@@ -1,0 +1,10 @@
+- uri:
+    url: "{{ globalsign_api_managed_ssl_service_url }}/submit_csr"
+    method: POST
+    headers:
+      Content-Type: "application/json"
+    body_format: json
+    body: "{{ globalsign_api_submit_csr_body }}"
+    return_content: yes
+    status_code: 200
+  register: csr_response

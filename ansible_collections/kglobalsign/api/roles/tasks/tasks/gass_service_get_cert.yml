@@ -1,0 +1,18 @@
+- name: Query GlobalSign for GASService for order_id {{ globalsign_order_id }}
+  uri:
+    url: "{{ globalsign_api_gasservice_url }}/get_cert"
+    method: POST
+    headers:
+      Content-Type: "application/json"
+    body_format: json
+    body:
+      username: "{{ globalsign_api_username }}"
+      password: "{{ globalsign_api_password }}"
+      order_id: "{{ globalsign_order_id }}"
+      return_certificate_info: true
+      return_fulfillment: true
+      return_pkcs12: true
+      return_san_entries: true
+    return_content: yes
+    status_code: 200
+  register: cert_response

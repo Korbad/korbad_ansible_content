@@ -1,0 +1,12 @@
+globalsign_api_gasservice_url: https://system.globalsign.com/kb/ws/v1/GASService
+
+# https://gcc.globalsign.com/kb/ws/v1/GASService ?
+
+globalsign_api_managed_ssl_service_url: https://system.globalsign.com/kb/ws/v1/ManagedSSLService
+# https://gcc.globalsign.com/kb/ws/v2/ManagedSSLService ?
+
+
+_globalsign_api_domain_response_domain_id: "{{ _globalsign_api_domain_response.json.domain_id }}"
+
+
+_registerable_domain_from_fqdn: "{{ _cert_fqdn | community.dns.get_registrable_domain }}"

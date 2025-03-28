@@ -1,0 +1,17 @@
+- name: Get Domain ID
+  uri:
+    url: "{{ globalsign_api_managed_ssl_service_url }}/get_domains"
+    method: POST
+    headers:
+      Content-Type: "application/json"
+    body_format: json
+    body:
+      username: "{{ globalsign_api_username }}"
+      password: "{{ globalsign_api_password }}"
+      domain_name: "{{ domain_name }}"
+    return_content: yes
+    status_code: 200
+  register: _globalsign_api_domain_response
+
+- debug:
+    var: _globalsign_api_domain_response_domain_id
