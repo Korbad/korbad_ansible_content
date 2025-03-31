@@ -1,0 +1,4 @@
+- import_role:
+    name: kopenssh_keypair.privatekey.info
+  vars:
+    openssh_privatekey_file_path: "{{ managed_openssh_privatekey_file_path }}"

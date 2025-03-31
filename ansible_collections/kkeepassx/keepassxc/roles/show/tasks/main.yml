@@ -5,7 +5,8 @@
     - keepass_database_entry_name is defined
     - keepass_database_file_password is defined
 
-- shell: keepassxc-cli show --show-protected --quiet --attributes {{ keepass_database_entry_attribute_name }} {{ keepass_database_file_path }} '{{ keepass_database_entry_name }}'
+- name: Fetching attribute '{{ keepass_database_entry_attribute_name }}' from keepass database '{{ keepass_database_file_path }}' entry '{{ keepass_database_entry_name }}'
+  shell: keepassxc-cli show --show-protected --quiet --attributes {{ keepass_database_entry_attribute_name }} {{ keepass_database_file_path }} '{{ keepass_database_entry_name }}'
   args:
     stdin: "{{ keepass_database_file_password }}"
   register: _keepass_show_result

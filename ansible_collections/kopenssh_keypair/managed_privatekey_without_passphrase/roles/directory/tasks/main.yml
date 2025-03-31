@@ -1,0 +1,4 @@
+- file:
+    state: directory
+    path: "{{ managed_openssh_keypair_directory_path }}"
+    mode: 'o-xrw,g-xrw'

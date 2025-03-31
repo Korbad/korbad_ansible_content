@@ -1,0 +1,2 @@
+_keepass_attachment_read_b64_value: "{{ _keepass_attachment_read_result.stdout | b64encode }}"
+_keepass_attachment_read_value: "{{ _keepass_attachment_read_b64_value | b64decode }}"

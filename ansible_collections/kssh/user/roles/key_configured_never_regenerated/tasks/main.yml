@@ -1,4 +1,5 @@
 - community.crypto.openssh_keypair:
     path: "{{ xdg_user_home_ssh_priv_key_file_path }}"
     regenerate: never
+    passphrase: "{{ openssh_privatekey_file_passphrase | default(omit) }}"
   register: _xdg_user_home_ssh_priv_key_result

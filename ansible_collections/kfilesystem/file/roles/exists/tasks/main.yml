@@ -1,0 +1,14 @@
+- import_role:
+      name: kfilesystem.directory.exists
+  vars:
+      filesystem_directory_path: "{{ filesystem_file_path | dirname }}"
+
+- import_role:
+      name: kfilesystem.entry.stat
+  vars:
+      filesystem_entry_path: "{{ filesystem_file_path }}"
+
+- file:
+      state: touch
+      path: "{{ filesystem_file_path }}"
+  when: not _filesystem_entry_exists

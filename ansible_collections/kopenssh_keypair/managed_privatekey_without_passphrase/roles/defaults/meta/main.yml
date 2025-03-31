@@ -1,0 +1,2 @@
+dependencies:
+- name: kopenssh_keypair.managed.defaults

@@ -1,0 +1,3 @@
+- stat:
+    path: "{{ filesystem_entry_path }}"
+  register: _filesystem_entry_stat_result

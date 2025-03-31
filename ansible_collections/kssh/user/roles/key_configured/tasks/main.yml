@@ -1,2 +1,3 @@
 - community.crypto.openssh_keypair:
     path: "{{ xdg_user_home_ssh_priv_key_file_path }}"
+    passphrase: "{{ openssh_privatekey_file_passphrase | default(omit) }}"

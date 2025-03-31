@@ -1,6 +1,15 @@
-- shell: keepassxc-cli attachment-export --quiet {{ keepass_database_file_path }} '{{ keepass_database_entry_name }}' '{{ keepass_database_entry_attachment_name }}' {{ keepass_database_entry_attachment_export_path }}
+- file:
+    state: directory
+    path: "{{ keepass_database_entry_attachment_export_path | dirname }}"
+    mode: 'o-rw,g-rw'
+
+- name: Exporting attachment '{{ keepass_database_entry_attachment_name }}' from keepass database '{{ keepass_database_file_path }}' entry '{{ keepass_database_entry_name }}' to file path {{ keepass_database_entry_attachment_export_path }}
+  shell: keepassxc-cli attachment-export --quiet {{ keepass_database_file_path }} '{{ keepass_database_entry_name }}' '{{ keepass_database_entry_attachment_name }}' {{ keepass_database_entry_attachment_export_path }}
   args:
     stdin: "{{ keepass_database_file_password }}"
   register: _keepass_attachment_export_file_result
-  changed_when: false
-  no_log: true
+
+- import_role:
+    name: kfile.mode.user_secret
+  vars:
+    filesystem_file_path: "{{ keepass_database_entry_attachment_export_path }}"

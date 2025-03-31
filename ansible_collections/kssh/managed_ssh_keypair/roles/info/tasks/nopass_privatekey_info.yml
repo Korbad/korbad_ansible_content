@@ -1,0 +1,5 @@
+- name: Fetching info from passphrase-protected openssl priv key {{ managed_openssh_privatekey_without_passphrase_file_path }}
+  community.crypto.openssl_privatekey_info:
+    path: "{{ managed_openssh_privatekey_without_passphrase_file_path }}"
+  register: _managed_openssh_privatekey_without_passphrase_file_info_result
+

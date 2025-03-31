@@ -1,4 +1,4 @@
 controller_xdg_user_home_ssh_directory_path: "{{ controller_xdg_user_home_path }}/.ssh"
 controller_xdg_user_home_ssh_directory_config_file_path: "{{ controller_xdg_user_home_ssh_directory_path }}/config"
-controller_xdg_user_home_ssh_priv_key_file_path: "{{ controller_xdg_user_home_ssh_directory_path }}/{{ controller_ssh_priv_key_filename }}"
-controller_ssh_priv_key_filename: "{{ ssh_priv_key_filename }}"
+controller_xdg_user_home_ssh_priv_key_file_path: "{{ controller_xdg_user_home_ssh_directory_path }}/{{ controller_xdg_user_home_ssh_priv_key_filename }}"
+controller_xdg_user_home_ssh_priv_key_filename: "{{ xdg_user_home_ssh_priv_key_filename }}"

@@ -1,0 +1,4 @@
+- import_role:
+    name: kssh.keypair.configured_never_regenerated_with_passphrase
+  vars:
+    ssh_priv_key_file_path: "{{ managed_openssh_privatekey_file_path }}"

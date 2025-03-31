@@ -1,0 +1,6 @@
+- name: Open SSH keypair, never regenerated, with passphrase, at {{ ssh_priv_key_file_path }}
+  community.crypto.openssh_keypair:
+    path: "{{ ssh_priv_key_file_path }}"
+    regenerate: never
+    passphrase: "{{ openssh_privatekey_file_passphrase }}"
+  register: _ssh_priv_key_with_passphrase_result

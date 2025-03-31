@@ -1,0 +1,13 @@
+- import_role:
+    name: kopenssh_keypair.privatekey.info
+  vars:
+    openssh_privatekey_file_path: "{{ managed_openssh_privatekey_file_path }}"
+
+- include_tasks: privatekey_maybe_without_passphrase_exists.yml
+  when: _detected_openssh_privatekey_file_passphrase_protection
+
+- import_tasks: passphrase_protection_removed.yml
+  vars:
+    openssh_privatekey_file_path: "{{ managed_openssh_privatekey_maybe_without_passphrase_file_path }}"
+
+- import_tasks: privatekey_without_passphrase_exists.yml

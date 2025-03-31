@@ -1,0 +1,6 @@
+- copy:
+    src: "{{ managed_openssh_privatekey_file_path }}"
+    dest: "{{ _private_key_copy_path }}"
+    remote_src: true
+    force: true
+    mode: 'o-rxw,g-rxw'

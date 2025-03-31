@@ -1,0 +1,4 @@
+- name: Remove passphrase using ssh-keygen with -P and -N options for {{ managed_openssh_privatekey_maybe_without_passphrase_file_path }}
+  ansible.builtin.command:
+    cmd: ssh-keygen -p -P '{{ openssh_privatekey_file_passphrase }}' -N '' -f {{ managed_openssh_privatekey_maybe_without_passphrase_file_path }}
+  no_log: true

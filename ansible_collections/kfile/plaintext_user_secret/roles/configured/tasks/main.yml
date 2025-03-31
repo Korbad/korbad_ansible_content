@@ -1,0 +1,8 @@
+- import_role:
+    name: kfilesystem.file.exists
+
+- import_role:
+    name: kfile.mode.user_secret
+
+- import_role:
+    name: kfile.plaintext.ensure_content

@@ -1,0 +1,1 @@
+_detected_openssh_privatekey_file_passphrase_protection: "{{ 'incorrect passphrase' in _ssh_keygen_private_key_info_result.stderr }}"
