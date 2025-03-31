@@ -1,0 +1,2 @@
+dependencies:
+  - name: kpython.managed_virtual_environment.defaults

@@ -1,0 +1,5 @@
+- import_role:
+    name: added_committed
+
+- import_role:
+    name: pulled_rebased_from_remote_if_remote_has_branches
