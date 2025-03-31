@@ -1,0 +1,14 @@
+---
+- import_role:
+    name: kfilesystem.state.ensure_filesystem_write_buffering_is_complete
+
+- name: Fetch blkid info
+  command: blkid
+  register: blkid_output
+  become: true
+  changed_when: false
+
+- name: blkid
+  set_fact:
+    blkid_data: "{{ lookup('template', 'blkid.j2') | from_yaml }}"
+#    cacheable: true

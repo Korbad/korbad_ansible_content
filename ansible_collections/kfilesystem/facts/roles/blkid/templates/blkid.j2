@@ -1,0 +1,16 @@
+{% set blkid_data = {} %}
+{% for line in blkid_output.stdout_lines %}
+    {% if line != "" %}
+        {% set device, attrs = line.split(': ') %}
+        {% set attributes = {} %}
+        {% for attr in attrs.split() %}
+            {% if '=' in attr %}
+                {% set key, val = attr.split('=') %}
+                {% set val = val[1:-1] %}
+                {% set _ = attributes.update({key: val}) %}
+            {% endif %}
+        {% endfor %}
+        {% set _ = blkid_data.update({device: attributes}) %}
+    {% endif %}
+{% endfor %}
+{{ blkid_data }}

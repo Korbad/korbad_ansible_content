@@ -1,0 +1,10 @@
+---
+- import_role:
+    name: uuid_device_dict
+
+- import_role:
+    name: blkid
+
+- set_fact:
+    blkid_uuid_device_dict: "{{ lookup('template', 'blkid_uuid_device_dict.j2') | from_yaml }}"
+#    cacheable: true

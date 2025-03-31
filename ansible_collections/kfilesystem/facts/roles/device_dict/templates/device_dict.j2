@@ -1,0 +1,20 @@
+{% set device_dict = {} %}
+{% for device, details in ansible_facts.devices.items() %}
+  {% for id in details.links.ids %}
+    {% set _ = device_dict.update({id: {'device': '/dev/' + device, 'partitions': {}}}) %}
+  {% endfor %}
+  {% if details.partitions %}
+    {% for partition, partition_details in details.partitions.items() %}
+      {% for id in details.links.ids %}
+        {% set partition_number = partition.split(device)[-1].replace('p', '') %}
+        {% set _ = device_dict[id]['partitions'].update({partition_number: {'path': '/dev/' + partition, 'mounts': []}}) %}
+        {% for mount in ansible_mounts %}
+          {% if mount.device == '/dev/' + partition %}
+            {% set _ = device_dict[id]['partitions'][partition_number]['mounts'].append(mount.mount) %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{{ device_dict }}

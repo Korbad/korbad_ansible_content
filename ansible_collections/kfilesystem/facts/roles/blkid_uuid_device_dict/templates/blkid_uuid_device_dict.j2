@@ -1,0 +1,15 @@
+{% for uuid, devices in uuid_device_dict.items() %}
+  {% for device in devices %}
+    {% set blkid_info = blkid_data[device.path] | default(None, true) %}
+    {% if blkid_info %}
+      {% set _ = device.update({
+        'BLOCK_SIZE': blkid_info.get('BLOCK_SIZE'),
+        'PARTUUID': blkid_info.PARTUUID,
+        'TYPE': blkid_info.TYPE,
+        'UUID': blkid_info.UUID
+      }) %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{{ uuid_device_dict | to_nice_json }}

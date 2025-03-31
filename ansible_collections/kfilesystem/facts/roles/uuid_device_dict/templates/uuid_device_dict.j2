@@ -1,0 +1,23 @@
+{% set uuid_device_dict = {} %}
+{% for device, details in ansible_facts.devices.items() %}
+  {% if details.partitions %}
+    {% for partition, partition_details in details.partitions.items() %}
+      {% if partition_details.links.uuids %}
+        {% for uuid in partition_details.links.uuids %}
+          {% set partition_info = {
+            'path': '/dev/' + partition,
+            'ids': partition_details.links.ids,
+            'mounts': []
+          } %}
+          {% for mount in ansible_mounts %}
+            {% if mount.device == '/dev/' + partition %}
+              {% set _ = partition_info['mounts'].append(mount.mount) %}
+            {% endif %}
+          {% endfor %}
+          {% set _ = uuid_device_dict.setdefault(uuid, []).append(partition_info) %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{{ uuid_device_dict | to_nice_json }}

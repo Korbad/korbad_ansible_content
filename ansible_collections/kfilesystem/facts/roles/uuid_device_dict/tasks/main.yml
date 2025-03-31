@@ -1,0 +1,12 @@
+---
+- import_role:
+    name: kfilesystem.state.ensure_filesystem_write_buffering_is_complete
+
+- name: Gather facts
+  setup:
+    filter: ansible_devices,ansible_mounts
+
+- name: uuid_device_dict
+  set_fact:
+    uuid_device_dict: "{{ lookup('template', 'uuid_device_dict.j2') | from_yaml }}"
+#    cacheable: true
