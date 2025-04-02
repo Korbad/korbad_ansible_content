@@ -1,0 +1,9 @@
+_nonrecursive_found_any_fileystem_entry: "{{ _nonrecursive_found_any_filesystem_entry_result.files }}"
+_nonrecursive_found_any_filesystem_entry_paths: "{{ _nonrecursive_found_any_fileystem_entry | map(attribute='path') }}"
+_nonrecursive_found_any_filesystem_entry_count: "{{ _nonrecursive_found_any_fileystem_entry | count }}"
+_nonrecursive_found_any_filesystem_entry_directory_is_empty: "{{ _nonrecursive_found_any_filesystem_entry_count | int == 0 }}"
+_nonrecursive_found_any_filesystem_entry_owned_by_root: "{{ _nonrecursive_found_any_fileystem_entry | selectattr('uid', 'eq', 0) | list }}"
+
+_nonrecursive_found_directories: "{{ _nonrecursive_found_directories_result.files }}"
+_nonrecursive_found_directories_paths: "{{ _nonrecursive_found_directories | map(attribute='path') }}"
+

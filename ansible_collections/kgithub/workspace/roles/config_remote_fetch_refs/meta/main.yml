@@ -1,2 +1,2 @@
 dependencies:
-  - name: kgithub.ssh.defaults
+  - name: kgithub.remote.defaults

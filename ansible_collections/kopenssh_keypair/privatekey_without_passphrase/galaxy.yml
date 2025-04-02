@@ -1,0 +1,2 @@
+namespace: kopenssh_keypair
+name: privatekey_without_passphrase

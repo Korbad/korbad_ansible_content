@@ -1,0 +1,6 @@
+---
+- find:
+    paths: "{{ filesystem_nonrecursive_find_path }}"
+    file_type: directory
+    hidden: true
+  register: _nonrecursive_found_directories_result
