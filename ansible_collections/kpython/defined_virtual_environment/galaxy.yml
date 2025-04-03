@@ -1,2 +1,6 @@
 namespace: kpython
 name: defined_virtual_environment
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

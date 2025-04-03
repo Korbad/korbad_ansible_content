@@ -1,2 +1,6 @@
 namespace: knemo
 name: runtime_terminator
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

@@ -1,2 +1,6 @@
 namespace: kssh
 name: info
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

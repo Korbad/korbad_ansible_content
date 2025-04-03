@@ -1,2 +1,6 @@
 namespace: kansible_controller
 name: playbook_python_interactive
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

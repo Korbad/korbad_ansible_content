@@ -1,2 +1,6 @@
 namespace: kinput_leap
 name: client
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

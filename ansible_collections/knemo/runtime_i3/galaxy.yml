@@ -1,2 +1,6 @@
 namespace: knemo
 name: runtime_i3
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

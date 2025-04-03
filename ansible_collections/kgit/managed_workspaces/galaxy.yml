@@ -1,2 +1,6 @@
 namespace: kgit
 name: managed_workspaces
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

@@ -1,2 +1,6 @@
 namespace: kopenssh_keypair
 name: privatekey
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

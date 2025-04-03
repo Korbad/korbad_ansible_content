@@ -1,2 +1,6 @@
 namespace: kansible_controller
 name: fetch_indirect_byhost
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

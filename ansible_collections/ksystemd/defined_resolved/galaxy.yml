@@ -1,2 +1,6 @@
 namespace: ksystemd
 name: defined_resolved
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

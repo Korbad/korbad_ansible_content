@@ -1,2 +1,6 @@
 namespace: kgithub
 name: defined_user_ssh
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md

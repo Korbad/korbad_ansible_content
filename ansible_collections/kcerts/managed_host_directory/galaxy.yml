@@ -1,2 +1,6 @@
 namespace: kcerts
 name: managed_host_directory
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md
