@@ -1,4 +1,5 @@
-- copy:
-    dest: "{{ managed_ansible_vault_user_secret_path }}"
-    content: "{{ managed_ansible_vault_user_secret_encrypted_content }}"
-    decrypt: false
+- import_role:
+    name: kansible.vault_entry.ensure_encrypted_content
+  vars:
+    vault_encrypted_file_path: "{{ managed_ansible_vault_user_secret_path }}"
+    vault_encrypted_file_content: "{{ managed_ansible_vault_user_secret_encrypted_content }}"

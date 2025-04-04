@@ -1,0 +1,8 @@
+- file:
+    state: directory
+    path: "{{ vault_encrypted_file_path | dirname }}"
+
+- copy:
+    dest: "{{ vault_encrypted_file_path }}"
+    content: "{{ vault_encrypted_file_content }}"
+    decrypt: false
