@@ -1,3 +1,4 @@
 - community.crypto.get_certificate:
     host: "{{ get_cert_remote_host_fqdn }}"
     port: "{{ get_cert_remote_host_port }}"
+    asn1_base64: true
