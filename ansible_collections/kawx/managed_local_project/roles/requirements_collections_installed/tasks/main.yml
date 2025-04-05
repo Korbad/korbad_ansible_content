@@ -1,0 +1,5 @@
+- import_role:
+    name: kansible.galaxy.collections_from_requirements_file
+  vars:
+    collection_requirements_file_path: "{{ managed_awx_project_requirements_file_path }}"
+    collections_path: "{{ managed_awx_project_collections_cache_path }}"
