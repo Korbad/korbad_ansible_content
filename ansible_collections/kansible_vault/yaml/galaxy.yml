@@ -1,0 +1,6 @@
+namespace: kansible_vault
+name: yaml
+authors:
+- Korbad
+version: 0.0.1
+readme: README.md
