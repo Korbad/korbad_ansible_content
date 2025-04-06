@@ -1,5 +1,5 @@
 - import_role:
-    name: config_key_set
+    name: key_set
   vars:
     git_workspace_config_key_name: "{{ git_workspace_config_fetch_refs_heads_and_refs_remote_key_name }}"
     git_workspace_config_key_value: "{{ git_workspace_config_remote_fetch_value }}"
