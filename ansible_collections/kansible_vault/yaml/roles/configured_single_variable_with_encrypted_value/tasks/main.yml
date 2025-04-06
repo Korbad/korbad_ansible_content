@@ -11,6 +11,7 @@
 - template:
     src: yaml_file.yml.j2
     dest: "{{ yaml_file_with_vault_encrypted_data_path }}"
+    force: true
   vars:
-    variable_encrypted_value_in_yaml_file: "{{ variable_value_to_vault_encrypt|vault(vault_password) }}"
-  no_log: true
+    variable_encrypted_value_in_yaml_file: "{{ variable_value_to_vault_encrypt|vault(vault_password, salt=(variable_value_to_vault_encrypt|hash('sha256'))) }}"
+#  no_log: true
