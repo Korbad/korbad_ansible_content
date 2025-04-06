@@ -1,0 +1,4 @@
+- import_role:
+    name: meta_import_role
+  vars:
+    git_import_role_with_managed_git_workspace_path_role_fqcn: agit.workspace.cloned_remote_head

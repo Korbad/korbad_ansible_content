@@ -1,0 +1,5 @@
+- name: Gather config info for git workspace {{ git_workspace_path }}
+  community.general.git_config_info:
+    path: "{{ git_workspace_path }}"
+    scope: local
+  register: _git_workspace_config_info_result

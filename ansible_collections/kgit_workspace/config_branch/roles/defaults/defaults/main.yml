@@ -1,0 +1,2 @@
+git_workspace_config_branch_remote_key_name: branch.{{ git_workspace_branch_name }}.remote
+git_workspace_config_branch_upstream_tracking_remote_branch_key_name: branch.{{ git_workspace_branch_name }}.merge

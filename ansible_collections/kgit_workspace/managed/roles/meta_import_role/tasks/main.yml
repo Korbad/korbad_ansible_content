@@ -1,0 +1,4 @@
+- import_role:
+    name: "{{ git_import_role_with_managed_git_workspace_path_role_fqcn }}"
+  vars:
+    git_workspace_path: "{{ managed_git_workspace_path }}"
