@@ -7,7 +7,7 @@
     body: "{{ lookup('template', 'get_domains.xml.j2') }}"
     return_content: true
     status_code: 200
-  register: globalsign_api_domain_id_response
+  register: _globalsign_api_domain_response
 
 - debug:
     var: _globalsign_api_domain_response_dict_content
