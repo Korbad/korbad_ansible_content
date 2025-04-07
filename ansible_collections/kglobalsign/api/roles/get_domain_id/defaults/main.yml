@@ -1,1 +1,2 @@
-_globalsign_api_domain_response_domain_id: "{{ _globalsign_api_domain_response.json.domain_id }}"
+_globalsign_api_domain_response_xml_content: "{{ _globalsign_api_domain_response.content }}"
+_globalsign_api_domain_response_dict_content: "{{ _globalsign_api_domain_response_xml_content | ansible.utils.from_xml }}"

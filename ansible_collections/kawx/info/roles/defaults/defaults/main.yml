@@ -1,0 +1,8 @@
+awx_controller_api_plugin: awx.awx.controller_api
+awx_api_endpoint_path: "api/v2/{{ awx_api_endpoint_name }}/"
+awx_controller_fqdn_api_endpoint_path: "{{ awx_controller_fqdn }}/{{ awx_api_endpoint_path }}"
+awx_controller_api_query_max_objects: 10000
+awx_controller_validate_certs: true
+awx_api_query_params: {'order_by': 'organization,id'}
+
+
