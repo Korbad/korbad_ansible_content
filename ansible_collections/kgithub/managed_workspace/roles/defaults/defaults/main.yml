@@ -1,5 +1,5 @@
 managed_github_organization_grandparent_directory_path: "{{ xdg_user_home_path }}"
-managed_github_workspaces_directory_name: managed_github_workspaces
-managed_github_organization_parent_directory_path: "{{ managed_github_organization_grandparent_directory_path }}/{{ managed_github_workspaces_directory_name }}"
+managed_github_organization_repo_workspaces_directory_name: managed_github_organization_repo_workspaces
+managed_github_organization_parent_directory_path: "{{ managed_github_organization_grandparent_directory_path }}/{{ managed_github_organization_repo_workspaces_directory_name }}"
 managed_github_organization_directory_path: "{{ managed_github_organization_parent_directory_path }}/{{ github_organization_name }}"
-managed_github_workspace_path: "{{ managed_github_organization_directory_path }}/{{ github_repo_name }}"
+managed_github_organization_repo_workspace_path: "{{ managed_github_organization_directory_path }}/{{ github_repo_name }}"

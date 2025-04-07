@@ -1,0 +1,4 @@
+- import_role:
+    name: kgithub.cli_info.repo_list
+  environment:
+    GH_TOKEN: "{{ github_personal_access_token }}"

@@ -1,3 +1,12 @@
+- assert:
+    that:
+      - managed_ansible_vault_user_secret_path is defined
+      - managed_ansible_vault_password is defined
+
+- file:
+    path: "{{ managed_ansible_vault_user_secret_path }}"
+  no_log: true
+
 - import_role:
     name: kfile.plaintext.read
   vars:
