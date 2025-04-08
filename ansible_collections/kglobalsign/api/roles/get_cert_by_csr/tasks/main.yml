@@ -7,4 +7,7 @@
     body: "{{ lookup('template', 'get_cert_by_csr.xml.j2') }}"
     return_content: true
     status_code: 200
-  register: globalsign_get_cert_response
+  register: _globalsign_cert_by_csr_response
+
+- debug:
+    var: _globalsign_cert_by_csr_response_dict_content
