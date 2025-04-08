@@ -1,2 +1,7 @@
 _globalsign_api_domain_response_xml_content: "{{ _globalsign_api_domain_response.content }}"
 _globalsign_api_domain_response_dict_content: "{{ _globalsign_api_domain_response_xml_content | ansible.utils.from_xml }}"
+_globalsign_api_domain_response_root: "{{ _globalsign_api_domain_response_dict_content['soap:Envelope']['soap:Body']['ns2:GetDomainsResponse']['Response'] }}"
+_globalsign_api_domain_response_domain_details: "{{ _globalsign_api_domain_response_root['DomainDetails']['DomainDetail'] }}"
+_globalsign_api_domain_response_domain_id: "{{ _globalsign_api_domain_response_domain_details['DomainID'] }}"
+_globalsign_api_domain_response_mssl_profile_id: "{{ _globalsign_api_domain_response_domain_details['MSSLProfileID'] }}"
+_globalsign_api_domain_response_domain_name: "{{ _globalsign_api_domain_response_domain_details['DomainName'] }}"
