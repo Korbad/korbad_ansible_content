@@ -1,0 +1,3 @@
+- import_role:
+    name: kawx.api.info_tasks
+    tasks_from: job_template.yml
