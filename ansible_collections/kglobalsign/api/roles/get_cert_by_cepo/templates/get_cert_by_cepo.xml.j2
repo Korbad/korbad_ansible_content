@@ -5,15 +5,13 @@
                   xmlns:ins0="{{ globalsign_api_soap_namespaces.xmlns_ins0 }}">
   <soapenv:Body>
     <ins0:GetOBOIDR>
-      <GetResponse>
-        <UserName>{{ globalsign_api_username }}</UserName>
-        <Password>{{ globalsign_api_password }}</Password>
-        <OrderID>{{ globalsign_order_id }}</OrderID>
-        <ReturnCertificateInfo>true</ReturnCertificateInfo>
-        <ReturnFulfillment>true</ReturnFulfillment>
-        <ReturnPKCS12>true</ReturnPKCS12>
-        <ReturnSANEntries>true</ReturnSANEntries>
-      </GetResponse>
+      <ins0:UserName>{{ globalsign_api_username }}</ins0:UserName>
+      <ins0:Password>{{ globalsign_api_password }}</ins0:Password>
+      <ins0:OrderID>{{ globalsign_order_id }}</ins0:OrderID>
+      <ins0:ReturnCertificateInfo>true</ins0:ReturnCertificateInfo>
+      <ins0:ReturnFulfillment>true</ins0:ReturnFulfillment>
+      <ins0:ReturnPKCS12>true</ins0:ReturnPKCS12>
+      <ins0:ReturnSANEntries>true</ins0:ReturnSANEntries>
     </ins0:GetOBOIDR>
   </soapenv:Body>
 </soapenv:Envelope>
