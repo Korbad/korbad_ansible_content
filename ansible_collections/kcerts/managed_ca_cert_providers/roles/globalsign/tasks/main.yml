@@ -1,7 +1,21 @@
+- assert:
+    that:
+    - managed_ca_cert_provider_globalsign_crt_file_path is defined
+
 - import_role:
     name: kfilesystem.file.from_url
   vars:
-    managed_ca_cert_provider_directory_name: globalsign
-    managed_ca_cert_provider_crt_file_name: gsrsaovsslca2018.crt
-    filesystem_file_path: "{{ managed_ca_cert_provider_crt_file_path }}"
+    filesystem_file_path: "{{ managed_ca_cert_provider_globalsign_crt_file_path }}"
     filesystem_file_src_url: http://secure.globalsign.com/cacert/gsrsaovsslca2018.crt
+
+- slurp:
+    path: "{{ managed_ca_cert_provider_globalsign_crt_file_path }}"
+  register: globalsign_ca_cert_intermediate_file_slurp_result
+
+- community.crypto.x509_certificate_convert:
+    src_path: "{{ managed_ca_cert_provider_globalsign_crt_file_path }}"
+    dest_path: "{{ managed_ca_cert_provider_globalsign_pem_file_path }}"
+    format: pem
+    verify_cert_parsable: true
+
+

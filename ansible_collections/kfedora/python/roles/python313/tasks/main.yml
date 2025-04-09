@@ -1,0 +1,4 @@
+- import_role:
+    name: kdnf.package.installed
+  vars:
+    dnf_package_name: python3.13

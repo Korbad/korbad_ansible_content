@@ -1,0 +1,4 @@
+- import_role:
+    name: kansible_host.facts.gathered
+  delegate_to: localhost
+  delegate_facts: true
