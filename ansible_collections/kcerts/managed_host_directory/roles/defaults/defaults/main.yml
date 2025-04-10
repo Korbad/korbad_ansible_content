@@ -14,7 +14,6 @@ managed_cert_csr_file_shortname: "{{ managed_cert_directory_name }}"
 managed_cert_csr_file_name: "{{ managed_cert_csr_file_shortname }}.csr"
 managed_cert_csr_file_path: "{{ managed_cert_csr_file_parent_directory_path }}/{{ managed_cert_csr_file_name }}"
 
-
 managed_cert_key_file_parent_directory_path: "{{ managed_cert_directory_path }}"
 managed_cert_key_file_shortname: "{{ managed_cert_directory_name }}"
 managed_cert_key_file_name: "{{ managed_cert_key_file_shortname }}.key"

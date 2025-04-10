@@ -1,5 +1,0 @@
-- import_role:
-    name: kfilesystem.file.from_url
-  vars:
-    filesystem_file_src_url:
-    filesystem_file_path:
