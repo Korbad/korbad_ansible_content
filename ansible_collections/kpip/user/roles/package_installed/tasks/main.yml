@@ -1,0 +1,5 @@
+---
+- name: Ensure {{ pip_package_name }} is installed in user pip
+  pip:
+    name: "{{ pip_package_name }}"
+    extra_args: --user
