@@ -4,3 +4,7 @@ container_image_full_path_with_tag: "{{ container_image_repository_path }}/{{ co
 container_image_name_with_tag: "{{ container_image_name }}:{{ container_image_tag }}"
 container_image_tag: latest
 container_image_full_path: "{{ container_image_full_path_with_tag }}"
+
+desired_container_image_name_with_tag: "{{ desired_container_image_name }}:{{ desired_container_image_tag }}"
+desired_container_image_tag: latest
+source_container_name: "{{ container_name }}"

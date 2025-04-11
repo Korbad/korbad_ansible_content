@@ -1,0 +1,5 @@
+- containers.podman.podman_container_exec:
+    name: "{{ container_name }}"
+    command: "{{ command_to_execute_in_container }}"
+  register: _command_executed_in_container_via_container_host_exec_result
+  changed_when: command_to_execute_in_container_changed_when

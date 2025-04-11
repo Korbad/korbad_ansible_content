@@ -1,0 +1,3 @@
+container_host_fs_tarball_file_path: "{{ container_host_fs_tarball_file_directory_path }}/{{ container_host_fs_tarball_file_name }}"
+container_host_fs_tarball_file_shortname: "{{ container_name }}"
+container_host_fs_tarball_file_name: "{{ container_host_fs_tarball_file_shortname }}.tar.gz"

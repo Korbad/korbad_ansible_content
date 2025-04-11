@@ -12,3 +12,4 @@ dependencies:
       - psutil
       - PyGithub
       - xmltodict
+      - ansible-navigator

@@ -1,0 +1,4 @@
+- name: Commit container {{ container_name }} state as new anonymous image
+  command:
+    cmd: podman commit {{ container_name }}
+  register: podman_commit_container_to_anonymous_image_result

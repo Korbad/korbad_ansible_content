@@ -1,0 +1,10 @@
+- name: Ensure {{ container_name }} from {{ container_image_full_path_with_tag }} is running, detached, interactive - with tmp volume mount
+  containers.podman.podman_container:
+    name: "{{ container_name }}"
+    image: "{{ container_image_full_path_with_tag }}"
+    image_strict: true
+    state: started
+    detach: true
+    interactive: true
+    volumes:
+    - "{{ container_host_tmp_volume_mount_path }}:/tmp:Z"

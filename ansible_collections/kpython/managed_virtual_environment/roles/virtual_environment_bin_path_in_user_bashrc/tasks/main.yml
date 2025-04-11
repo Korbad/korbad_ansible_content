@@ -1,0 +1,4 @@
+- import_role:
+    name: kbash.bashrc.ensure_path_relative_to_home_is_in_path_env_var
+  vars:
+    absolute_path_for_path_env_var: "{{ managed_virtual_environment_bin_path }}"
