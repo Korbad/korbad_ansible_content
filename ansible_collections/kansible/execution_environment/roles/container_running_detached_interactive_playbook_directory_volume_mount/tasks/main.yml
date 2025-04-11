@@ -1,0 +1,14 @@
+- name: Ensure container which acts as EE {{ container_name }} is started from {{ container_image_full_path }}
+  containers.podman.podman_container:
+    name: "{{ container_name }}"
+    image: "{{ container_image_full_path }}"
+    interactive: true
+    network: host
+    recreate: true
+    command: bash
+    volumes:
+    - "{{ ansible_env.HOME }}/.ssh:/root/.ssh"
+    - "{{ playbook_directory_path_to_mount_to_ee }}:/runner"
+    label:
+      ansible-execution-environment: true
+    workdir: /runner
