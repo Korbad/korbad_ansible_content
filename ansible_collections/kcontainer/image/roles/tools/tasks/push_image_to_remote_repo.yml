@@ -1,0 +1,10 @@
+- name: Push container image {{ container_image_name }} to repo {{ container_image_repository_path }}
+  containers.podman.podman_image:
+    name: "{{ container_image_name }}"
+    push: true
+    push_args:
+      dest: "{{ container_image_repository_path }}/{{ dest_container_image_short_name }}:{{ dest_container_image_tag }}"
+#    tag: "{{ container_image_tag | default(omit) }}"
+    password: "{{ container_image_repository_password | default(omit) }}"
+    username: "{{ container_image_repository_username | default(omit) }}"
+    validate_certs: "{{ container_image_repository_validate_certs | default(omit) }}"
