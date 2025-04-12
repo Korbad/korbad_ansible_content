@@ -1,0 +1,3 @@
+- name: Ensure that python module {{ python_module_name }} is installed for interpreter {{ ansible_python_interpreter }}
+  pip:
+    name: "{{ python_module_name }}"

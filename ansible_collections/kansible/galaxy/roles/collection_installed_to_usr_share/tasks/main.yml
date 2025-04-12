@@ -1,0 +1,5 @@
+---
+- import_role:
+    name: collection_installed
+  vars:
+    collections_path: /usr/share/ansible/collections

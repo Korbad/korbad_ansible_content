@@ -1,3 +1,0 @@
-- name: Ensure that container image {{ container_image_full_path }} exists
-  containers.podman.podman_image:
-    name: "{{ container_image_full_path }}"

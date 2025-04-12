@@ -1,0 +1,12 @@
+---
+- name: Ensure that the builder binary directory exists
+  file:
+    path: /opt/builder/bin
+    state: directory
+  become: true
+
+- name: Ensure that the ansible-builder entrypoint script is in place
+  copy:
+    src: entrypoint
+    dest: /opt/builder/bin/entrypoint
+  become: true

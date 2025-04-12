@@ -1,0 +1,6 @@
+- name: Ensure {{ container_name }} from {{ container_image_fully_qualified_name }} is not running (stopped)
+  containers.podman.podman_container:
+    name: "{{ container_name }}"
+    image: "{{ container_image_fully_qualified_name }}"
+    image_strict: true
+    state: stopped

@@ -1,0 +1,4 @@
+- name: Ensure that container image {{ container_image_fully_qualified_name }} doesn't exist on container host repo
+  containers.podman.podman_image:
+    name: "{{ container_image_fully_qualified_name }}"
+    state: absent

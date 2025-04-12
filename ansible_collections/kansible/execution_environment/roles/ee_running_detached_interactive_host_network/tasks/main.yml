@@ -1,7 +1,7 @@
-- name: Ensure EE {{ container_name }} is started from {{ container_image_full_path }}
+- name: Ensure EE {{ container_name }} is started from {{ container_image_fully_qualified_name }}
   containers.podman.podman_container:
     name: "{{ container_name }}"
-    image: "{{ container_image_full_path }}"
+    image: "{{ container_image_fully_qualified_name }}"
     interactive: true
     network: host
     command: bash

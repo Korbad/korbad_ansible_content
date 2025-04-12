@@ -1,7 +1,7 @@
-- name: Ensure {{ container_name }} from {{ container_image_full_path_with_tag }} is restarted, detached, interactive
+- name: Ensure {{ container_name }} from {{ container_image_fully_qualified_name }} is restarted, detached, interactive
   containers.podman.podman_container:
     name: "{{ container_name }}"
-    image: "{{ container_image_full_path_with_tag }}"
+    image: "{{ container_image_fully_qualified_name }}"
     image_strict: true
     state: started
     recreate: true

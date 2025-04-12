@@ -1,4 +1,4 @@
-- name: Perform collection installation via ansible-galaxy
+- name: Ensure Ansible collection {{ collection_namespace_dot_collection_name }} is installed to {{ collections_path }}
   community.general.ansible_galaxy_install:
     type: collection
     name: "{{ collection_namespace_dot_collection_name }}"

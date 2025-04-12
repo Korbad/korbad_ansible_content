@@ -1,0 +1,4 @@
+---
+- name: Prune (purge) all unused images, not only dangling images
+  containers.podman.podman_prune:
+    system_all: true
