@@ -1,1 +1,6 @@
 nemo_action_icon_name: folder
+nemo_action_file_shortname: "{{ _sanitized_generated_nemo_action_file_shortname }}"
+
+__valid_filename_chars: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_.
+_dirty_generated_nemo_action_file_shortname: "{{ nemo_action_name }}{{ nemo_action_exec }}{{ nemo_action_selection }}{{ nemo_action_extensions_str|default('') }}{{ nemo_action_mimetypes_str|default('') }}"
+_sanitized_generated_nemo_action_file_shortname: "{{ _dirty_generated_nemo_action_file_shortname | list | select('in', __valid_filename_chars | list) | join }}"

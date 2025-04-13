@@ -1,14 +1,14 @@
 [Nemo Action]
 Name={{ nemo_action_name }}
+Selection={{ nemo_action_selection }}
+Exec={{ nemo_action_exec }}
+Icon-Name={{ nemo_action_icon_name }}
 {% if nemo_action_comment is defined %}
 Comment={{ nemo_action_comment }}
 {% endif %}
-Exec={{ nemo_action_exec }}
-Icon-Name={{ nemo_action_icon_name }}
 {% if nemo_action_stock_id is defined %}
 Stock-Id={{ nemo_action_stock_id }}
 {% endif %}
-Selection={{ nemo_action_selection }}
 {% if nemo_action_extensions_str is defined %}
 Extensions={{ nemo_action_extensions_str }}
 {% endif %}

@@ -1,0 +1,5 @@
+- import_role:
+    name: single_plaintext_file
+
+- import_role:
+    name: single_dir_and_background_click

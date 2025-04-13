@@ -1,0 +1,5 @@
+- import_role:
+    name: knemo.action.configured
+  vars:
+    nemo_action_selection: s
+    nemo_action_mimetypes_str: text/*;
