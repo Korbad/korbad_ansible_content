@@ -1,0 +1,5 @@
+- import_role:
+    name: kfreedesktop.xdg_mime.configured_default_application_for_mimetype
+  vars:
+    xdg_mimetype: application/x-gnome-saved-search
+    xdg_application: nemo.desktop
