@@ -1,0 +1,4 @@
+- command:
+    cmd: xdg-mime query default {{ xdg_mimetype }}
+  register: xdg_mime_query_default_mimetype_command_result
+  changed_when: false

@@ -1,0 +1,3 @@
+- command:
+    cmd: xdg-mime default {{ xdg_application }} {{ xdg_mimetype }}
+
