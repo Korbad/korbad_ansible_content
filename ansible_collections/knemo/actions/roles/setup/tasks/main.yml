@@ -1,0 +1,5 @@
+# https://github.com/linuxmint/nemo/blob/master/files/usr/share/nemo/actions/sample.nemo_action
+- name: Ensure that user nemo actions directory exists at {{ nemo_actions_directory_path }}
+  file:
+    state: directory
+    path: "{{ nemo_actions_directory_path }}"

@@ -1,0 +1,5 @@
+
+- name: Ensure that user nemo action (file) is configured at {{ nemo_action_file_path }}
+  template:
+    dest: "{{ nemo_action_file_path }}"
+    src: nemo_action.j2

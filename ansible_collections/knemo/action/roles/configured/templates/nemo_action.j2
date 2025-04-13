@@ -1,0 +1,41 @@
+[Nemo Action]
+Name={{ nemo_action_name }}
+{% if nemo_action_comment is defined %}
+Comment={{ nemo_action_comment }}
+{% endif %}
+Exec={{ nemo_action_exec }}
+Icon-Name={{ nemo_action_icon_name }}
+{% if nemo_action_stock_id is defined %}
+Stock-Id={{ nemo_action_stock_id }}
+{% endif %}
+Selection={{ nemo_action_selection }}
+{% if nemo_action_extensions_str is defined %}
+Extensions={{ nemo_action_extensions_str }}
+{% endif %}
+{% if nemo_action_mimetypes_str is defined %}
+Mimetypes={{ nemo_action_mimetypes_str }}
+{% endif %}
+{% if nemo_action_separator_between_path_entries_in_exec_line is defined %}
+Separator={{ nemo_action_separator_between_path_entries_in_exec_line }}
+{% endif %}
+{% if nemo_action_quote_type is defined %}
+Quote={{ nemo_action_quote_type }}
+{% endif %}
+{% if nemo_action_dependencies_str is defined %}
+Dependencies={{ nemo_action_dependencies_str }}
+{% endif %}
+{% if nemo_action_conditions_str is defined %}
+Conditions={{ nemo_action_conditions_str }}
+{% endif %}
+{% if nemo_action_launch_terminal_bool is defined %}
+Terminal={{ nemo_action_launch_terminal_bool }}
+{% endif %}
+{% if nemo_action_location_uri_scheme is defined %}
+UriScheme={{ nemo_action_location_uri_scheme }}
+{% endif %}
+{% if nemo_action_locations_str is defined %}
+Locations={{ nemo_action_locations_str }}
+{% endif %}
+{% if nemo_action_files_str is defined %}
+Files={{ nemo_action_files_str }}
+{% endif %}
