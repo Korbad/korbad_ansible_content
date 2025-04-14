@@ -1,0 +1,6 @@
+- include_tasks: main.yml
+  loop: "{{ collection_namespace_dot_collection_name_list }}"
+  loop_control:
+    loop_var: _collection_namespace_dot_collection_name
+  vars:
+    collection_namespace_dot_collection_name: "{{ _collection_namespace_dot_collection_name }}"

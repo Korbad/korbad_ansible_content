@@ -1,0 +1,4 @@
+---
+- import_tasks: main.yml
+  vars:
+    collections_path: /usr/share/ansible/collections

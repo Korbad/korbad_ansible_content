@@ -1,0 +1,3 @@
+- import_tasks: from_list.yml
+  vars:
+    collections_path: /usr/share/ansible/collections
