@@ -1,7 +1,0 @@
-- f5networks.f5_modules.bigip_device_info:
-    gather_subset: all
-    provider: "{{ bigip_connection_provider_dict }}"
-  register: bigip_device_info_result
-
-- debug:
-    var: bigip_device_info_result

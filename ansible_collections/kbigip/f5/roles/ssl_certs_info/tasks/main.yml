@@ -1,7 +1,0 @@
-- f5networks.f5_modules.bigip_device_info:
-    gather_subset: ssl-certs
-    provider: "{{ bigip_connection_provider_dict }}"
-  register: bigip_device_info_ssl_certs_result
-
-- debug:
-    var: bigip_device_info_ssl_certs_result
