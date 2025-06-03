@@ -1,8 +1,0 @@
----
-- name: Execute i3-msg {{ i3_msg }}
-  command:
-    cmd: i3-msg {{ i3_msg }}
-  environment:
-    DISPLAY: "{{ active_user_display_env_var_value }}"
-    I3SOCK: "{{ i3_socket_path }}"
-  changed_when: false

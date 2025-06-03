@@ -1,3 +1,0 @@
-- name: reload i3
-  include_tasks: reload.yml
-  listen: reload i3

@@ -1,2 +1,0 @@
-github_git_repo_remote_full_ssh_url: git@github.com:{{ github_organization_name }}/{{ github_repo_name }}.git
-github_git_repo_remote_full_https_url: https://github.com/{{ github_organization_name }}/{{ github_repo_name }}.git

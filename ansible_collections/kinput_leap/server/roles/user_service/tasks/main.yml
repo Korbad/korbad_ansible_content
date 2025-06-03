@@ -2,7 +2,7 @@
     name: ksystemd.user_unit.configured
   vars:
     systemd_user_unit_file_content: "{{ lookup('template','input_leap_server.j2') }}"
-    systemd_user_unit_filename: input-leap-server.service
+    systemd_user_unit_file_name: input-leap-server.service
     environment_variables:
       PATH: "/usr/local/bin:/usr/bin:/bin"
       DISPLAY: ":0"
@@ -11,9 +11,9 @@
 - import_role:
     name: ksystemd.user_unit.enabled
   vars:
-    systemd_user_unit_filename: input-leap-server.service
+    systemd_user_unit_file_name: input-leap-server.service
 
 - import_role:
     name: ksystemd.user_unit.started
   vars:
-    systemd_user_unit_filename: input-leap-server.service
+    systemd_user_unit_file_name: input-leap-server.service

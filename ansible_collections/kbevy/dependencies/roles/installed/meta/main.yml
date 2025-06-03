@@ -1,5 +1,5 @@
 dependencies:
-- name: kdnf.package.installed
+- name: korbad.dnf.package_installed
   dnf_package_name:
   - gcc-c++
   - libX11-devel

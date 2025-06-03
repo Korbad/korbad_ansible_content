@@ -1,3 +1,0 @@
-dependencies:
- - name: kdnf.package.installed
-   dnf_package_name: firefox

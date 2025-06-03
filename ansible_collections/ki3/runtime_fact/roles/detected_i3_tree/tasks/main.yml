@@ -1,6 +1,0 @@
-- import_role:
-    name: ki3.runtime_info.get_tree
-
-- set_fact:
-    detected_i3_tree: "{{ _i3_tree }}"
-    cacheable: true

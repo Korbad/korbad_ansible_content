@@ -1,2 +1,2 @@
 dependencies:
-  - name: kfreedesktop.xdg_spec.defaults
+  - name: korbad.freedesktop.xdg_spec

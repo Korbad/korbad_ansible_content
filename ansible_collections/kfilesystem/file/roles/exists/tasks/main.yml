@@ -1,5 +1,5 @@
 - import_role:
-      name: kfilesystem.directory.exists
+      name: korbad.filesystem.directory_exists
   vars:
       filesystem_directory_path: "{{ filesystem_file_path | dirname }}"
 

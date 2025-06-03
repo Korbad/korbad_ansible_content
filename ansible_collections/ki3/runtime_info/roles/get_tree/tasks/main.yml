@@ -1,8 +1,0 @@
-- name: Get i3 tree
-  command:
-    cmd: i3-msg -t get_tree
-  environment:
-    DISPLAY: "{{ active_user_display_env_var_value }}"
-    I3SOCK: "{{ i3_socket_path }}"
-  changed_when: false
-  register: i3_tree_result

@@ -1,11 +1,11 @@
 dependencies:
 - name: defaults
-- name: kfilesystem.directory.exists
+- name: korbad.filesystem.directory_exists
   filesystem_directory_path: "{{ input_leap_config_ssl_dir_path }}"
 - name: openssl_privatekey
 - name: openssl_csr
 - name: self_signed_cert
 - name: combined_key_and_cert_file
-- name: kfilesystem.directory.exists
+- name: korbad.filesystem.directory_exists
   filesystem_directory_path: "{{ input_leap_config_ssl_fingerprints_dir_path }}"
 - name: local_txt

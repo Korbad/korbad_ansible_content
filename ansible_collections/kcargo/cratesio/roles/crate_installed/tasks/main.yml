@@ -1,6 +1,0 @@
----
-- name: Ensure that {{ cargo_crate_name }} is installed
-  community.general.cargo:
-    name: "{{ cargo_crate_name }}"
-  environment:
-    PATH: "{{ user_cargo_bin_directory_path }}:{{ ansible_env.PATH }}"

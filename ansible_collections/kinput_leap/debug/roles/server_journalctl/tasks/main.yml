@@ -1,6 +1,6 @@
 - import_role:
     name: kjournalctl.runtime_terminator.user_unit
   vars:
-    systemd_user_unit_filename: input-leap-server.service
+    systemd_user_unit_file_name: input-leap-server.service
 
 
