@@ -1,8 +1,0 @@
-- import_role:
-    name: kfile.plaintext.ensure_content
-  vars:
-    filesystem_file_content: "{{ systemd_user_unit_file_content }}"
-    filesystem_file_path: "{{ systemd_user_unit_file_path }}"
-  notify:
-    - reload systemd user daemon
-    - systemd user unit restarted

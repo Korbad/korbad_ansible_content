@@ -1,2 +1,0 @@
-input_leap_config_file_path: "{{ input_leap_config_dir_path }}/input-leap.conf"
-input_leap_config_ssl_fingerprints_trustedclients_file_path: "{{ input_leap_config_ssl_fingerprints_dir_path }}/TrustedClients.txt"

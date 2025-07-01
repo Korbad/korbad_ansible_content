@@ -5,7 +5,7 @@ After=network.target
 [Service]
 ExecStart=input-leaps -f
 Restart=always
-{% for key, value in environment_variables.items() %}
+{% for key, value in systemd_user_unit_service_environment_variables.items() %}
 Environment="{{ key }}={{ value }}"
 {% endfor %}
 

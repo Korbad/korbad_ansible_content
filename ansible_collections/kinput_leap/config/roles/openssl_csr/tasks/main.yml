@@ -1,6 +1,0 @@
-- import_role:
-    name: kcerts.openssl.csr_file
-  vars:
-    ssl_csr_file_path: "{{ input_leap_config_ssl_csr_file_path }}"
-    ssl_privatekey_file_path: "{{ input_leap_config_ssl_key_file_path }}"
-    ssl_csr_common_name: "Input Leap"

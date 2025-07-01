@@ -1,8 +1,0 @@
-- file:
-    state: directory
-    path: "{{ xdg_bin_home_file_path | dirname }}"
-
-- file:
-    state: link
-    src: "{{ symlink_src_path }}"
-    dest: "{{ xdg_bin_home_file_path }}"

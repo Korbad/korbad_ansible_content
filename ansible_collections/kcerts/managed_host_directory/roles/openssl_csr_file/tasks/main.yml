@@ -1,5 +1,5 @@
 - import_role:
     name: kcerts.openssl.csr_file
   vars:
-    ssl_csr_file_path: "{{ managed_cert_csr_file_path }}"
-    ssl_privatekey_file_path: "{{ managed_cert_key_file_path }}"
+    openssl_csr_file_path: "{{ managed_cert_csr_file_path }}"
+    openssl_privatekey_file_path: "{{ managed_cert_key_file_path }}"

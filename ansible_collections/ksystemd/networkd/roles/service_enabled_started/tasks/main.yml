@@ -1,5 +1,5 @@
 - name: Enable systemd-networkd
-  systemd:
+  systemd_service:
     name: systemd-networkd
     enabled: yes
     state: started

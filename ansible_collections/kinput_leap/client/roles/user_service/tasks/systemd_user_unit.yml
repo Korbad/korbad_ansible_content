@@ -6,7 +6,7 @@
   register: input_leap_client_user_unit_file_template_result
   vars:
     input_leap_server_ip: "{{ input_leap_target_server_ip }}"
-    environment_variables:
+    systemd_user_unit_service_environment_variables:
       PATH: "/usr/local/bin:/usr/bin:/bin"
       DISPLAY: "{{ active_user_display_env_var_value }}"
       XAUTHORITY: "{{ ansible_env.HOME }}/.Xauthority"

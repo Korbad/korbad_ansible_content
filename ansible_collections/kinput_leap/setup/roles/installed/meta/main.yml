@@ -1,4 +1,0 @@
-dependencies:
-- name: korbad.dnf.package_installed
-  dnf_package_name: input-leap
-  when: ansible_distribution == 'Fedora'

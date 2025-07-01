@@ -1,5 +1,5 @@
 - name: restart systemd-resolved and reload daemon
-  systemd:
+  systemd_service:
     name: systemd-resolved
     state: restarted
     daemon_reload: yes

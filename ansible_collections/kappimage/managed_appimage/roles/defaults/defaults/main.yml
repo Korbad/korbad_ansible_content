@@ -1,7 +1,0 @@
-managed_appimages_path: "{{ xdg_data_home_path }}/managed_appimages"
-managed_appimage_filename: "{{ undef() }}"
-managed_appimage_dir_name: "{{ managed_appimage_filename }}"
-managed_appimage_dir_path: "{{ managed_appimages_path }}/{{ managed_appimage_dir_name }}"
-managed_appimage_file_path: "{{ managed_appimage_dir_path }}/{{ managed_appimage_filename }}"
-managed_appimage_extracted_squashfs_path: "{{ managed_appimage_dir_path }}/squashfs-root"
-managed_appimage_extracted_executable_path: "{{ managed_appimage_extracted_squashfs_path }}/AppRun"

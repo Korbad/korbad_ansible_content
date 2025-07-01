@@ -1,6 +1,0 @@
-namespace: kfreedesktop
-name: xdg_spec
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

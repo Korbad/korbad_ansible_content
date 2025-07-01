@@ -1,7 +1,7 @@
 - name: Gather Certificate Signing Request (CSR) file info
   community.crypto.openssl_csr_info:
-    path: "{{ ssl_csr_file_path }}"
-  register: _ssl_csr_file_info_result
+    path: "{{ openssl_csr_file_path }}"
+  register: _openssl_csr_file_info_result
 
 - debug:
-    var: _ssl_csr_file_info_result
+    var: _openssl_csr_file_info_result

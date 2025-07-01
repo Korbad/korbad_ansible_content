@@ -1,4 +1,0 @@
----
-allow_duplicates: true
-dependencies:
-- name: kdevice.disk.defaults

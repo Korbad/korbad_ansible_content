@@ -1,3 +1,0 @@
-obsidian_config_directory_path: "{{ xdg_config_home_path }}/obsidian"
-obsidian_config_obsidian_jsonfile_path: "{{ obsidian_config_directory_path }}/obsidian.json"
-obsidian_vault_config_dir_path: "{{ obsidian_vault_path }}/.obsidian"

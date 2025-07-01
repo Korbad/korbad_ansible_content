@@ -1,4 +1,0 @@
-- import_role:
-    name: kfreedesktop.xdg_bin_home.symlink
-  vars:
-    symlink_src_path: "{{ managed_appimage_file_path }}"

@@ -1,2 +1,0 @@
-ssl_crt_filename: "{{ ssl_crt_file_shortname }}.key"
-ssl_crt_file_path: "{{ ssl_crt_file_parent_directory_path }}/{{ ssl_crt_filename }}"

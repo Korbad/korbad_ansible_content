@@ -1,7 +1,7 @@
 - import_role:
     name: kcerts.x509.file_info
   vars:
-    x509_cert_crt_file_path: "{{ managed_cert_crt_file_path }}"
+    x509_crt_file_path: "{{ managed_cert_crt_file_path }}"
 
 - slurp:
     path: "{{ managed_cert_crt_file_path }}"

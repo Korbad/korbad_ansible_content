@@ -1,6 +1,0 @@
-- import_role:
-    name: kcerts.x509_file.selfsigned_provider
-  vars:
-    ssl_csr_file_path: "{{ input_leap_config_ssl_csr_file_path }}"
-    ssl_privatekey_file_path: "{{ input_leap_config_ssl_key_file_path }}"
-    ssl_crt_file_path: "{{ input_leap_config_ssl_crt_file_path }}"

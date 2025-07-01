@@ -1,5 +1,0 @@
-- import_role:
-    name: kappimage.managed_appimage.setup
-  vars:
-    managed_appimage_filename: "{{ obsidian_appimage_filename }}"
-    xdg_bin_home_filename: "{{ obsidian_xdg_bin_home_executable_filename }}"

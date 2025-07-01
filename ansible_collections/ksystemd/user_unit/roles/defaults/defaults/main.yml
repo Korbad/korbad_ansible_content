@@ -1,2 +1,0 @@
-systemd_user_config_directory_path: "{{ xdg_config_home_path }}/systemd/user"
-systemd_user_unit_file_path: "{{ systemd_user_config_directory_path }}/{{ systemd_user_unit_file_name }}"

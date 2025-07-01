@@ -1,4 +1,0 @@
-- name: systemd user unit restarted
-  include_tasks: service_restarted.yml
-  listen:
-    - systemd user unit restarted

@@ -1,7 +1,0 @@
-dependencies:
-  - name: kpacman.package.installed
-    pacman_package_name: git-annex
-    when: ansible_distribution == 'Archlinux'
-  - name: korbad.dnf.package_installed
-    dnf_package_name: git-annex
-    when: ansible_distribution == 'Fedora'

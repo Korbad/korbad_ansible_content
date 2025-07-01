@@ -1,7 +1,0 @@
-- import_role:
-    name: kfile.mode.user_executable
-  vars:
-    filesystem_file_path: "{{ managed_appimage_file_path }}"
-
-- import_role:
-    name: kappimage.managed_appimage.symlink_to_xdg_bin_home

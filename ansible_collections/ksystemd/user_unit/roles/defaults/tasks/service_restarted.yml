@@ -1,4 +1,0 @@
-- systemd:
-    scope: user
-    name: "{{ systemd_user_unit_file_name }}"
-    state: restarted

@@ -1,2 +1,0 @@
-- command:
-    cmd: systemctl --user start {{ systemd_user_unit_file_name }}

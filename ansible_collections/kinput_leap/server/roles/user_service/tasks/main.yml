@@ -1,9 +1,10 @@
 - import_role:
-    name: ksystemd.user_unit.configured
+    name: korbad.systemd.user_unit
+    tasks_from: ensure_service_file_configured.yml
   vars:
     systemd_user_unit_file_content: "{{ lookup('template','input_leap_server.j2') }}"
     systemd_user_unit_file_name: input-leap-server.service
-    environment_variables:
+    systemd_user_unit_service_environment_variables:
       PATH: "/usr/local/bin:/usr/bin:/bin"
       DISPLAY: ":0"
       XAUTHORITY: "{{ ansible_env.HOME }}/.Xauthority"

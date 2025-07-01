@@ -1,5 +1,0 @@
-- import_role:
-    name: ki3.runtime_status.ensure_instance_of_window_class_exists
-  vars:
-    window_properties_class: obsidian
-    i3_exec_command: obsidian
