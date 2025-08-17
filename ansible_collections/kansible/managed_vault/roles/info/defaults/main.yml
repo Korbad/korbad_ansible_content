@@ -1,1 +1,0 @@
-_detected_managed_ansible_vault_user_secret_file_paths: "{{ _managed_ansible_vault_user_secrets_path_result.files | sort(attribute='path') | map(attribute='path') | map('basename') }}"

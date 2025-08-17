@@ -1,6 +1,0 @@
-- import_role:
-    name: kgit_workspace.active_worktree_info.git_worktree_active_branch_name
-
-- include_role:
-    name: kgit_workspace.
-  when: not _git_workspace_branch_name_equalto_worktree_active_branch_name

@@ -1,5 +1,0 @@
-- name: Set git config name if it is defined
-  community.general.git_config:
-    scope: global
-    name: user.name
-    value: "{{ git_username }}"

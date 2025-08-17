@@ -1,6 +1,0 @@
-- import_role:
-    name: kgit.workspace_info.status
-
-- include_role:
-    name: kgit.workspace_action.commit
-  when: _git_status_uncommited_changes_detected

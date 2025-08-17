@@ -1,5 +1,0 @@
-- name: Set git config email if it is defined
-  community.general.git_config:
-    scope: global
-    name: user.email
-    value: "{{ git_email }}"

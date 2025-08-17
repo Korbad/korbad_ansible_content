@@ -1,4 +1,0 @@
-- import_role:
-    name: kgit.workspaces.added_committed_pushed
-  vars:
-    git_local_repo_directory_paths: "{{ managed_git_local_repo_directory_path_list }}"

@@ -1,7 +1,0 @@
-- include_role:
-    name: open_path_with_rustrover
-  loop: "{{ rustrover_open_paths }}"
-  loop_control:
-    loop_var: _rustrover_open_path
-  vars:
-    rustrover_open_path: "{{ _rustrover_open_path }}"

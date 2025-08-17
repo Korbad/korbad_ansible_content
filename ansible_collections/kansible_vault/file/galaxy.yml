@@ -1,6 +1,0 @@
-namespace: kansible_vault
-name: file
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md
