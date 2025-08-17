@@ -1,2 +1,0 @@
-_detected_git_workspace_branch_name_list: "{{ _git_workspace_all_branches_result.stdout_lines }}"
-_git_workspace_branch_name_in_detected_branch_names_bool: "{{ git_workspace_branch_name in _detected_git_workspace_branch_name_list }}"

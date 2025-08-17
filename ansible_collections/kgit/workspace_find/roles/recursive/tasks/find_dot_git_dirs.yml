@@ -1,8 +1,0 @@
-- name: Recursively find .git directories in {{ find_start_path }}
-  find:
-    file_type: directory
-    paths: "{{ find_start_path }}"
-    recurse: true
-    hidden: true
-    patterns: .git
-  register: find_dot_git_directories_result

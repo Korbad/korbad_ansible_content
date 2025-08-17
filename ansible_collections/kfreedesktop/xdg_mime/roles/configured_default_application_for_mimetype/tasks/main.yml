@@ -1,4 +1,0 @@
-- import_tasks: query_default_mimetype.yml
-
-- include_tasks: set_default_for_mimetype.yml
-  when: not _returned_default_application_matches_xdg_mimetype_var_value

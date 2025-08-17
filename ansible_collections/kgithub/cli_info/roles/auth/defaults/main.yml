@@ -1,2 +1,0 @@
-_github_cli_not_logged_in: "{{ 'You are not logged into' in _gh_auth_status_result.stderr }}"
-_github_cli_logged_in: "{{ not _github_cli_not_logged_in }}"

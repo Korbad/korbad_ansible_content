@@ -1,3 +1,0 @@
-- name: Delete GitHub repository {{ github_repo_name }} using gh CLI
-  command:
-    cmd: gh repo delete {{ github_repo_name }} --yes

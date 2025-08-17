@@ -1,5 +1,0 @@
-- command:
-    cmd: git rev-parse --abbrev-ref --symbolic-full-name {{ git_workspace_branch_name }}@{u}
-    chdir: "{{ git_workspace_path }}"
-  register: _detected_git_workspace_branch_remote_tracking_branch_result
-  changed_when: false

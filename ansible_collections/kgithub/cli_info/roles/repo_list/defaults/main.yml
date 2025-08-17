@@ -1,1 +1,0 @@
-_detected_github_repo_name_list: "{{ gh_repo_list_result.stdout | from_json | map(attribute='name') | list }}"

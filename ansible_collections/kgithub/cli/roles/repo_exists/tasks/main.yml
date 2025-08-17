@@ -1,6 +1,0 @@
-- import_role:
-    name: kgithub.cli_info.repo_list
-
-- include_role:
-    name: kgithub.cli_action.create_private_repo
-  when: not github_repo_name in _detected_github_repo_name_list

@@ -1,4 +1,0 @@
-managed_git_workspace_grandparent_directory_path: "{{ xdg_user_home_path }}"
-managed_git_workspace_parent_directory_name: managed_git_workspaces
-managed_git_workspace_parent_directory_path: "{{ managed_git_workspace_grandparent_directory_path }}/{{ managed_git_workspace_parent_directory_name }}"
-managed_git_workspace_path: "{{ managed_git_workspace_parent_directory_path }}/{{ managed_git_workspace_name }}"

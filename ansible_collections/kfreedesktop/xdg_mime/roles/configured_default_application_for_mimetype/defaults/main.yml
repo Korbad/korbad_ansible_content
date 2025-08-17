@@ -1,2 +1,0 @@
-_returned_default_application_for_xdg_mimetype: "{{ xdg_mime_query_default_mimetype_command_result.stdout }}"
-_returned_default_application_matches_xdg_mimetype_var_value: "{{ _returned_default_application_for_xdg_mimetype | string == xdg_application | string }}"

@@ -1,3 +1,0 @@
-- ansible.builtin.shell: gh auth login --hostname github.com --git-protocol ssh --skip-ssh-key --with-token
-  args:
-    stdin: "{{ github_personal_access_token }}"

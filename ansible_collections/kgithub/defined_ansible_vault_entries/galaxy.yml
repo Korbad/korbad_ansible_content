@@ -1,6 +1,0 @@
-namespace: kgithub
-name: defined_ansible_vault_entries
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

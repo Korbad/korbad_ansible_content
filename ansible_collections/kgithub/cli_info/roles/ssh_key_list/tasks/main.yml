@@ -1,6 +1,0 @@
-- name: List SSH keys in GitHub account using gh CLI
-  ansible.builtin.command:
-    cmd: gh ssh-key list
-  register: ssh_key_list_result
-  failed_when: "ssh_key_list_result.rc != 0"
-  changed_when: false

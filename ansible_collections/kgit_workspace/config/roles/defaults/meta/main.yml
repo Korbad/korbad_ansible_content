@@ -1,3 +1,0 @@
-dependencies:
-  - name: kgit_workspace.config_branch.defaults
-  - name: kgit_workspace.config_remote.defaults

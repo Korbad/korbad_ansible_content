@@ -1,5 +1,0 @@
-- name: GitHub repo list
-  command:
-    cmd: gh repo list --limit=3000 --json name
-  changed_when: false
-  register: gh_repo_list_result

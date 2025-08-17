@@ -1,1 +1,0 @@
-_found_dot_git_directory_paths: "{{ find_dot_git_directories_result.files | map(attribute='path') | list }}"

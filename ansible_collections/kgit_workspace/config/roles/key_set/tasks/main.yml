@@ -1,5 +1,0 @@
-- community.general.git_config:
-    repo: "{{ git_workspace_path }}"
-    scope: local
-    name: "{{ git_workspace_config_key_name }}"
-    value: "{{ git_workspace_config_key_value }}"

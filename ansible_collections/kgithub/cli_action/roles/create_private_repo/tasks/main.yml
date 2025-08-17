@@ -1,3 +1,0 @@
-- name: Create GitHub repository using gh CLI
-  command:
-    cmd: gh repo create {{ github_repo_name }} --private

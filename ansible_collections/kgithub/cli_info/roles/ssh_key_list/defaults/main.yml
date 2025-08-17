@@ -1,2 +1,0 @@
-_github_user_ssh_public_key_lines_dirty: "{{ ssh_key_list_result.stdout_lines }}"
-_github_user_ssh_public_keys_blob_dirty: "{{ ssh_key_list_result.stdout }}"

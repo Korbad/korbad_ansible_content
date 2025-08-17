@@ -1,6 +1,0 @@
-- import_role:
-    name: kgithub.cli_info.auth
-
-- include_role:
-    name: kgithub.cli_action.auth
-  when: _github_cli_not_logged_in

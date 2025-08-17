@@ -1,4 +1,0 @@
-git_workspace_config_remote_fetch_url_key_name: remote.{{ git_remote_name }}.url
-git_workspace_config_branch_remote_key_name: branch.{{ git_workspace_branch_name }}.remote
-git_workspace_config_branch_upstream_tracking_remote_branch_key_name: branch.{{ git_workspace_branch_name }}.merge
-git_workspace_config_fetch_refs_heads_and_refs_remote_key_name: remote.{{ git_remote_name }}.fetch
