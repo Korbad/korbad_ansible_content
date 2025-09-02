@@ -1,18 +1,12 @@
-managed_openssh_keypair_directory_path: "{{ xdg_data_home_path }}/{{ managed_openssh_keypair_directory_name }}"
-managed_openssh_keypair_directory_name: managed_openssh_keypairs
-managed_openssh_privatekey_file_path: "{{ managed_openssh_keypair_directory_path }}/{{ managed_openssh_privatekey_file_name }}"
-managed_openssh_keypair_pub_key_filename: "{{ managed_openssh_privatekey_file_name }}.pub"
-managed_openssh_keypair_pub_key_file_path: "{{ managed_openssh_keypair_directory_path }}/{{ managed_openssh_keypair_pub_key_filename }}"
-managed_openssh_privatekey_file_path_relative_to_xdg_user_home: "{{ managed_openssh_privatekey_file_path | ansible.builtin.relpath(xdg_user_home_path) }}"
-managed_openssh_privatekey_file_name: id_rsa
 
-_detected_managed_openssh_keypair_public_key_value: "{{ _managed_ssh_priv_key_result.public_key }}"
-_detected_managed_openssh_keypair_key_fingerprint: "{{ _managed_ssh_priv_key_result.fingerprint }}"
+
+_detected_managed_openssh_keypair_public_key_value: "{{ _ed25519_type_openssh_privatekey_file_result.public_key }}"
+_detected_managed_openssh_keypair_key_fingerprint: "{{ _ed25519_type_openssh_privatekey_file_result.fingerprint }}"
 
 managed_openssh_privatekey_with_passphrase_file_path: "{{ managed_openssh_keypair_directory_path }}/{{ managed_openssh_privatekey_with_passphrase_file_name }}"
 managed_openssh_privatekey_with_passphrase_file_name: "{{ managed_openssh_privatekey_file_name }}_with_passphrase"
 
-managed_openssh_privatekey_without_passphrase_file_path: "{{ managed_openssh_keypair_directory_path }}/{{ managed_openssh_privatekey_without_passphrase_file_name }}"
+ed25519_type_openssh_privatekey_file_path: "{{ managed_openssh_keypair_directory_path }}/{{ managed_openssh_privatekey_without_passphrase_file_name }}"
 managed_openssh_privatekey_without_passphrase_file_name: "{{ managed_openssh_privatekey_file_name }}_without_passphrase"
 
 managed_openssh_privatekey_maybe_without_passphrase_file_path: "{{ managed_openssh_keypair_directory_path }}/{{ managed_openssh_privatekey_maybe_without_passphrase_file_name }}"

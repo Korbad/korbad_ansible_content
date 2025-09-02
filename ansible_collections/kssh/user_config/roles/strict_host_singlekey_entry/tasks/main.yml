@@ -6,4 +6,4 @@
     block: |
       Host {{ ssh_config_host_fqdn }}
         IdentitiesOnly yes
-        IdentityFile ~/{{ xdg_user_home_ssh_priv_key_file_path_relative_to_xdg_user_home }}
+        IdentityFile ~/{{ openssh_privatekey_file_path_relative_to_xdg_user_home }}

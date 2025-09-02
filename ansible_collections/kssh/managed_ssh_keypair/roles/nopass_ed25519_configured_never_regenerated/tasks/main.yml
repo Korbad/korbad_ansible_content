@@ -1,6 +1,0 @@
-- name: Configuring (without regeneration) openssh ed25519 keypair priv key file path {{ managed_openssh_privatekey_without_passphrase_file_path }}
-  community.crypto.openssh_keypair:
-    path: "{{ managed_openssh_privatekey_without_passphrase_file_path }}"
-    regenerate: never
-    type: ed25519
-  register: _managed_ssh_priv_key_result

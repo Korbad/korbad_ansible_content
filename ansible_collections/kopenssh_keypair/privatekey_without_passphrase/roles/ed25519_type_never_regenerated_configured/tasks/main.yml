@@ -1,6 +1,0 @@
-- name: Open SSH keypair of type ed25519, never regenerated, no passphrase, at {{ openssh_privatekey_file_path }}
-  community.crypto.openssh_keypair:
-    path: "{{ openssh_privatekey_file_path }}"
-    regenerate: never
-    type: ed25519
-  register: _openssh_privatekey_file_without_passphrase_result
