@@ -1,5 +1,5 @@
 dependencies:
-- name: korbad.pacman.package_installed
+- name: josh.pacman.package_installed
   pacman_package_name: base-devel
-- name: korbad.pacman.package_installed
+- name: josh.pacman.package_installed
   pacman_package_name: yay
