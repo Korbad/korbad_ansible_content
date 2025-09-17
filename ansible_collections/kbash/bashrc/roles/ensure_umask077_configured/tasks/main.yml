@@ -1,6 +1,6 @@
 - name: Ensure umask 077 block exists in .bashrc
   ansible.builtin.blockinfile:
-    path: "{{ user_home_bashrc_file_path }}"
+    path: "{{ xdg_user_home_bashrc_file_path }}"
     block: |
       umask 077
     marker: "# {mark} UMASK BLOCK - Ansible managed"

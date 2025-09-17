@@ -1,7 +1,7 @@
 ---
 - name: Ensure that the timezone is set in userspace bashrc
   ansible.builtin.blockinfile:
-    path: "{{ user_home_bashrc_file_path }}"
+    path: "{{ xdg_user_home_bashrc_file_path }}"
     block: "TZ='{{ user_timezone_string }}'; export TZ"
     marker: "# {mark} ANSIBLE MANAGED BLOCK FOR timezone"
   notify: refresh user bash sessions using SIGHUP

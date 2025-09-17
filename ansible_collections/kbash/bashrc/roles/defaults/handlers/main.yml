@@ -1,4 +1,0 @@
----
-- name: refresh user bash sessions using SIGHUP
-  include_tasks: tasks/refresh_user_sessions_using_sighup.yml
-  listen: refresh user bash sessions using SIGHUP

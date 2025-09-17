@@ -1,2 +1,2 @@
 dependencies:
-  - name: ksystemd.resolved.defaults
+  - name: jsystemd.resolved.defaults

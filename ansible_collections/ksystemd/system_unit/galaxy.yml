@@ -1,4 +1,4 @@
-namespace: ksystemd
+namespace: jsystemd
 name: system_unit
 authors:
 - Korbad

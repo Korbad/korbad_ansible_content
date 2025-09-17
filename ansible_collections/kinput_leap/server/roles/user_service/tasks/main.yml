@@ -1,5 +1,5 @@
 - import_role:
-    name: korbad.systemd.user_unit
+    name: josh.systemd.user_unit
     tasks_from: ensure_service_file_configured.yml
   vars:
     systemd_user_unit_file_content: "{{ lookup('template','input_leap_server.j2') }}"
@@ -10,11 +10,11 @@
       XAUTHORITY: "{{ ansible_env.HOME }}/.Xauthority"
 
 - import_role:
-    name: ksystemd.user_unit.enabled
+    name: jsystemd.user_unit.ensure_enabled
   vars:
     systemd_user_unit_file_name: input-leap-server.service
 
 - import_role:
-    name: ksystemd.user_unit.started
+    name: jsystemd.user_unit.started
   vars:
     systemd_user_unit_file_name: input-leap-server.service

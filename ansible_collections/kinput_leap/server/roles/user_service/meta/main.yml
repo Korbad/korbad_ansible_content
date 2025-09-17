@@ -1,2 +1,2 @@
 dependencies:
-  - name: ksystemd.user_daemon.defaults
+  - name: jsystemd.user_daemon.defaults

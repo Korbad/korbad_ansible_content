@@ -1,8 +1,0 @@
-- name: Ensure that {{ env_var_name }} is set in bashrc
-  ansible.builtin.blockinfile:
-    prepend_newline: true
-    path: "{{ user_home_bashrc_file_path }}"
-    block: |
-      export {{ env_var_name }}="{{ env_var_value }}"
-    marker: "# {mark} env var {{ env_var_name }} - Ansible managed"
-  notify: refresh user bash sessions using SIGHUP

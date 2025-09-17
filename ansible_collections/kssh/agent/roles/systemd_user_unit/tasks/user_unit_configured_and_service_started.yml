@@ -9,7 +9,7 @@
 - meta: flush_handlers
 
 - import_role:
-    name: ksystemd.user_unit.enabled
+    name: jsystemd.user_unit.ensure_enabled
 
 - import_role:
-    name: ksystemd.user_unit.started
+    name: jsystemd.user_unit.started

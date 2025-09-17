@@ -1,7 +1,7 @@
 - name: Ensure that ansible-managed {{ env_var_name }} is not in bashrc
   ansible.builtin.blockinfile:
     prepend_newline: true
-    path: "{{ user_home_bashrc_file_path }}"
+    path: "{{ xdg_user_home_bashrc_file_path }}"
     marker: "# {mark} env var {{ env_var_name }} - Ansible managed"
     state: absent
   notify: refresh user bash sessions using SIGHUP
