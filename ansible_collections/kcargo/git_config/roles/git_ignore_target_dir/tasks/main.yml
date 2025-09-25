@@ -1,5 +1,0 @@
-- import_role:
-    name: korbad.git.user_global_config
-    tasks_from: ensure_global_git_ignore_file_has_line.yml
-  vars:
-    global_config_git_ignore_file_entry: target/
