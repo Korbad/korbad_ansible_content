@@ -1,2 +1,0 @@
-user_cargo_bin_directory_path: "{{ xdg_user_home_path }}/.cargo/bin"
-cargo_install_destination_bin_path: "{{ user_cargo_bin_directory_path }}"

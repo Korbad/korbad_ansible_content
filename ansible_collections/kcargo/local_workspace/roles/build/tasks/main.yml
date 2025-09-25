@@ -1,7 +1,0 @@
-
-- name: NOT IDEMPOTENT, NOT GREAT - cargo build workspace at {{ cargo_workspace_path }}
-  command:
-    cmd: cargo build --workspace
-    chdir: "{{ cargo_workspace_path }}"
-  environment:
-    PATH: "{{ user_cargo_bin_directory_path }}:{{ ansible_env.PATH }}"
