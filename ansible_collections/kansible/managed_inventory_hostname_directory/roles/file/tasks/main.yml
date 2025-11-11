@@ -1,4 +1,4 @@
 - import_role:
     name: kfile.yaml.ensure_content
   vars:
-    filesystem_file_path: "{{ managed_inventory_hostname_directory_file_path }}"
+    file_path: "{{ managed_inventory_hostname_directory_file_path }}"

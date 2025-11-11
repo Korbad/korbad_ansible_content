@@ -1,5 +1,5 @@
-- name: Direct fetching file from {{ filesystem_file_path }} on host to {{ controller_filesystem_file_path }} on ansible controller
+- name: Direct fetching file from {{ file_path }} on host to {{ controller_filesystem_file_path }} on ansible controller
   fetch:
-    src: "{{ filesystem_file_path }}"
+    src: "{{ file_path }}"
     dest: "{{ controller_filesystem_file_path }}"
     flat: true

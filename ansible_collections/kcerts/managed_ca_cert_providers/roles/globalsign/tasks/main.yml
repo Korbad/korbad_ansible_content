@@ -5,7 +5,7 @@
 - import_role:
     name: kfilesystem.file.from_url
   vars:
-    filesystem_file_path: "{{ managed_ca_cert_provider_globalsign_crt_file_path }}"
+    file_path: "{{ managed_ca_cert_provider_globalsign_crt_file_path }}"
     filesystem_file_src_url: http://secure.globalsign.com/cacert/gsrsaovsslca2018.crt
 
 - slurp:

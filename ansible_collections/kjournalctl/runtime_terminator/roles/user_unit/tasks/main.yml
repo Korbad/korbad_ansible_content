@@ -1,4 +1,0 @@
-- import_role:
-    name: kterminator.runtime_shell.launch_executing_command
-  vars:
-    subcommand_to_execute: journalctl --user -u {{ systemd_user_unit_file_name }} -f

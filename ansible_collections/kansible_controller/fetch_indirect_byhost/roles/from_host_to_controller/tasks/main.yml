@@ -1,5 +1,5 @@
-- name: Fetching from {{ filesystem_file_path }} on host to ansible-fetch-module-defined filesystem structure stored at {{ controller_managed_hostdirs_path }} on the ansible controller
+- name: Fetching from {{ file_path }} on host to ansible-fetch-module-defined filesystem structure stored at {{ controller_managed_hostdirs_path }} on the ansible controller
   fetch:
-    src: "{{ filesystem_file_path }}"
+    src: "{{ file_path }}"
     dest: "{{ controller_managed_hostdirs_path }}"
     flat: false

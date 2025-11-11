@@ -10,7 +10,7 @@
 - import_role:
     name: kfile.plaintext.read
   vars:
-    filesystem_file_path: "{{ managed_ansible_vault_user_secret_path }}"
+    file_path: "{{ managed_ansible_vault_user_secret_path }}"
   no_log: true
 
 - set_fact:

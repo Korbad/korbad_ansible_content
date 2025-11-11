@@ -1,4 +1,4 @@
 _filesystem_file_from_url_file_path: "{{ _filesystem_file_get_url_result.dest }}"
 _filesystem_file_from_url_file_name: "{{ _filesystem_file_from_url_file_path | basename }}"
 _filesystem_file_from_url_file_parent_directory_path: "{{ _filesystem_file_from_url_file_path | dirname }}"
-filesystem_file_parent_directory_path: "{{ filesystem_file_path | dirname }}"
+filesystem_file_parent_directory_path: "{{ file_path | dirname }}"

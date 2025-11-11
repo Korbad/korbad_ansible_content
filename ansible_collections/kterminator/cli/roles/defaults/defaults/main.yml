@@ -2,4 +2,3 @@ __terminator_cli_working_directory_argument: "--working-directory={{ target_work
 __terminator_cli_subcommand_execution_argument: '--execute "{{ subcommand_to_execute }}"'
 _command_to_open_terminator_at_working_directory: terminator {{ __terminator_cli_working_directory_argument }}
 _command_to_open_terminator_at_working_directory_running_command: terminator {{ __terminator_cli_working_directory_argument }} {{ __terminator_cli_subcommand_execution_argument }}
-_command_to_open_terminator_running_command: terminator {{ __terminator_cli_subcommand_execution_argument }}

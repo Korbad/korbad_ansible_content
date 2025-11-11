@@ -2,4 +2,4 @@ dependencies:
 - name: defaults
 - name: jsystemd.user_daemon.defaults
 - name: josh.filesystem.directory_exists
-  filesystem_directory_path: "{{ systemd_user_config_directory_path }}"
+  directory_path: "{{ systemd_user_config_directory_path }}"

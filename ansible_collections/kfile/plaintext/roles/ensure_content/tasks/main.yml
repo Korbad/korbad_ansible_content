@@ -1,9 +1,9 @@
 - file:
     state: directory
-    path: "{{ filesystem_file_path | dirname }}"
+    path: "{{ file_path | dirname }}"
     
 - template:
     src: file_content.j2
-    dest: "{{ filesystem_file_path }}"
+    dest: "{{ file_path }}"
     force: true
   register: _template_file_result

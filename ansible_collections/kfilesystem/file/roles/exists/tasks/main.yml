@@ -1,14 +1,15 @@
 - import_role:
       name: josh.filesystem.directory_exists
   vars:
-      filesystem_directory_path: "{{ filesystem_file_path | dirname }}"
+      directory_path: "{{ file_path | dirname }}"
 
 - import_role:
-      name: kfilesystem.entry.stat
+    name: korbad.filesystem.path
+    tasks_from: stat.yml
   vars:
-      filesystem_entry_path: "{{ filesystem_file_path }}"
+      filesystem_path: "{{ file_path }}"
 
 - file:
       state: touch
-      path: "{{ filesystem_file_path }}"
+      path: "{{ file_path }}"
   when: not _filesystem_entry_exists

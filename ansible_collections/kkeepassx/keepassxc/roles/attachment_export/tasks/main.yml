@@ -12,4 +12,4 @@
 - import_role:
     name: kfile.mode.user_secret
   vars:
-    filesystem_file_path: "{{ keepass_database_entry_attachment_export_path }}"
+    file_path: "{{ keepass_database_entry_attachment_export_path }}"
