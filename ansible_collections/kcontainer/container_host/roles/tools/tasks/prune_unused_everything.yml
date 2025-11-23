@@ -1,3 +1,0 @@
-- name: Prune unused pods, containers, image, networks and volume data
-  containers.podman.podman_prune:
-    system: true

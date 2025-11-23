@@ -1,4 +1,0 @@
-- command:
-    cmd: desktop-file-validate {{ desktop_entry_file_path }}
-  register: desktop_file_validate_result
-  changed_when: false

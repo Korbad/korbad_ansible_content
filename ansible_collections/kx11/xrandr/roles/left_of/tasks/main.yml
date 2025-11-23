@@ -1,4 +1,0 @@
-- command:
-    cmd: xrandr --output {{ left_output }} --auto --left-of {{ right_output }}
-  environment:
-    DISPLAY: "{{ active_user_display_env_var_value }}"

@@ -1,6 +1,0 @@
-- name: git push {{ git_workspace_path }}
-  command:
-    cmd: git push
-    chdir: "{{ git_workspace_path }}"
-  register: git_push_result
-  changed_when: not 'Everything up-to-date' in git_push_result.stderr

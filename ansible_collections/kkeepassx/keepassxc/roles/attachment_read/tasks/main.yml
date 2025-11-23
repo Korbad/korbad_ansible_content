@@ -1,7 +1,0 @@
-- name: Reading attachment '{{ keepass_database_entry_attachment_name }}' in keepass database '{{ keepass_database_file_path }}' entry '{{ keepass_database_entry_name }}'
-  shell: keepassxc-cli attachment-export --stdout --quiet {{ keepass_database_file_path }} '{{ keepass_database_entry_name }}' '{{ keepass_database_entry_attachment_name }}'
-  args:
-    stdin: "{{ keepass_database_file_password }}"
-  register: _keepass_attachment_read_result
-  changed_when: false
-  no_log: true

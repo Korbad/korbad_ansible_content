@@ -1,4 +1,0 @@
-- name: Ensure {{ managed_ansible_fact_cache_path }} exists
-  file:
-    path: "{{ managed_ansible_fact_cache_path }}"
-    state: directory

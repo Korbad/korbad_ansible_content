@@ -1,6 +1,0 @@
----
-- name: Ensure that dnf package {{ dnf_package_name }} is installed
-  dnf:
-    name: "{{ dnf_package_name }}"
-    use_backend: dnf
-  become: true

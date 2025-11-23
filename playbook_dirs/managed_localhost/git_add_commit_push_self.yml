@@ -1,3 +1,0 @@
-- hosts: localhost
-  roles:
-    - name: kgit.managed_workspace.added_committed_pushed

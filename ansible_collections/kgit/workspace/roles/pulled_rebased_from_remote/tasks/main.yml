@@ -1,6 +1,0 @@
-- name: Perform git pull --rebase from remote {{ git_remote_name }} in workspace {{ git_workspace_path }}
-  command:
-    cmd: git pull --rebase {{ git_remote_name }}
-    chdir: "{{ git_workspace_path }}"
-  register: git_pull_rebase_from_remote_result
-  changed_when: not 'up to date.' in git_pull_rebase_from_remote_result.stdout

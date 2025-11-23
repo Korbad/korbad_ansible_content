@@ -1,6 +1,0 @@
-managed_virtual_environments_directory_grandparent_directory_path: "{{ xdg_data_home_path }}"
-managed_virtual_environments_directory_name: managed_virtual_environments
-managed_virtual_environments_path: "{{ managed_virtual_environments_directory_grandparent_directory_path }}/{{ managed_virtual_environments_directory_name }}"
-managed_virtual_environment_path: "{{ managed_virtual_environments_path }}/{{ managed_virtual_environment_name }}"
-managed_virtual_environment_bin_path: "{{ managed_virtual_environment_path }}/bin"
-managed_virtual_environment_python_interpreter_path: "{{ managed_virtual_environment_bin_path }}/python3"

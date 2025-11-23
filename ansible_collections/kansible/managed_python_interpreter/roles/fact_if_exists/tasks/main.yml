@@ -1,8 +1,0 @@
-- stat:
-    path: "{{ managed_ansible_interpreter_virtual_environment_python_interpreter_path }}"
-  register: managed_virtual_environment_python_interpreter_path_result
-
-- set_fact:
-    detected_managed_ansible_interpreter_virtual_environment_python_interpreter_path: "{{ managed_ansible_interpreter_virtual_environment_python_interpreter_path }}"
-    cacheable: true
-  when: managed_virtual_environment_python_interpreter_path_result.stat.exists

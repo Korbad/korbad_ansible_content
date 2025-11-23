@@ -1,2 +1,0 @@
-openssl_csr_file_name: "{{ openssl_csr_file_shortname }}.csr"
-openssl_csr_file_path: "{{ openssl_csr_file_parent_directory_path }}/{{ openssl_csr_file_name }}"

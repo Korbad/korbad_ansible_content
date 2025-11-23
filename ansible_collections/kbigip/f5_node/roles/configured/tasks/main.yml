@@ -1,4 +1,0 @@
-- f5networks.f5_modules.bigip_node:
-    fqdn: "{{ f5_node_fqdn }}"
-    name: "{{ f5_node_name }}"
-    provider: "{{ bigip_connection_provider_dict }}"

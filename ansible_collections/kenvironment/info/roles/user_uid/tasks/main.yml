@@ -1,4 +1,0 @@
-- name: Find user UID
-  command: id -u {{ ansible_env.USER }}
-  register: user_uid_result
-  changed_when: false

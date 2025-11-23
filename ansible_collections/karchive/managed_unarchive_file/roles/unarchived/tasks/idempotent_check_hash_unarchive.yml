@@ -1,9 +1,0 @@
-- name: Read stored archive hash
-  ansible.builtin.slurp:
-    src: "{{ managed_unarchive_path }}/.archive_hash"
-  register: _stored_hash_result
-
-- include_tasks: unarchive_and_hash.yml
-  when: >
-    _stored_hash_result.content is not defined or
-    _managed_unarchive_stored_hash_checksum != _managed_archive_checksum

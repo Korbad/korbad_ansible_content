@@ -1,4 +1,0 @@
-- command:
-    cmd: git branch -d {{ git_workspace_branch_name }}
-    chdir: "{{ git_workspace_path }}"
-  register: _git_branch_delete_result

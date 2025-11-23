@@ -1,5 +1,0 @@
-- name: nohup {{ command_to_execute }} (background, ends process on cmd exit, NOT IDEMPOTENT)
-  shell:
-    cmd: nohup {{ command_to_execute }} >/dev/null 2>&1 &
-  environment:
-    DISPLAY: "{{ active_user_display_env_var_value }}"

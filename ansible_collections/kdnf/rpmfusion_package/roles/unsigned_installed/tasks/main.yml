@@ -1,6 +1,0 @@
----
-- name: INSECURE Ensure that dnf package {{ dnf_package_name }} is installed, but gpg checking is disabled
-  dnf:
-    name: "{{ dnf_package_name }}"
-    disable_gpg_check: true
-  become: true

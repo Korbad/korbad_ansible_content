@@ -1,7 +1,0 @@
----
-- name: Ensure dnf is up-to-date
-  command:
-    cmd: dnf -y update
-  register: dnf_update_result
-  become: true
-  changed_when: "'Nothing to do' not in dnf_update_result.stdout"

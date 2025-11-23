@@ -1,6 +1,0 @@
-- f5networks.f5_modules.bigip_ssl_csr:
-    common_name: "{{ cert_common_name }}"
-    dest: "{{ openssl_key_dest }}"
-    key_name: "{{ openssl_key_name }}"
-    name: "{{ csr_name }}"
-    provider: "{{ bigip_connection_provider_dict }}"

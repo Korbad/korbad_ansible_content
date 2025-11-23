@@ -1,6 +1,0 @@
-- f5networks.f5_modules.bigip_pool_member:
-    fqdn: "{{ f5_pool_member_fqdn }}"
-    pool: "{{ f5_pool_name }}"
-    port: "{{ f5_pool_member_port }}"
-    name: "{{ f5_pool_member_node_name }}"
-    provider: "{{ bigip_connection_provider_dict }}"

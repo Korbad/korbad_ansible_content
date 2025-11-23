@@ -1,5 +1,0 @@
-- name: Turn on the monitor using xset
-  ansible.builtin.command:
-    cmd: xset dpms force on
-  environment:
-    DISPLAY: "{{ active_user_display_env_var_value }}"

@@ -1,4 +1,0 @@
-managed_composite_ansible_content_grandparent_path: "{{ xdg_user_home_path }}"
-managed_composite_ansible_content_parent_directory_name: managed_composite_ansible_content_directories
-managed_composite_ansible_content_parent_path: "{{ managed_composite_ansible_content_grandparent_path }}/{{ managed_composite_ansible_content_parent_directory_name }}"
-managed_composite_ansible_content_path: "{{ managed_composite_ansible_content_parent_path }}/{{ managed_composite_ansible_content_directory_name }}"

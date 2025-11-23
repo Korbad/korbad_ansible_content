@@ -1,7 +1,0 @@
-- import_tasks: list_keys.yml
-
-- include_tasks: value_set.yml
-  when: gsettings_key in existing_gsettings_keys
-
-- include_tasks: set.yml
-  when: not (gsettings_key in existing_gsettings_keys)

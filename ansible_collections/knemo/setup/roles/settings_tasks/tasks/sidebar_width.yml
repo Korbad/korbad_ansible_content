@@ -1,4 +1,0 @@
-- name: Nemo sidebar-width configured to {{ nemo_sidebar_width }}
-  community.general.dconf:
-    key: /org/nemo/window-state/sidebar-width
-    value: "{{ nemo_sidebar_width }}"

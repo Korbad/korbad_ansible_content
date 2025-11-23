@@ -1,3 +1,0 @@
-managed_archive_file_parent_directory_path: "{{ xdg_data_home_path }}/managed_archive_files"
-managed_archive_file_path: "{{ managed_archive_file_parent_directory_path }}/{{ managed_archive_filename }}"
-managed_archive_filename: "{{ managed_archive_file_path | basename }}"

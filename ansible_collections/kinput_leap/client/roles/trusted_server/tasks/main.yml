@@ -1,4 +1,0 @@
-- lineinfile:
-    path: "{{ input_leap_config_ssl_fingerprints_trustedservers_file_path }}"
-    line: "{{ input_leap_trusted_server_line }}"
-    create: true

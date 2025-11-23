@@ -1,7 +1,0 @@
-- name: Ensure managed python virtual environment exists and is configured at {{ virtual_environment_path }}
-  pip:
-    name: "{{ virtual_environment_packages }}"
-    state: present
-    virtualenv: "{{ virtual_environment_path }}"
-    virtualenv_site_packages: no
-    virtualenv_python: "{{ virtual_environment_base_interpreter_path | default(omit, true) }}"

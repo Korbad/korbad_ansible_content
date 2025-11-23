@@ -1,3 +1,0 @@
-- slurp:
-    path: "{{ file_path }}"
-  register: _filesystem_file_slurp_result

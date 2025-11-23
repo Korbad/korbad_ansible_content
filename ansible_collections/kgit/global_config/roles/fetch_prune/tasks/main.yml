@@ -1,4 +1,0 @@
-- community.general.git_config:
-    scope: global
-    name: fetch.prune
-    value: true

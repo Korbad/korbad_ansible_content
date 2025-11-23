@@ -1,4 +1,0 @@
-- command:
-    cmd: xrandr --query --auto
-  environment:
-    DISPLAY: "{{ active_user_display_env_var_value }}"
