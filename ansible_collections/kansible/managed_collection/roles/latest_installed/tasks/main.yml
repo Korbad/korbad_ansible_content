@@ -1,4 +1,0 @@
-- import_role:
-    name: kansible.galaxy.collection_latest_installed
-  vars:
-    collections_path: "{{ managed_external_ansible_collections_path }}"

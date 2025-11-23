@@ -1,4 +1,0 @@
-- import_role:
-    name: "{{ git_import_role_fqcn }}"
-  environment:
-    GIT_TERMINAL_PROMPT: 0

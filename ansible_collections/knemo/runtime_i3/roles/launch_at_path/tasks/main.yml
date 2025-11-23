@@ -1,4 +1,0 @@
-- import_role:
-    name: ki3.runtime_action.exec
-  vars:
-    i3_exec_command: nemo {{ nemo_target_path }}

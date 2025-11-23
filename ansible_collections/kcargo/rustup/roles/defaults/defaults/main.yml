@@ -1,1 +1,0 @@
-rustup_executable_path: "{{ user_cargo_bin_directory_path }}/rustup"

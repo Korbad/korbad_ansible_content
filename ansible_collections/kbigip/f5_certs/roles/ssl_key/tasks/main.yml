@@ -1,4 +1,0 @@
-- f5networks.f5_modules.bigip_ssl_key:
-    content: "{{ ssl_key_content }}"
-    name: "{{ ssl_key_name }}"
-    provider: "{{ bigip_connection_provider_dict }}"

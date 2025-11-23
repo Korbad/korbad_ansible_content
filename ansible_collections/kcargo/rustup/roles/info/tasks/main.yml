@@ -1,5 +1,0 @@
-- name: Show rust toolchain information
-  command:
-    cmd: "{{ rustup_executable_path }} show"
-  register: rustup_show_result
-  changed_when: false

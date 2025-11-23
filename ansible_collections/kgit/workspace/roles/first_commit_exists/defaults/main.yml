@@ -1,1 +1,0 @@
-_git_workspace_commits_exist: "{{ rev_list_commit_check_result.stdout_lines | length > 0 }}"

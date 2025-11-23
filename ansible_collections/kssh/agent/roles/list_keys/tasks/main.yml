@@ -1,9 +1,0 @@
-- name: List currently loaded SSH keys
-  ansible.builtin.command: ssh-add -l
-  register: ssh_agent_keys_result
-  changed_when: false
-  failed_when: >
-    ssh_agent_keys_result.rc != 0 and not (
-      ssh_agent_keys_result.rc == 1 and
-      'The agent has no identities' in ssh_agent_keys_result.stdout
-    )

@@ -1,8 +1,0 @@
-- command:
-    cmd: systemctl --user is-active {{ systemd_user_unit_file_name }}
-  register: systemctl_user_is_started_check_unit_file_result
-  changed_when: false
-  failed_when: systemctl_user_is_started_check_unit_file_result.rc not in [0, 1]
-
-- include_tasks: start.yml
-  when: systemctl_user_is_started_check_unit_file_result.rc == 1

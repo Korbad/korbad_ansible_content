@@ -1,9 +1,0 @@
-- file:
-    path: "{{ openssh_privatekey_file_path }}"
-
-- name: Check if private key {{ openssh_privatekey_file_path }} has a passphrase
-  ansible.builtin.shell:
-    cmd: ssh-keygen -y -f {{ openssh_privatekey_file_path }}
-  register: _ssh_keygen_private_key_info_result
-  failed_when: false
-  changed_when: false

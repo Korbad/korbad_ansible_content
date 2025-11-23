@@ -1,1 +1,0 @@
-user_graphical_process_name_pid: "{{ user_graphical_process_name_pid_result.stdout }}"

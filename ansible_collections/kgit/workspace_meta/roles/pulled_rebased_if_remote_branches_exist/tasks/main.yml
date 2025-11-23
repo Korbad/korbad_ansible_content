@@ -1,6 +1,0 @@
-- import_role:
-    name: kgit_workspace.remote.git_ls_remote_branches_for_all_remotes
-
-- include_role:
-    name: kgit.workspace.pulled_rebased
-  when: _git_workspace_git_ls_remote_branches_exist

@@ -1,4 +1,0 @@
-dependencies:
-- name: jsystemd.user_unit.defaults
-- name: jsystemd.user_daemon.defaults
-- name: defaults

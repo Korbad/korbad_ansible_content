@@ -1,8 +1,0 @@
-- import_role:
-    name: info
-
-- name: Ensure toolchain is installed
-  command:
-    cmd: "{{ rustup_executable_path }} default stable"
-  register: rustup_default_stable_result
-  when: "'stable' not in rustup_show_result.stdout"

@@ -1,5 +1,0 @@
-- command:
-    cmd: paccheck --files --file-properties --md5sum glibc filesystem
-  register: paccheck_result
-  changed_when: false
-  become: true

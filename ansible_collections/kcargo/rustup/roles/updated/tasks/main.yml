@@ -1,4 +1,0 @@
-- name: Ensure rust is updated
-  command:
-    cmd: "{{ rustup_executable_path }} update"
-  register: rustup_update_result

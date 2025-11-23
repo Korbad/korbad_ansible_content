@@ -1,4 +1,0 @@
-- import_role:
-    name: kopenssh_keypair.privatekey_without_passphrase.never_regenerated_configured
-  vars:
-    openssh_privatekey_file_path: "{{ managed_openssh_privatekey_without_passphrase_file_path }}"

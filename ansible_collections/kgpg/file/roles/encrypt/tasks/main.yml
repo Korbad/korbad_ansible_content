@@ -1,7 +1,0 @@
-- command:
-    cmd: gpg --batch --yes --passphrase={{ gpg_key_passphrase }} -o {{ gpg_encryption_output_file_path }} -c {{ gpg_encryption_input_file_path }}
-
-
-#    gpg --batch --passphrase="${GPG}" \
-#    -o ./certs/"${certCN}"/"${certCN}".key.gpg \
-#    -c ./certs/"${certCN}"/"${certCN}".key

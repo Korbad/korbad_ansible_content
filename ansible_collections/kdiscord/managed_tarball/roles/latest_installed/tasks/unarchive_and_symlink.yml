@@ -1,9 +1,0 @@
-
-- import_role:
-    name: karchive.managed_unarchive_file.unarchived
-
-- import_role:
-    name: kfreedesktop.xdg_bin_home.symlink
-  vars:
-    symlink_src_path: "{{ managed_unarchive_path }}/Discord/Discord"
-    xdg_bin_home_filename: discord

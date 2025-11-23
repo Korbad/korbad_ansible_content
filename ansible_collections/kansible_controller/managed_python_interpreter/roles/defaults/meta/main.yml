@@ -1,2 +1,0 @@
-dependencies:
-  - name: kansible_controller.managed_virtual_environment.defaults

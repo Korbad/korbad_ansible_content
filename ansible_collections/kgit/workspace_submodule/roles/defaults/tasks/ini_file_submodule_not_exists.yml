@@ -1,5 +1,0 @@
-- community.general.ini_file:
-    path: "{{ git_workspace_git_submodules_config_file_path }}"
-    section: 'submodule "{{ git_workspace_submodule_name }}"'
-    state: absent
-  register: _git_workspace_git_submodules_ini_file_result

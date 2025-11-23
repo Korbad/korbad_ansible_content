@@ -1,1 +1,0 @@
-_secret_prompt_response_value: "{{ terminal_prompt_for_user_secret_result.user_input }}"

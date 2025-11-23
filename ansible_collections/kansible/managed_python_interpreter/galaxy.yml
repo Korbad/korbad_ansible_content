@@ -1,6 +1,0 @@
-namespace: kansible
-name: managed_python_interpreter
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

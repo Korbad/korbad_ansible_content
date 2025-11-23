@@ -1,6 +1,0 @@
-- f5networks.f5_modules.bigip_profile_client_ssl:
-    name: "{{ bigip_profile_client_ssl_name }}"
-    provider: "{{ bigip_connection_provider_dict }}"
-    cert_key_chain:
-    - cert: "{{ bigip_profile_client_ssl_cert_name }}"
-      key: "{{ bigip_profile_client_ssl_key_name }}"

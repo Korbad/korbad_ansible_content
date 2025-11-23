@@ -1,4 +1,0 @@
-- import_role:
-    name: ensure_path_relative_to_home_is_in_path_env_var
-  vars:
-    absolute_path_for_path_env_var: "{{ xdg_bin_home_path }}"

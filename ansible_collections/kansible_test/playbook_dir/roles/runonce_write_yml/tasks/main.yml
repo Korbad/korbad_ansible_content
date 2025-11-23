@@ -1,7 +1,0 @@
-- import_role:
-    name: kfile.yaml.ensure_content
-  vars:
-    yaml_file_shortname: _test
-    yaml_file_parent_directory_path: "{{ playbook_dir }}"
-  delegate_to: localhost
-  run_once: true

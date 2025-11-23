@@ -1,6 +1,0 @@
-namespace: kansible_controller
-name: managed_fact_cache
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

@@ -1,4 +1,0 @@
-- import_role:
-    name: kssh.agent.journalctl_user_unit
-  environment:
-    SSH_AUTH_SOCK: "{{ active_user_environment_dict.SSH_AUTH_SOCK }}"

@@ -1,6 +1,0 @@
-namespace: kansible
-name: defined_collections
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

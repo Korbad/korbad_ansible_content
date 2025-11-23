@@ -1,4 +1,0 @@
-- import_role:
-    name: from_remote_src
-  vars:
-    remote_src_filesystem_file_path: "{{ xdg_download_dir_file_path }}"

@@ -1,6 +1,0 @@
-- command:
-    cmd: systemctl --user list-unit-files --no-pager --type service,target,socket,mount --all --plain --no-legend
-  register: systemctl_user_list_unit_files_result
-
-- debug:
-    var: systemctl_user_list_unit_files_result

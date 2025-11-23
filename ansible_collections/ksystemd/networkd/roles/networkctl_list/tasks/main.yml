@@ -1,6 +1,0 @@
-- command:
-    cmd: networkctl list --json=pretty
-  register: _networkctl_list_result
-
-- debug:
-    var: _networkctl_list

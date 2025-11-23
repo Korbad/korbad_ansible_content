@@ -1,5 +1,0 @@
-- import_role:
-    name: kansible_controller.fetch_direct.from_host_to_controller
-  vars:
-    file_path: "{{ xdg_user_home_ssh_priv_key_file_path }}"
-    controller_filesystem_file_path: "{{ controller_xdg_user_home_ssh_priv_key_file_path }}"

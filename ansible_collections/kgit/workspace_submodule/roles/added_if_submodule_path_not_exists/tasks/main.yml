@@ -1,3 +1,0 @@
-- import_role:
-      name: defaults
-      tasks_from: added_if_submodule_path_not_exists.yml

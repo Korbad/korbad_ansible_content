@@ -1,3 +1,0 @@
-- import_role:
-    name: defaults
-    tasks_from: service_restarted.yml

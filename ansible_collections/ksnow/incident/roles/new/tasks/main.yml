@@ -1,4 +1,0 @@
-- servicenow.itsm.incident:
-    state: new
-    caller: "{{ snow_caller_user_id }}"
-    instance: "{{ snow_instance_connection_dict }}"

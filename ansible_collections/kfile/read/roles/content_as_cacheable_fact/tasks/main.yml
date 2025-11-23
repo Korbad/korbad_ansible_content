@@ -1,6 +1,0 @@
-- import_role:
-    name: kfilesystem.file.read
-
-- set_fact:
-    "{{ file_content_as_fact_var_name }}": "{{ _detected_filesystem_file_content }}"
-    cacheable: true

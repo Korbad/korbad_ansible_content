@@ -1,4 +1,0 @@
-
-
-_detected_xdg_user_home_ssh_public_key_value: "{{ _xdg_user_home_ssh_priv_key_result.public_key }}"
-_detected_xdg_user_home_ssh_key_fingerprint: "{{ _xdg_user_home_ssh_priv_key_result.fingerprint }}"

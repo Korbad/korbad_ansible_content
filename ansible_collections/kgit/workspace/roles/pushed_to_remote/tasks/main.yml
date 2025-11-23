@@ -1,6 +1,0 @@
-- name: git push to remote {{ git_remote_name }}
-  command:
-    cmd: git push {{ git_remote_name }}
-    chdir: "{{ git_local_repo_directory_path }}"
-  register: git_push_to_remote_result
-  changed_when: not 'Everything up-to-date' in git_push_to_remote_result.stderr

@@ -1,5 +1,0 @@
-- import_role:
-    name: kfile.read.content_as_cacheable_fact
-  vars:
-    file_path: "{{ input_leap_config_ssl_fingerprint_file_path }}"
-    file_content_as_fact_var_name: input_leap_local_fingerprint

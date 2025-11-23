@@ -1,8 +1,0 @@
-- file:
-    state: directory
-    path: "{{ managed_virtual_environment_path }}"
-
-- import_role:
-    name: kpython.virtual_environment.configured
-  vars:
-    virtual_environment_path: "{{ managed_virtual_environment_path }}"

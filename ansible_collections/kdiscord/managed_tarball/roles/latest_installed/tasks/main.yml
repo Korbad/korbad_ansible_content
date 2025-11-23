@@ -1,9 +1,0 @@
-- import_role:
-    name: karchive.managed_archive_file.from_url_without_filename
-  vars:
-    managed_archive_file_url: https://discord.com/api/download?platform=linux&format=tar.gz
-
-- import_tasks: unarchive_and_symlink.yml
-  vars:
-    managed_archive_file_path: "{{ _filesystem_file_from_url_file_path }}"
-    managed_archive_filename: "{{ managed_archive_file_path | basename }}"

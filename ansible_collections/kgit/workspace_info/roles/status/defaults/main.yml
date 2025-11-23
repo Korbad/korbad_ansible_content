@@ -1,3 +1,0 @@
-_git_status_untracked_files_detected: "{{ 'Untracked files' in git_status_result.stdout }}"
-_git_status_unstaged_changes_detected: "{{ 'Changes not staged for commit' in git_status_result.stdout }}"
-_git_status_uncommited_changes_detected: "{{ 'Changes to be committed' in git_status_result.stdout }}"

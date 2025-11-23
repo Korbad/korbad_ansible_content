@@ -1,7 +1,0 @@
-managed_ca_cert_provider_globalsign_directory_name: globalsign
-managed_ca_cert_provider_globalsign_directory_path: "{{ managed_ca_cert_provider_directories_path }}/{{ managed_ca_cert_provider_globalsign_directory_name }}"
-managed_ca_cert_provider_globalsign_crt_file_path: "{{ managed_ca_cert_provider_globalsign_directory_path }}/{{ managed_ca_cert_provider_globalsign_crt_file_name }}"
-managed_ca_cert_provider_globalsign_pem_file_path: "{{ managed_ca_cert_provider_globalsign_directory_path }}/{{ managed_ca_cert_provider_globalsign_pem_file_name }}"
-managed_ca_cert_provider_globalsign_crt_file_name: gsrsaovsslca2018.crt
-managed_ca_cert_provider_globalsign_pem_file_name: gsrsaovsslca2018.pem
-globalsign_ca_cert_intermediate_content: "{{ globalsign_ca_cert_intermediate_file_slurp_result['content'] | b64decode }}"

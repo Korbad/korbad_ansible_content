@@ -1,7 +1,0 @@
-- import_role:
-    name: kssh.info.keyscan_fqdn
-
-- import_role:
-    name: list_configured
-  vars:
-    _xdg_user_home_ssh_known_hosts: "{{ _ssh_keyscan_filtered_parts }}"

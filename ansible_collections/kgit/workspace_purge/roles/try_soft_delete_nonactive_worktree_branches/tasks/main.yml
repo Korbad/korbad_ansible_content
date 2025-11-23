@@ -1,3 +1,0 @@
-- import_role:
-    name: kgit.workspace_action.branch_action
-    tasks_from: try_soft_git_branch_delete_for_each_nonactive_branch.yml

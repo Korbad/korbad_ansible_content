@@ -1,2 +1,0 @@
-_globalsign_cert_by_csr_response_xml_content: "{{ _globalsign_cert_by_csr_response.content }}"
-_globalsign_cert_by_csr_response_dict_content: "{{ _globalsign_cert_by_csr_response_xml_content | ansible.utils.from_xml }}"

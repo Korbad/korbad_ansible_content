@@ -1,5 +1,0 @@
-- name: NOT IDEMPOTENT - Export container filesystem to tarball
-  containers.podman.podman_export:
-    container: "{{ container_name }}"
-    dest: "{{ container_host_fs_tarball_file_path }}"
-  changed_when: true

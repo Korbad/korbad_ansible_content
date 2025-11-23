@@ -1,8 +1,0 @@
-- import_role:
-    name: tasks
-    tasks_from: xrandr_query_auto.yml
-
-- include_tasks: try_xrandr_configuration.yml
-  loop: "{{ xrandr_screenlayout_config }}"
-  loop_control:
-    loop_var: xrandr_entry

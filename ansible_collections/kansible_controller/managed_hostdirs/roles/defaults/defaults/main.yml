@@ -1,3 +1,0 @@
-controller_managed_hostdirs_parent_directory_path: "{{ controller_xdg_user_home_path }}"
-controller_managed_hostdirs_parent_directory_name: managed_hostdirs
-controller_managed_hostdirs_path: "{{ controller_managed_hostdirs_parent_directory_path }}/{{ controller_managed_hostdirs_parent_directory_name }}"

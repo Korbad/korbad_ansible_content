@@ -1,5 +1,0 @@
-controller_ansible_python_interpreter: "{{ controller_detected_managed_ansible_interpreter_virtual_environment_python_interpreter_path | default('auto',true) }}"
-controller_managed_ansible_interpreter_virtual_environment_name: default
-controller_managed_ansible_interpreter_virtual_environment_path: "{{ controller_managed_virtual_environments_path }}/{{ controller_managed_ansible_interpreter_virtual_environment_name }}"
-controller_managed_ansible_interpreter_virtual_environment_bin_path: "{{ controller_managed_ansible_interpreter_virtual_environment_path }}/bin"
-controller_managed_ansible_interpreter_virtual_environment_python_interpreter_path: "{{ controller_managed_ansible_interpreter_virtual_environment_bin_path }}/python"

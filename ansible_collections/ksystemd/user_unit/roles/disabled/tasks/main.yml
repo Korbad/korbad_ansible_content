@@ -1,6 +1,0 @@
-- import_role:
-    name: defaults
-    tasks_from: check_enabled.yml
-
-- include_tasks: disable.yml
-  when: systemctl_user_is_enabled_check_unit_file_result.rc == 0

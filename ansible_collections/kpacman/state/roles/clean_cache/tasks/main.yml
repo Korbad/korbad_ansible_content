@@ -1,4 +1,0 @@
-- name: NOT IDEMPOTENT Clean pacman cache using pacman cli
-  ansible.builtin.command: pacman -Scc --noconfirm
-  become: true
-

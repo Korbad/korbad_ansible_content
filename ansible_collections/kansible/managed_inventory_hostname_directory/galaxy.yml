@@ -1,6 +1,0 @@
-namespace: kansible
-name: managed_inventory_hostname_directory
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

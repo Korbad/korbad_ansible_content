@@ -1,9 +1,0 @@
-- name: Get the currently checked-out branch
-  command:
-    cmd: git rev-parse --abbrev-ref HEAD
-    chdir: "{{ git_local_repo_directory_path }}"
-  register: _git_checked_out_branch_result
-  changed_when: false
-
-- debug:
-    var: _detected_git_worktree_active_branch_name

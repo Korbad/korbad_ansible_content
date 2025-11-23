@@ -1,4 +1,0 @@
-- import_role:
-    name: korbad.file.openssl_privatekey_file_info
-  vars:
-    openssl_privatekey_file_path: "{{ managed_cert_key_file_path }}"

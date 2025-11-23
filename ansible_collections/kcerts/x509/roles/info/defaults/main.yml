@@ -1,2 +1,0 @@
-x509_cert_content_valid_at_point_1_string: '+60d'
-_x509_cert_content_future_valid_bool: "{{ _x509_cert_content_info_result.valid_at.point_1 }}"

@@ -1,1 +1,0 @@
-_vault_content_viewed: "{{ _vault_entry_view_result.stdout }}"

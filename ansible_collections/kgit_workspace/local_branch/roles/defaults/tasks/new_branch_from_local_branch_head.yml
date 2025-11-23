@@ -1,3 +1,0 @@
-- command:
-    cmd: git branch {{ git_workspace_branch_name }} {{ git_workspace_source_branch_name }}
-    chdir: "{{ git_local_repo_directory_path }}"

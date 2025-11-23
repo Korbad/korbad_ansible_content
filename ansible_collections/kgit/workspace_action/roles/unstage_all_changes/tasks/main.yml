@@ -1,5 +1,0 @@
-
-- name: Unstage all changes for worktree in git workspace {{ git_local_repo_directory_path }}
-  command:
-    cmd: git restore --staged .
-    chdir: "{{ git_local_repo_directory_path }}"

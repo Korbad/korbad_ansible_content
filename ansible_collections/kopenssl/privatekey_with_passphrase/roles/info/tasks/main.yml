@@ -1,5 +1,0 @@
-- name: Fetching info from passphrase-protected openssl priv key {{ openssl_privatekey_file_path }}
-  community.crypto.openssl_privatekey_info:
-    path: "{{ openssl_privatekey_file_path }}"
-    passphrase: "{{ openssl_privatekey_file_passphrase }}"
-  register: _openssl_privatekey_file_info_result

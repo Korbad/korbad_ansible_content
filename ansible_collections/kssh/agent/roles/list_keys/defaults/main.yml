@@ -1,3 +1,0 @@
-_current_ssh_agent_key_result_list: "{{ ssh_agent_keys_result.stdout_lines | list }}"
-_current_ssh_agent_empty: "{{ 'The agent has no identities' in ssh_agent_keys_result.stdout }}"
-_current_ssh_agent_not_empty: "{{ not 'The agent has no identities' in ssh_agent_keys_result.stdout }}"

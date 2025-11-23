@@ -1,7 +1,0 @@
----
-- name: Ensure that dnf package {{ dnf_package_name }} is installed
-  command:
-    cmd: dnf install -y {{ dnf_package_name }}
-  register: _dnf_install_package_via_cli_result
-  become: true
-  changed_when: "'Nothing to do' not in _dnf_install_package_via_cli_result.stdout"

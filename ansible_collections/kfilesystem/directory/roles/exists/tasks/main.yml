@@ -1,3 +1,0 @@
-- file:
-    state: directory
-    path: "{{ directory_path }}"

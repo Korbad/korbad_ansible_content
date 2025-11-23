@@ -1,2 +1,0 @@
-controller_managed_hostdirs_inventory_hostname_dir_path: "{{ controller_managed_hostdirs_host_dir_path }}/{{ inventory_hostname }}"
-controller_managed_hostdirs_inventory_hostname_file_path: "{{ controller_managed_hostdirs_inventory_hostname_dir_path }}/{{ file_path }}"

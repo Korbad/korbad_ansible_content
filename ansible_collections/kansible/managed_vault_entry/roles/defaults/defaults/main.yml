@@ -1,2 +1,0 @@
-managed_ansible_vault_user_secret_encrypted_content: "{{ managed_ansible_vault_user_secret_value|vault(managed_ansible_vault_password, salt=(managed_ansible_vault_user_secret_value|hash('sha256')) )}}"
-managed_ansible_vault_user_secret_decrypted_content: "{{ managed_ansible_vault_user_secret_encrypted_content|unvault(managed_ansible_vault_password )}}"

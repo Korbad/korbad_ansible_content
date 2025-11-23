@@ -1,7 +1,0 @@
----
-- name: For each ref, get local (head) branches
-  command:
-    cmd: git for-each-ref --format='%(refname:short)' refs/heads/
-    chdir: "{{ git_local_repo_directory_path }}"
-  register: _git_for_each_ref_head_refs_result
-  changed_when: false

@@ -1,4 +1,0 @@
-- name: Ensure container {{ container_name }} is absent
-  containers.podman.podman_container:
-    name: "{{ container_name }}"
-    state: absent

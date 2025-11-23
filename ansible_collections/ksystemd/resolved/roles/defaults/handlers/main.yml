@@ -1,4 +1,0 @@
-- name: restart systemd-resolved and reload daemon
-  include_tasks: daemon_reloaded_service_restarted.yml
-  listen:
-  - restart systemd-resolved and reload daemon

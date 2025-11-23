@@ -1,1 +1,0 @@
-_ip_link_show: "{{ _ip_link_show_result.stdout | from_json }}"

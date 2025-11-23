@@ -1,9 +1,0 @@
-- command:
-    cmd: xrandr --query
-  register: _xrandr_query_result
-  environment:
-    DISPLAY: "{{ active_user_display_env_var_value }}"
-
-- set_fact:
-    xrandr_query_result: "{{ _xrandr_query_result.stdout }}"
-    cacheable: true

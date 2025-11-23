@@ -1,1 +1,0 @@
-_podman_container_committed_image_id: "{{ podman_commit_container_to_anonymous_image_result.stdout_lines | first }}"

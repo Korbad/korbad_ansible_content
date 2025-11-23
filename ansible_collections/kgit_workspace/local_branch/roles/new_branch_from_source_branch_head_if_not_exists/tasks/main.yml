@@ -1,7 +1,0 @@
-- import_role:
-    name: kgit_workspace.local_branch_info.list_branches
-
-- include_role:
-    name: defaults
-    tasks_from: new_branch_from_local_branch_head.yml
-  when: not _git_workspace_branch_name_in_detected_branch_names_bool

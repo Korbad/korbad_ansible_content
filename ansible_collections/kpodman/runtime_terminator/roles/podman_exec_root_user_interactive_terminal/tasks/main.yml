@@ -1,4 +1,0 @@
-- import_role:
-    name: kterminator.runtime_shell.launch_executing_command
-  vars:
-    subcommand_to_execute: podman exec --user=root -it {{ container_name }} /bin/bash

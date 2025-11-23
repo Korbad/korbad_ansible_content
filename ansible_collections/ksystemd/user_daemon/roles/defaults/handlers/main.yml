@@ -1,9 +1,0 @@
-- name: reload systemd user daemon
-  include_tasks: daemon_reload.yml
-  listen:
-  - reload systemd user daemon
-
-- name: rexec systemd user daemon
-  include_tasks: daemon_rexec.yml
-  listen:
-    - rexec systemd user daemon

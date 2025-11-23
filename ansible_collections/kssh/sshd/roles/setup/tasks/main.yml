@@ -1,6 +1,0 @@
-- name: sshd started and enabled
-  systemd_service:
-    name: sshd
-    state: started
-    enabled: true
-  become: true

@@ -1,9 +1,0 @@
-- name: NOT IDEMPOTENT, CONFLATES ERRORS, Check if private key has a passphrase
-  ansible.builtin.shell:
-    cmd: ssh-keygen -y -f "{{ ssh_priv_key_file_path }}" > /dev/null 2>&1
-  register: key_passphrase_check
-  failed_when: false
-  changed_when: false
-
-- debug:
-    var: key_passphrase_check

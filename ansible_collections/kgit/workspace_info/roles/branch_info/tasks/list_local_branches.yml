@@ -1,7 +1,0 @@
-
-- name: List all local branches
-  ansible.builtin.command:
-    cmd: git branch --format='%(refname:short)'
-    chdir: "{{ git_local_repo_directory_path }}"
-  register: _git_workspace_all_branches_result
-  changed_when: false

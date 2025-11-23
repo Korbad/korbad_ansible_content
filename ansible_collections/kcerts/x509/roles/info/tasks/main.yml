@@ -1,5 +1,0 @@
-- community.crypto.x509_certificate_info:
-    content: "{{ x509_cert_crt_content }}"
-    valid_at:
-      point_1: "{{ x509_cert_content_valid_at_point_1_string }}"
-  register: _x509_cert_content_info_result

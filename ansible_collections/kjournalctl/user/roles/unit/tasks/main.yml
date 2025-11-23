@@ -1,2 +1,0 @@
-- command:
-    cmd: journalctl --user -u {{ systemd_user_unit_file_name }} --no-pager

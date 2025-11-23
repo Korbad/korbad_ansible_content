@@ -1,5 +1,0 @@
-- name: Add 1password key for yum repo
-  rpm_key:
-    state: present
-    key: https://downloads.1password.com/linux/keys/1password.asc
-  become: yes

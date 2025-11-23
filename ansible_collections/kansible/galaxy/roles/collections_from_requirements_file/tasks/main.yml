@@ -1,5 +1,0 @@
-- community.general.ansible_galaxy_install:
-    requirements_file: "{{ collection_requirements_file_path }}"
-    dest: "{{ collections_path }}"
-    type: collection
-    force: true

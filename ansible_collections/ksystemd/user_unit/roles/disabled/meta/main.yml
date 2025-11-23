@@ -1,5 +1,0 @@
-dependencies:
-- name: defaults
-- name: jsystemd.user_daemon.defaults
-- name: korbad.filesystem.directory_exists
-  directory_path: "{{ systemd_user_config_directory_path }}"

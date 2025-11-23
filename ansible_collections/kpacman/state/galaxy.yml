@@ -1,6 +1,0 @@
-namespace: kpacman
-name: state
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

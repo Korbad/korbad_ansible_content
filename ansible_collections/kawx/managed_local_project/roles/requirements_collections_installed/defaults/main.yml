@@ -1,3 +1,0 @@
-managed_awx_project_collections_directory_path: "{{ managed_awx_project_root_path }}/collections"
-managed_awx_project_requirements_file_path: "{{ managed_awx_project_collections_directory_path }}/requirements.yml"
-managed_awx_project_collections_cache_path: "{{ managed_awx_project_collections_directory_path }}"

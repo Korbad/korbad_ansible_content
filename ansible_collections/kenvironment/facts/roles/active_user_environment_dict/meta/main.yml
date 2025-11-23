@@ -1,3 +1,0 @@
-allow_duplicates: true
-dependencies:
-  - name: ki3.runtime_environment.defaults

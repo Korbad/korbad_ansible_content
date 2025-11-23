@@ -1,3 +1,0 @@
-systemd_user_environment_config_directory_path: "{{ }}/environment.d"
-systemd_user_environment_config_directory_file_path: "{{ systemd_user_environment_config_directory_path }}/{{ systemd_user_environment_config_directory_file_name }}"
-systemd_user_environment_config_directory_file_name: "{{ systemd_user_environment_config_directory_file_shortname }}.conf"

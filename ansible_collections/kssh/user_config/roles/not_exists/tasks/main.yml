@@ -1,3 +1,0 @@
-- file:
-    state: absent
-    path: "{{ xdg_user_home_ssh_directory_config_file_path }}"

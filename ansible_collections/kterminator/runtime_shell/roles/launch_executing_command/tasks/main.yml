@@ -1,4 +1,0 @@
-- import_role:
-    name: kshell.runtime.nohup_command_devnull_stderr_stdout_background
-  vars:
-    command_to_execute: "{{ _command_to_open_terminator_running_command }}"

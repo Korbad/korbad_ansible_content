@@ -1,3 +1,0 @@
-nemo_actions_directory_path: "{{ xdg_data_home_path }}/nemo/actions"
-nemo_action_file_file_name: "{{ nemo_action_file_shortname }}.nemo_action"
-nemo_action_file_path: "{{ nemo_actions_directory_path }}/{{ nemo_action_file_file_name }}"

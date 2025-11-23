@@ -1,5 +1,0 @@
-- name: Ensure rustup is self updated
-  command:
-    cmd: "{{ rustup_executable_path }} self update"
-  register: rustup_self_update_result
-  changed_when: "'rustup unchanged' not in rustup_self_update_result.stdout"

@@ -1,8 +1,0 @@
-- include_role:
-    name: kgit.workspace_submodule.added_if_submodule_path_not_exists
-  loop: "{{ git_workspace_submodules }}"
-  loop_control:
-    loop_var: git_workspace_submodule
-  vars:
-    git_repo_remote_full_url: "{{ git_workspace_submodule.git_repo_remote_full_url }}"
-    git_workspace_submodule_name: "{{ git_workspace_submodule.git_workspace_submodule_name }}"

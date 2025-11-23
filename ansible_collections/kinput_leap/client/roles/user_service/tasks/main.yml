@@ -1,6 +1,0 @@
-- import_role:
-    name: resolve_server_ip_from_client_host
-    
-- import_tasks: systemd_user_unit.yml
-  vars:
-    systemd_user_unit_file_name: input-leap-client.service

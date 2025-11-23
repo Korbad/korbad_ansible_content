@@ -1,4 +1,0 @@
-- name: NOT IDEMPOTENT, NOT GREAT
-  command:
-    cmd: systemctl --user enable {{ systemd_user_unit_file_path }} --now
-  register: systemctl_user_enable_unit_file_now_result

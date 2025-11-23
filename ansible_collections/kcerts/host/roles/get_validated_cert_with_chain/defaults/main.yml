@@ -1,2 +1,0 @@
-_detected_validated_presented_cert_value: "{{ _get_validated_certificate_with_chain_from_remote_host_result.cert }}"
-_detected_validated_presented_verified_chain_value: "{{ _get_validated_certificate_with_chain_from_remote_host_result.verified_chain }}"

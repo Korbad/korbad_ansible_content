@@ -1,3 +1,0 @@
-- name: Reload user systemd units
-  command:
-    cmd: systemctl --user daemon-reload

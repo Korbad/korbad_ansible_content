@@ -1,1 +1,0 @@
-_git_workspace_branch_head_refs_list: "{{ _git_for_each_ref_head_refs_result.stdout_lines }}"

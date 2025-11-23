@@ -1,8 +1,0 @@
-- command:
-    cmd: git log @{u}..
-    chdir: "{{ git_local_repo_directory_path }}"
-  register: _git_log_info_local_commits_missing_from_remote_remote
-  changed_when: false
-
-- debug:
-    var: _git_log_info_local_commits_missing_from_remote_remote

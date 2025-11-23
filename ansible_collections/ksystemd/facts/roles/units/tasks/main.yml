@@ -1,6 +1,0 @@
-- import_role:
-    name: jsystemd.info.info
-
-- set_fact:
-    systemd_units: "{{ systemd_info_results.units }}"
-    cacheable: true

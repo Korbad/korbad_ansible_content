@@ -1,2 +1,0 @@
-_filesystem_entry_stat: "{{ _filesystem_entry_stat_result.stat }}"
-_filesystem_entry_exists: "{{ _filesystem_entry_stat.exists }}"

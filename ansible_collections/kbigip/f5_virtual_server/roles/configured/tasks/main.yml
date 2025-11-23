@@ -1,3 +1,0 @@
-- f5networks.f5_modules.bigip_virtual_server:
-    provider: "{{ bigip_connection_provider_dict }}"
-    name: "{{ f5_virtual_server_name }}"

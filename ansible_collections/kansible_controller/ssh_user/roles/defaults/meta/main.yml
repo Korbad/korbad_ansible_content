@@ -1,3 +1,0 @@
-dependencies:
-  - name: kansible_controller.xdg_spec.defaults
-  - name: kssh.user.defaults

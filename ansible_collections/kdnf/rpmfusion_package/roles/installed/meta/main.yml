@@ -1,5 +1,0 @@
-dependencies:
-- name: kdnf.action.updated
-- name: krpm_fusion.fedora_package.free_installed
-- name: krpm_fusion.fedora_package.nonfree_installed
-- name: kdnf.action.updated

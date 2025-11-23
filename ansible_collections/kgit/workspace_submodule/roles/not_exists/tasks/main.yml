@@ -1,3 +1,0 @@
-- import_role:
-      name: defaults
-      tasks_from: git_submodule_removed.yml

@@ -1,7 +1,0 @@
-- template:
-    src: combined_privatekey_and_cert_pem_file.j2
-    dest: "{{ managed_cert_privatekey_and_cert_ssl_pem_file_path }}"
-    mode: '0600'
-  vars:
-    privatekey_content: "{{ _openssl_privatekey_file_configruation_result.privatekey }}"
-    certificate_content: "{{ x509_crt_file_result.certificate }}"

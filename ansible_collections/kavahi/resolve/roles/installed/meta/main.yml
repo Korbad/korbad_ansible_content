@@ -1,3 +1,0 @@
-dependencies:
-  - name: josh.dnf.package_installed
-    dnf_package_name: avahi-tools

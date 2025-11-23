@@ -1,4 +1,0 @@
-- import_role:
-    name: kopenssh_keypair.privatekey_without_passphrase.ed25519_type_never_regenerated_configured
-  vars:
-    openssh_privatekey_file_path: "{{ ed25519_type_openssh_privatekey_file_path }}"

@@ -1,5 +1,0 @@
-- name: Ensure that {{ pacman_package_name }} is updated to latest
-  pacman:
-    name: "{{ pacman_package_name }}"
-    state: latest
-  become: true

@@ -1,2 +1,0 @@
-- command: pacman -Syu
-  become: true

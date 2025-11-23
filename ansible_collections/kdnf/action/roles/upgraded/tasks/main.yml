@@ -1,4 +1,0 @@
-- name: Upgrade dnf
-  command:
-    cmd: dnf upgrade -y
-  become: yes

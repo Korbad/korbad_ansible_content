@@ -1,7 +1,0 @@
----
-- systemd_service:
-    name: "{{ systemd_unit_name }}"
-    masked: true
-    enabled: false
-    state: stopped
-  become: true

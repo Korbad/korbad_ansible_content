@@ -1,6 +1,0 @@
-namespace: kopenssh_keypair
-name: managed_privatekey_without_passphrase
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

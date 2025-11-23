@@ -1,6 +1,0 @@
-- import_role:
-    name: show
-
-- set_fact:
-    "{{ keepassx_fact_var_name }}": "{{ _keepass_show_result.stdout }}"
-  no_log: true

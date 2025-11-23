@@ -1,3 +1,0 @@
-etc_systemd_networkd_directory_path: /etc/systemd/network
-etc_systemd_networkd_file_path: "{{ etc_systemd_networkd_directory_path }}/{{ systemd_networkd_file_name }}"
-systemd_networkd_file_name: "{{ systemd_networkd_file_shortname }}.network"

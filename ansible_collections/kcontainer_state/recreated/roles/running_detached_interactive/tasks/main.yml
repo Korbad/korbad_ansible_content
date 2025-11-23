@@ -1,9 +1,0 @@
-- name: Ensure {{ container_name }} from {{ container_image_fully_qualified_name }} is restarted, detached, interactive
-  containers.podman.podman_container:
-    name: "{{ container_name }}"
-    image: "{{ container_image_fully_qualified_name }}"
-    image_strict: true
-    state: started
-    recreate: true
-    detach: true
-    interactive: true

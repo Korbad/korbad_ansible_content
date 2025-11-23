@@ -1,3 +1,0 @@
-- copy:
-    src: "{{ controller_xdg_user_home_ssh_priv_key_file_path }}"
-    dest: "{{ xdg_user_home_ssh_priv_key_file_path }}"

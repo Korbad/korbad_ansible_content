@@ -1,5 +1,0 @@
-- include_role:
-    name: kgit.workspace_submodule.not_exists
-  loop: "{{ git_workspace_submodule_names }}"
-  loop_control:
-    loop_var: git_workspace_submodule_name

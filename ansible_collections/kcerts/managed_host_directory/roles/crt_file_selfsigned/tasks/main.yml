@@ -1,6 +1,0 @@
-- import_role:
-    name: kcerts.x509_file.selfsigned_provider
-  vars:
-    openssl_csr_file_path: "{{ managed_cert_csr_file_path }}"
-    openssl_privatekey_file_path: "{{ managed_cert_key_file_path }}"
-    x509_crt_file_path: "{{ managed_cert_crt_file_path }}"

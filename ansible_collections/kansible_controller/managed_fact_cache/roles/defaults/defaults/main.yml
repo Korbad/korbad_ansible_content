@@ -1,3 +1,0 @@
-managed_ansible_inventory_cache_path: "{{ xdg_cache_home_path }}/managed_ansible_inventory_cache"
-managed_ansible_fact_cache_path: "{{ xdg_cache_home_path }}/managed_ansible_fact_cache"
-managed_external_ansible_collections_path: "{{ xdg_data_home_path }}/managed_external_ansible_collections"

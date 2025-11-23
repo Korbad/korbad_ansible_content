@@ -1,8 +1,0 @@
-- import_role:
-    name: kfilesystem.file.exists
-
-- import_role:
-    name: ensure_umask077_configured
-
-- import_role:
-    name: timezone_configured

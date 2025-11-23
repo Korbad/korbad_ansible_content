@@ -1,6 +1,0 @@
-namespace: kansible_controller
-name: ssh_user
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

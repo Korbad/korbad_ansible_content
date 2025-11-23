@@ -1,4 +1,0 @@
-- name: Get the PID of {{ user_graphical_process_name }} for the user {{ ansible_env.USER }}
-  shell: pgrep -u {{ ansible_env.USER }} -a {{ user_graphical_process_name }} | head -n 1 | awk '{print $1}'
-  register: user_graphical_process_name_pid_result
-  changed_when: false

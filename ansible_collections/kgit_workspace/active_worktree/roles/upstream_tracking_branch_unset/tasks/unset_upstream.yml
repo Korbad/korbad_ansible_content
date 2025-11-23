@@ -1,3 +1,0 @@
-- command:
-    cmd: git branch --unset-upstream
-    chdir: "{{ git_local_repo_directory_path }}"

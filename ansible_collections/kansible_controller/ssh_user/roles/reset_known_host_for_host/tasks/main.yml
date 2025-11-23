@@ -1,9 +1,0 @@
-- import_role:
-    name: kssh.known_hosts.entry_not_exists
-  delegate_to: localhost
-  vars:
-    known_host_entry_hostname: "{{ hostvars[inventory_hostname]['ansible_host'] }}"
-
-- setup:
-  vars:
-    ansible_ssh_common_args: '-o StrictHostKeyChecking=accept-new'

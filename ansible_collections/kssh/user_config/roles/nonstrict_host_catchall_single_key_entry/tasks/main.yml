@@ -1,8 +1,0 @@
-- blockinfile:
-    path: "{{ xdg_user_home_ssh_directory_config_file_path }}"
-    marker: "# {mark} Host catch-all always last - Ansible managed"
-    insertafter: EOF
-    block: |
-      Host *
-        AddKeysToAgent yes
-        IdentityFile ~/{{ openssh_privatekey_file_path_relative_to_xdg_user_home }}

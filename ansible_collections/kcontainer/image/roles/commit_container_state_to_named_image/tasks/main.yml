@@ -1,3 +1,0 @@
-- name: NOT IDEMPOTENT Commit container {{ source_container_name }} as named image {{ desired_container_image_shortname_with_tag }}
-  command:
-    cmd: podman commit {{ source_container_name }} {{ desired_container_image_shortname_with_tag }}

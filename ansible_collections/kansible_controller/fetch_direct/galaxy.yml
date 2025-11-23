@@ -1,6 +1,0 @@
-namespace: kansible_controller
-name: fetch_direct
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

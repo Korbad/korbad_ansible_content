@@ -1,6 +1,0 @@
-namespace: kfile
-name: plaintext
-authors:
-- Korbad
-version: 0.0.1
-readme: README.md

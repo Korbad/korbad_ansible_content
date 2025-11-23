@@ -1,8 +1,0 @@
-- file:
-    state: directory
-    path: "{{ file_path | dirname }}"
-
-- name: Copy managed artifact from controller {{ controller_filesystem_file_path }} to host {{ file_path }}
-  copy:
-    src: "{{ controller_filesystem_file_path }}"
-    dest: "{{ file_path }}"

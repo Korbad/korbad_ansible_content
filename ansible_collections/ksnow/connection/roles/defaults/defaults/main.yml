@@ -1,8 +1,0 @@
-snow_instance_connection_dict_using_userpass:
-  username: "{{ snow_username }}"
-  password: "{{ snow_password }}"
-  host: "{{ snow_host_fqdn }}"
-
-snow_instance_connection_dict_using_token:
-  access_token: "{{ snow_access_token }}"
-  host: "{{ snow_host_fqdn }}"

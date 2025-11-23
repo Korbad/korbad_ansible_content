@@ -1,4 +1,0 @@
-- import_role:
-    name: kpython.managed_virtual_environment.virtual_environment_bin_path_in_user_bashrc
-  vars:
-    managed_virtual_environment_name: default
