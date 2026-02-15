@@ -1,7 +1,7 @@
 dependencies:
-- name: josh.pacman.package_installed
+- name: korbad.pacman.package_installed
   pacman_package_name: nemo
   when: ansible_distribution == 'Archlinux'
-- name: josh.dnf.package_installed
+- name: korbad.dnf.package_installed
   dnf_package_name: nemo
   when: ansible_distribution == 'Fedora'
