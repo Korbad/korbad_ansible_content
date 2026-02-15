@@ -1,4 +1,4 @@
 - import_role:
-    name: josh.file.openssl_privatekey
+    name: korbad.file.openssl_privatekey
   vars:
     openssl_privatekey_file_path: "{{ managed_cert_key_file_path }}"

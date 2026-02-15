@@ -1,1 +1,1 @@
-managed_git_workspace_path_list: "{{ [managed_git_workspace_directory_parent_directory_path] | product(managed_git_workspace_name_list) | map('join','/') }}"
+managed_git_local_repo_directory_path_list: "{{ [managed_git_workspace_directory_parent_directory_path] | product(managed_git_workspace_name_list) | map('join','/') }}"

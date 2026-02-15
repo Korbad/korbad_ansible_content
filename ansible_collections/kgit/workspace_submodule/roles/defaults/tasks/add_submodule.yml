@@ -1,5 +1,5 @@
 
-- name: git workspace {{ git_workspace_path }} add submodule {{ git_workspace_submodule_relative_path }} from {{ git_repo_remote_full_url }}
+- name: git workspace {{ git_local_repo_directory_path }} add submodule {{ git_workspace_submodule_relative_path }} from {{ git_repo_remote_full_url }}
   command:
     cmd: git submodule add {{ git_repo_remote_full_url }} {{ git_workspace_submodule_relative_path }}
-    chdir: "{{ git_workspace_path }}"
+    chdir: "{{ git_local_repo_directory_path }}"

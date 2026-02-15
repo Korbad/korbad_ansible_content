@@ -1,6 +1,6 @@
 - name: git fetch prune (which removes local branches with nonexistant remote tracking branch)
   command:
     cmd: git fetch --atomic --porcelain --verbose --prune --prune-tags {{ git_remote_name }}
-    chdir: "{{ git_workspace_path }}"
+    chdir: "{{ git_local_repo_directory_path }}"
   register: _git_fetch_remote_result
   changed_when: _git_fetched_remote_refs_data_change_detected_bool

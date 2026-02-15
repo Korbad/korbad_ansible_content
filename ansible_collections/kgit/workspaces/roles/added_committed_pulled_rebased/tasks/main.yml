@@ -1,5 +1,5 @@
 - include_role:
     name: kgit.workspace_meta.added_committed_pulled_rebased
-  loop: "{{ git_workspace_paths }}"
+  loop: "{{ git_local_repo_directory_paths }}"
   loop_control:
-    loop_var: git_workspace_path
+    loop_var: git_local_repo_directory_path

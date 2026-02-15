@@ -1,3 +1,3 @@
 - command:
     cmd: git checkout --no-guess {{ git_workspace_branch_name }}
-    chdir: "{{ git_workspace_path }}"
+    chdir: "{{ git_local_repo_directory_path }}"

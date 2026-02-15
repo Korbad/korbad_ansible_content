@@ -1,2 +1,2 @@
 - command:
-    cmd: git clone {{ git_repo_remote_full_url }} {{ git_workspace_path }}
+    cmd: git clone {{ git_repo_remote_full_url }} {{ git_local_repo_directory_path }}

@@ -1,4 +1,4 @@
 - command:
     cmd: git rm -r {{ git_workspace_submodule_relative_path }}
-    chdir: "{{ git_workspace_path }}"
+    chdir: "{{ git_local_repo_directory_path }}"
     removes: "{{ git_workspace_submodule_path }}"

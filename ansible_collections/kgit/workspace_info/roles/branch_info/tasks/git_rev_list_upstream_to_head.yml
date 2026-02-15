@@ -1,6 +1,6 @@
 - name: List commits on HEAD but not in upstream
   command:
     cmd: git rev-list @{upstream}..HEAD
-    chdir: "{{ git_workspace_path }}"
+    chdir: "{{ git_local_repo_directory_path }}"
   register: _git_rev_list_upstream_head_result
   changed_when: false
